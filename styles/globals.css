@@ -1,5 +1,14 @@
 @import './fonts.css';
 
+:root {
+  --primary-color: #b02c2d;
+  --secondary-color: #FAF9F6;
+  --text-dark: #333;
+  --text-bright: #FAF9F6;
+  --background-color: #FAF9F6;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  /* color: var(--text-color); */
 }

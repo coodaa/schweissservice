@@ -1,8 +1,7 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-// import styles from "../styles/Home.module.scss";
 
-const Layout = ({ children }) => {
+export default function Layout({ children }) {
   return (
     <div>
       <Navbar />
@@ -10,6 +9,4 @@ const Layout = ({ children }) => {
       <Footer />
     </div>
   );
-};
-
-export default Layout;
+}

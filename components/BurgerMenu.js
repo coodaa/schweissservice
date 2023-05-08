@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "../styles/BurgerMenu.module.css";
 
-const BurgerMenu = ({ onToggle }) => {
+export default function BurgerMenu({ onToggle }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -17,6 +17,4 @@ const BurgerMenu = ({ onToggle }) => {
       <div className={`${styles.bar} ${menuOpen ? styles.open : ""}`}></div>
     </div>
   );
-};
-
-export default BurgerMenu;
+}

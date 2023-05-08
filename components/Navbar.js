@@ -4,7 +4,7 @@ import Link from "next/link";
 import BurgerMenu from "./BurgerMenu";
 import styles from "../styles/Navbar.module.css";
 
-const Navbar = () => {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleToggle = (open) => {
@@ -17,33 +17,29 @@ const Navbar = () => {
       {menuOpen && (
         <ul className={styles.navLinksMobile}>
           <li>
-            <Link legacyBehavior href="/" passHref>
-              <a className={styles.link}>Home</a>
+            <Link href="/" passHref className={styles.link}>
+              Home
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href="/about" passHref>
-              <a className={styles.link}>About</a>
+            <Link href="/about" passHref className={styles.link}>
+              About
             </Link>
           </li>
-          {/* Add more nav links here */}
         </ul>
       )}
       <ul className={styles.navLinksDesktop}>
         <li>
-          <Link legacyBehavior href="/" passHref>
-            <a className={styles.link}>Home</a>
+          <Link href="/" passHref className={styles.link}>
+            Home
           </Link>
         </li>
         <li>
-          <Link legacyBehavior href="/about" passHref>
-            <a className={styles.link}>About</a>
+          <Link href="/about" passHref className={styles.link}>
+            About
           </Link>
         </li>
-        {/* Add more nav links here */}
       </ul>
     </nav>
   );
-};
-
-export default Navbar;
+}
