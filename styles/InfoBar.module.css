@@ -1,0 +1,23 @@
+/* styles/InfoBar.module.css */
+.infoBar {
+  color: var(--secondary-color);
+  background-color:var(--primary-color);
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: space-between;
+}
+
+.openingHours {
+  margin-left: 1rem;
+}
+
+.phoneNumber {
+  margin-right: 1rem;
+}
