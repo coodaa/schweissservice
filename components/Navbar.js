@@ -1,15 +1,49 @@
-// import styles from "../styles/Home.module.scss";
+// components/Navbar.js
+import React, { useState } from "react";
 import Link from "next/link";
-import { useState } from "react";
-import React from "react";
 import BurgerMenu from "./BurgerMenu";
-import styles from "../styles/BurgerMenu.module.css";
+import styles from "../styles/Navbar.module.css";
 
-export default function Navbar() {
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleToggle = (open) => {
+    setMenuOpen(open);
+  };
+
   return (
-    <header className={styles.header}>
-      <h1>My Website</h1>
-      <BurgerMenu />
-    </header>
+    <nav className={styles.nav}>
+      <BurgerMenu onToggle={handleToggle} />
+      {menuOpen && (
+        <ul className={styles.navLinksMobile}>
+          <li>
+            <Link legacyBehavior href="/" passHref>
+              <a className={styles.link}>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="/about" passHref>
+              <a className={styles.link}>About</a>
+            </Link>
+          </li>
+          {/* Add more nav links here */}
+        </ul>
+      )}
+      <ul className={styles.navLinksDesktop}>
+        <li>
+          <Link legacyBehavior href="/" passHref>
+            <a className={styles.link}>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link legacyBehavior href="/about" passHref>
+            <a className={styles.link}>About</a>
+          </Link>
+        </li>
+        {/* Add more nav links here */}
+      </ul>
+    </nav>
   );
-}
+};
+
+export default Navbar;
