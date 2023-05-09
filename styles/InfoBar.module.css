@@ -15,9 +15,38 @@
 }
 
 .openingHours {
-  margin-left: 1rem;
+margin-left: 1rem;
 }
 
 .phoneNumber {
-  margin-right: 1rem;
+margin-right: 1rem;
+}
+
+.mobileBreak {
+display: none;
+}
+
+@media (max-width: 767px) {
+.infoBar {
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.openingHours {
+  margin-left: 0;
+  margin-bottom: 0;
+  text-align: left;
+  flex: 1;
+}
+
+.mobileBreak {
+  display: inline;
+}
+
+.phoneNumber {
+  margin-right: 0;
+  text-align: right;
+  flex: 1;
+}
 }
