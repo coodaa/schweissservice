@@ -1,19 +1,36 @@
 // components/Navbar.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image"; // Import the Image component
+import Image from "next/image";
 import BurgerMenu from "./BurgerMenu";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const handleToggle = (open) => {
     setMenuOpen(open);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${isSticky ? styles.sticky : ""}`}>
       <div className={styles.logo}>
         <Image
           src="/assets/img/logo/logo-original.png"
@@ -57,7 +74,7 @@ const Navbar = () => {
           <Link href="/kontakt" passHref className={styles.link}>
             Kontakt
           </Link>
-        </li>
+        </li>{" "}
       </ul>
     </nav>
   );

@@ -8,6 +8,16 @@
   position: sticky;
   top: 2.5rem;
   z-index: 20; /* To keep the navbar above the info bar */
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  z-index: 200; /* New style added */
 }
 
 .link {
