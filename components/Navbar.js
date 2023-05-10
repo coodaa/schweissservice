@@ -41,7 +41,9 @@ const Navbar = () => {
       </div>
       <BurgerMenu onToggle={handleToggle} />
       {menuOpen && (
-        <ul className={styles.navLinksMobile}>
+        <ul
+          className={`${styles.navLinksMobile} ${menuOpen ? styles.show : ""}`}
+        >
           <li>
             <Link href="/" passHref className={styles.link}>
               Service
@@ -59,6 +61,7 @@ const Navbar = () => {
           </li>
         </ul>
       )}
+
       <ul className={styles.navLinksDesktop}>
         <li>
           <Link href="/" passHref className={styles.link}>
