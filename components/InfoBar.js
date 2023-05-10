@@ -18,21 +18,29 @@ const InfoBar = () => {
       <div className={styles.openingHours}>
         {isClient &&
           (isDesktopOrLaptop ? (
-            "Öffnungszeiten: "
+            <span className={styles.textBold}> Öffnungszeiten: &nbsp;</span>
           ) : (
-            <MdAccessTime size={20} style={{ verticalAlign: "middle" }} />
+            <MdAccessTime
+              className={styles.icon}
+              size={20}
+              style={{ verticalAlign: "middle" }}
+            />
           ))}
-        <span> Mo-Do 08:30-11:00 Uhr | Fr & Sa 09:30-10:30 Uhr</span>
-        <span className={styles.sundayHours}> | So: Geschlossen</span>
+        <span>Mo-Do 08:30-11:00 Uhr | Fr & Sa 09:30-10:30 Uhr &nbsp;</span>
+        <span className={styles.sundayHours}>| So: Geschlossen</span>
       </div>
       <div className={styles.phoneNumber}>
         {isClient &&
           (isDesktopOrLaptop ? (
-            "Telefon: "
+            <span className={styles.textBold}>Telefon: &nbsp;</span>
           ) : (
-            <MdPhone size={20} style={{ verticalAlign: "middle" }} />
+            <MdPhone
+              className={styles.icon}
+              size={20}
+              style={{ verticalAlign: "middle" }}
+            />
           ))}
-        <span> +49 (0) 491 9293713</span>
+        <span>+49 (0) 491 9293713</span>
       </div>
     </div>
   );

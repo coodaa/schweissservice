@@ -14,6 +14,14 @@
   justify-content: space-between;
 }
 
+.textBold {
+  font-weight: bold;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
 .openingHours, .phoneNumber {
   display: flex;
   flex-direction: row;
@@ -35,7 +43,6 @@
     display: none;
   }
 }
-
 
 @media (min-width: 768px) {
   .sundayHours {
