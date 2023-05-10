@@ -14,39 +14,31 @@
   justify-content: space-between;
 }
 
-.openingHours {
-margin-left: 1rem;
-}
-
-.phoneNumber {
-margin-right: 1rem;
-}
-
-.mobileBreak {
-display: none;
+.openingHours, .phoneNumber {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 @media (max-width: 767px) {
-.infoBar {
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  .infoBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .openingHours, .phoneNumber {
+    margin-bottom: 0.5rem;
+  }
+
+  .sundayHours {
+    display: none;
+  }
 }
 
-.openingHours {
-  margin-left: 0;
-  margin-bottom: 0;
-  text-align: left;
-  flex: 1;
-}
 
-.mobileBreak {
-  display: inline;
-}
-
-.phoneNumber {
-  margin-right: 0;
-  text-align: right;
-  flex: 1;
-}
+@media (min-width: 768px) {
+  .sundayHours {
+    display: inline;
+  }
 }
