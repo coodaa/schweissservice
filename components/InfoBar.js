@@ -3,19 +3,16 @@ import styles from "../styles/InfoBar.module.css";
 import { MdAccessTime, MdPhone } from "react-icons/md"; // import the icons
 import { useMediaQuery } from "react-responsive"; // import the hook
 
-const InfoBar = ({ scrollPosition }) => {
-  const isScrolled = scrollPosition >= 50;
-
+const InfoBar = () => {
   const [isClient, setIsClient] = useState(false);
-
   useEffect(() => {
     setIsClient(true);
   }, []);
 
-  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1024 }); // define the media query
+  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1024 }); //
 
   return (
-    <div className={`${styles.infoBar} ${isScrolled ? styles.scrolled : ""}`}>
+    <div className={styles.infoBar}>
       <div className={styles.openingHours}>
         {isClient && (
           <>
@@ -48,7 +45,7 @@ const InfoBar = ({ scrollPosition }) => {
             <span>+49 (0) 491 9293713</span>
           </>
         )}
-      </div>
+      </div>{" "}
     </div>
   );
 };

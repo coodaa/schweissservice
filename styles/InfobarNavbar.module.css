@@ -6,13 +6,13 @@
 .infobar {
   position: absolute;
   top: 0;
-  /* width: 100%; */
+  width: 100%;
   z-index: 200;
 }
 
 .navbar {
   position: fixed;
-  top: 50px; /* Die tatsächliche Höhe Ihrer Infobar */
+  top: 100px; /* Die tatsächliche Höhe Ihrer Infobar */
   width: 100%;
   z-index: 200;
 }

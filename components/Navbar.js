@@ -14,7 +14,7 @@ const Navbar = ({ scrollPosition }) => {
   };
 
   return (
-    <nav className={`${styles.nav} ${isSticky ? styles.sticky : ""}`}>
+    <nav className={styles.nav}>
       <div className={styles.logo}>
         <Image
           src="/assets/img/logo/logo-original.png"
