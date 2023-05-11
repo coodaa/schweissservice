@@ -1,81 +1,20 @@
-.infoBar {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  padding: 0.5rem;
-  text-align: left;
-  font-size: 0.9rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 200;
-  display: flex;
-  justify-content: space-between;
-}
+/* InfobarNavbar.module.css */
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: var(--secondary-color);
+.container {
   position: relative;
-  transition: all 0.3s ease-in-out;
+  z-index: 100;
 }
 
-.sticky {
-  position: fixed;
+.infobar {
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 200;
 }
 
-.link {
-  text-decoration: none;
-  color:var(--primary-color);
-  font-weight: bold;
-}
-
-.navLinksMobile {
-  display: none;
-  list-style: none;
-  padding: 0;
-  position: absolute;
-  background-color: #fff;
-  top: 100%;
+.navbar {
+  position: fixed;
+  top: 50px;
   width: 100%;
-  left: 0;
-  flex-direction: column;
-  text-align: center;
-  background-color: var(--secondary-color);
-}
-
-.show {
-  display: flex;
-}
-
-.navLinksDesktop {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
-  margin-left: auto;
-}
-
-.logo {
-}
-
-@media (max-width: 767px) {
-  .nav {
-    top: 4.5rem;
-  }
-
-  .navLinksMobile {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .navLinksDesktop {
-    display: none;
-  }
+  z-index: 200;
 }

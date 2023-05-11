@@ -1,15 +1,29 @@
-// components/Header.js
-import React from "react";
+// Header.js
+import React, { useState, useEffect } from "react";
 import InfoBar from "./InfoBar";
 import Navbar from "./Navbar";
 import styles from "../styles/Header.module.css";
 
-const Header = ({ isScrolled }) => {
+const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    setIsScrolled(window.pageYOffset > 50);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={styles.header}>
+    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       <InfoBar isScrolled={isScrolled} />
-      <Navbar isScrolled={isScrolled} />
-    </div>
+      <Navbar />
+    </header>
   );
 };
 

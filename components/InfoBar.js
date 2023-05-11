@@ -1,9 +1,10 @@
+// components/InfoBar.js
 import React, { useState, useEffect } from "react";
 import styles from "../styles/InfoBar.module.css";
 import { MdAccessTime, MdPhone } from "react-icons/md"; // import the icons
 import { useMediaQuery } from "react-responsive"; // import the hook
 
-const InfoBar = ({ scrollPosition }) => {
+const InfoBar = ({ isScrolled }) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -12,13 +13,8 @@ const InfoBar = ({ scrollPosition }) => {
 
   const isDesktopOrLaptop = useMediaQuery({ minWidth: 1024 }); // define the media query
 
-  // Wird nur angezeigt, wenn der Scroll-Position kleiner als 50 ist
-  if (scrollPosition >= 50) {
-    return null;
-  }
-
   return (
-    <div className={styles.infoBar}>
+    <div className={`${styles.infoBar} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.openingHours}>
         {isClient &&
           (isDesktopOrLaptop ? (
@@ -45,7 +41,7 @@ const InfoBar = ({ scrollPosition }) => {
             />
           ))}
         <span>+49 (0) 491 9293713</span>
-      </div>{" "}
+      </div>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 /* styles/InfoBar.module.css */
+
 .infoBar {
   color: var(--secondary-color);
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   padding: 0.5rem;
   text-align: left;
   font-size: 0.9rem;
@@ -12,7 +13,18 @@
   z-index: 200;
   display: flex;
   justify-content: space-between;
+  transition: 0.3s all ease; /* Füge Übergang hinzu */
+}
 
+.stickyContainer {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.scrolled {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .textBold {
@@ -27,14 +39,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.infoBar {
-  transition: transform 0.3s;
-}
-
-.scrolled {
-  transform: translateY(-100%);
 }
 
 @media (max-width: 767px) {

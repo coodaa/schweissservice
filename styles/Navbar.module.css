@@ -1,24 +1,12 @@
+/* Navbar.module.css */
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: var(--secondary-color);
-  position: relative;
-  top: 2.5rem;
-  z-index: 200;
   transition: transform 0.3s;
-}
-
-.scrolled {
-  position: sticky;
-  top: 0;
-}
-.sticky {
-  position: fixed;
-  top: -50px; /* Setzen Sie diesen Wert auf den negativen Wert der Höhe der InfoBar */
-  width: 100%;
-  z-index: 200;
 }
 
 .link {
@@ -39,7 +27,6 @@
   flex-direction: column;
   text-align: center;
   background-color: var(--secondary-color);
-
 }
 
 .show {
@@ -51,7 +38,7 @@
   gap: 1rem;
   list-style: none;
   padding: 0;
-  margin-left: auto; /* Add this line */
+  margin-left: auto;
 }
 
 .logo {

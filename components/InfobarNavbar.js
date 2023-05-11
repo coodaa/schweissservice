@@ -1,19 +1,18 @@
-// InfobarNavbar.js
 import React, { useState, useEffect } from "react";
 import InfoBar from "./InfoBar";
 import Navbar from "./Navbar";
 import styles from "../styles/InfobarNavbar.module.css";
 
 const InfobarNavbar = () => {
-  const [isSticky, setIsSticky] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScroll = () => {
-    const currentScrollPosition = window.pageYOffset;
-    setIsSticky(currentScrollPosition >= 50);
+    const position = window.pageYOffset;
+    setScrollPosition(position);
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -21,8 +20,10 @@ const InfobarNavbar = () => {
   }, []);
 
   return (
-    <div className={`${styles.infobarNavbar} ${isSticky ? styles.sticky : ""}`}>
-      <InfoBar />
+    <div className={styles.stickyContainer}>
+      <div className={scrollPosition > 50 ? styles.scrolled : ""}>
+        <InfoBar />
+      </div>
       <Navbar />
     </div>
   );

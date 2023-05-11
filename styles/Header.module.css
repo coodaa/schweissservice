@@ -1,8 +1,12 @@
+/* Header.module.css */
 .header {
-  position: relative;
-  transition: top 0.3s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
 }
 
-.scrolled {
-  top: -50px; /* Stellen Sie sicher, dass dieser Wert der Höhe der InfoBar entspricht. */
+.scrolled .infoBar {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
 }
