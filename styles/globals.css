@@ -26,8 +26,8 @@ body {
   /* padding: 1rem; */
 /* } */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .page-content {
-    /* padding: 2rem; Erhöht den Abstand auf größeren Bildschirmen */
+    padding: 2rem; /* Erhöht den Abstand auf größeren Bildschirmen
   }
-}
+} */

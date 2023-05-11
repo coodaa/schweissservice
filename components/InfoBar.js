@@ -25,8 +25,8 @@ const Infobar = ({ scrollPosition }) => {
         <Image
           src="/assets/img/logo/logo-original.png"
           alt="WAGEMANN SCHWEISS-SERVICE"
-          width={150}
-          height={50}
+          width={170}
+          height={65}
         />
       </div>
       <div className={styles.phoneNumber}>

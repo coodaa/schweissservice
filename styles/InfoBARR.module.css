@@ -1,10 +1,9 @@
 .nav {
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--secondary-color);
   position: sticky;
   overflow: hidden;
-  padding: 0.5rem;
   text-align: left;
   font-size: 0.9rem;
   top: 0;
@@ -19,6 +18,7 @@
 .logo {
   height: 100%;
   margin-right: 1rem;
+  margin-top: 0.5rem;
 }
 
 .navLinksMobile {
@@ -53,6 +53,7 @@
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
+  font-size: 1.3em;
 }
 
 @media (max-width: 767px) {

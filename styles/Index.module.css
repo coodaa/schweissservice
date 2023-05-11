@@ -1,21 +1,32 @@
 .main {
-  position: relative; /* Position auf 'relative' setzen, damit das 'z-index' der Kinder funktioniert */
-  height: 100vh; /* Höhe auf 100% des Viewports setzen */
+  position: relative;
+  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: white; /* Textfarbe auf weiß setzen, damit er auf dem dunklen Hintergrund sichtbar ist */
-  z-index: 1; /* 'z-index' auf 1 setzen, damit der Text über dem Hintergrundbild erscheint */
+  align-items: center;
 }
 
 .backgroundImage {
-  position: absolute; /* Position auf 'absolute' setzen, damit das Bild den gesamten '.main'-Container ausfüllt */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-image: url('/assets/img/pictures/landing.jpg');
-  background-size: cover; /* Bild auf 'cover' setzen, damit es den gesamten Container ausfüllt */
-  background-position: center; /* Bild zentrieren */
-  z-index: 0; /* 'z-index' auf 0 setzen, damit das Bild hinter dem Text erscheint */
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.redSquare {
+  position: relative;
+  z-index: 1;
+  background-color: var(--primary-color);
+  padding: 50px;
+  color: var(--text-bright);
+  text-align: left;
+  left: -10%;
+  max-width: 30rem;
+  max-height: 35rem;
+  min-height: 19rem;
 }
