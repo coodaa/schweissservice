@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+// components/Navbar.js
+import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,8 +7,7 @@ import BurgerMenu from "./BurgerMenu";
 
 const Navbar = ({ scrollPosition }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const isSticky = scrollPosition >= 50;
+  const isSticky = scrollPosition >= 50; // Navbar wird sticky, wenn der Scroll 50 erreicht
 
   const handleToggle = (open) => {
     setMenuOpen(open);

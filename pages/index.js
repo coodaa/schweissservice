@@ -1,12 +1,12 @@
-import styles from "../styles/About.module.css";
+import styles from "../styles/Index.module.css";
 
 export default function Index() {
   return (
     <div className={styles.main}>
       <h1>Hello World</h1>
       <a>
-        PlaFür Szenarien, in denen keine dauerhafte Benachrichtigung benötigt
-        wird, z. B. die Anzeige von Informationen im Kontext eines bestimmten
+        Für Szenarien, in denen keine dauerhafte Benachrichtigung benötigt wird,
+        z. B. die Anzeige von Informationen im Kontext eines bestimmten
         Benutzeroberflächenelements, ist ein Flyout-Steuerelement die bessere
         Option. Für Szenarien, in denen die Anwendung eine Benutzeraktion
         bestätigt und Informationen anzeigt, die der Benutzer lesen muss ,

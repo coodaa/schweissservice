@@ -10,22 +10,19 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--secondary-color); ;
-
-  /* color: var(--text-color); */
+  background-color: var(--secondary-color);
 }
 
 .layout-container {
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
+  background-color: red;
   min-height: 100vh; /* Setzt die minimale Höhe auf die volle Bildschirmhöhe */
 }
 
 .page-content {
   flex: 1; /* Lässt den Inhalt den verfügbaren Raum ausfüllen */
   padding: 1rem;
-  /* background-color:green; */
 }
 
 @media (min-width: 768px) {

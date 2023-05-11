@@ -1,10 +1,10 @@
-// components/Header.js
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import InfoBar from "./InfoBar";
 
 const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,10 +18,14 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    setIsScrolled(scrollPosition >= 50);
+  }, [scrollPosition]);
+
   return (
     <>
-      <InfoBar scrollPosition={scrollPosition} />
-      <Navbar scrollPosition={scrollPosition} />
+      <Navbar scrollPosition={scrollPosition} isScrolled={isScrolled} />
+      <InfoBar scrollPosition={scrollPosition} isScrolled={isScrolled} />
     </>
   );
 };
