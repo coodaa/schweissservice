@@ -29,6 +29,14 @@
   align-items: center;
 }
 
+.infoBar {
+  transition: transform 0.3s;
+}
+
+.scrolled {
+  transform: translateY(-100%);
+}
+
 @media (max-width: 767px) {
   .infoBar {
     flex-direction: column;

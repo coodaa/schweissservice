@@ -1,0 +1,8 @@
+.header {
+  position: relative;
+  transition: top 0.3s;
+}
+
+.scrolled {
+  top: -50px; /* Stellen Sie sicher, dass dieser Wert der Höhe der InfoBar entspricht. */
+}

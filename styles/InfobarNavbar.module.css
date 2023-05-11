@@ -1,3 +1,18 @@
+.infoBar {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -5,18 +20,12 @@
   padding: 1rem;
   background-color: var(--secondary-color);
   position: relative;
-  top: 2.5rem;
-  z-index: 200;
-  transition: transform 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
-.scrolled {
-  position: sticky;
-  top: 0;
-}
 .sticky {
   position: fixed;
-  top: -50px; /* Setzen Sie diesen Wert auf den negativen Wert der Höhe der InfoBar */
+  top: 0;
   width: 100%;
   z-index: 200;
 }
@@ -39,7 +48,6 @@
   flex-direction: column;
   text-align: center;
   background-color: var(--secondary-color);
-
 }
 
 .show {
@@ -51,17 +59,13 @@
   gap: 1rem;
   list-style: none;
   padding: 0;
-  margin-left: auto; /* Add this line */
+  margin-left: auto;
 }
 
 .logo {
-  /* height: 1%; */
-  /* margin-right: 1rem; */
 }
 
-/* Show mobile menu for screens smaller than 768px */
 @media (max-width: 767px) {
-
   .nav {
     top: 4.5rem;
   }
