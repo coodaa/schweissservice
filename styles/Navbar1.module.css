@@ -1,0 +1,63 @@
+/* styles/InfoBar.module.css */
+
+.infoBar {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s all ease; /* Füge Übergang hinzu */
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.scrolled {
+  visibility: hidden;
+}
+
+.textBold {
+  font-weight: bold;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.openingHours, .phoneNumber {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .infoBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+
+  .openingHours, .phoneNumber {
+    margin-bottom: 0.5rem;
+  }
+
+  .sundayHours {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .sundayHours {
+    display: inline;
+  }
+}
