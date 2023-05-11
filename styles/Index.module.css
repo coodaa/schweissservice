@@ -22,10 +22,10 @@
   position: relative;
   z-index: 1;
   background-color: var(--primary-color);
-  padding: 50px;
+  padding: 10px;
   color: var(--text-bright);
   text-align: left;
-  left: -10%;
+  /* left: -10%; */
   max-width: 30rem;
   max-height: 35rem;
   min-height: 19rem;
