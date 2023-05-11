@@ -1,6 +1,6 @@
 import React from "react";
-import InfoBar from "./InfoBar";
-import Navbar from "./Navbar";
+import InfoBar from "./Navbar";
+import Navbar from "./InfoBar";
 import styles from "../styles/InfobarNavbar.module.css";
 
 const InfobarNavbar = () => {

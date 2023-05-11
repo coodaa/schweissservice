@@ -10,13 +10,14 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  margin: 0;
 }
 
 .layout-container {
   display: flex;
   flex-direction: column;
-  background-color: red;
+  /* background-color: red; */
   min-height: 100vh; /* Setzt die minimale Höhe auf die volle Bildschirmhöhe */
 }
 
