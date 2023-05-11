@@ -5,14 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import BurgerMenu from "./BurgerMenu";
 
-const Navbar = ({ scrollPosition }) => {
+const Infobar = ({ scrollPosition }) => {
   const [isClient, setIsClient] = useState(false);
   useEffect(() => {
     setIsClient(true);
   }, []);
 
   const [menuOpen, setMenuOpen] = useState(false);
-  // const isSticky = scrollPosition >= 50;
 
   const isDesktopOrLaptop = useMediaQuery({ minWidth: 1024 });
 
@@ -77,4 +76,4 @@ const Navbar = ({ scrollPosition }) => {
   );
 };
 
-export default Navbar;
+export default Infobar;

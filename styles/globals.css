@@ -21,13 +21,13 @@ body {
   min-height: 100vh; /* Setzt die minimale Höhe auf die volle Bildschirmhöhe */
 }
 
-.page-content {
-  flex: 1; /* Lässt den Inhalt den verfügbaren Raum ausfüllen */
-  padding: 1rem;
-}
+/* .page-content { */
+  /* flex: 1; Lässt den Inhalt den verfügbaren Raum ausfüllen */
+  /* padding: 1rem; */
+/* } */
 
 @media (min-width: 768px) {
   .page-content {
-    padding: 2rem; /* Erhöht den Abstand auf größeren Bildschirmen */
+    /* padding: 2rem; Erhöht den Abstand auf größeren Bildschirmen */
   }
 }
