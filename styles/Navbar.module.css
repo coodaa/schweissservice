@@ -1,12 +1,20 @@
-/* Navbar.module.css */
-
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: var(--secondary-color);
-  transition: transform 0.3s;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  z-index: 200;
+  top: 2rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
 }
 
 .link {
@@ -41,10 +49,10 @@
   margin-left: auto;
 }
 
-.logo {
+/* .logo { */
   /* height: 1%; */
   /* margin-right: 1rem; */
-}
+/* } */
 
 /* Show mobile menu for screens smaller than 768px */
 @media (max-width: 767px) {

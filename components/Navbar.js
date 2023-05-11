@@ -5,12 +5,7 @@ import Image from "next/image";
 import BurgerMenu from "./BurgerMenu";
 
 const Navbar = ({ scrollPosition }) => {
-  const [isClient, setIsClient] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   const isSticky = scrollPosition >= 50;
 
