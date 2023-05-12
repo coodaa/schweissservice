@@ -54,6 +54,13 @@
   color: var(--primary-color);
   font-weight: bold;
   font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.link:hover {
+  color: #1a8b42; /* Farbe des Links beim Hover, typischerweise Dunkelblau */
 }
 
 @media (max-width: 767px) {
