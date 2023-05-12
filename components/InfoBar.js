@@ -20,14 +20,23 @@ const Infobar = ({ scrollPosition }) => {
   };
   return (
     <div className={styles.nav}>
-      <div className={styles.logo}>
-        <Image
-          src="/assets/img/logo/logo-original.png"
-          alt="WAGEMANN SCHWEISS-SERVICE"
-          width={170}
-          height={65}
-        />
-      </div>
+      <ScrollLink
+        onClick={() => setMenuOpen(false)}
+        to="homeSection"
+        smooth={true}
+        duration={500}
+        className={styles.link}
+      >
+        <div className={styles.logo}>
+          <Image
+            src="/assets/img/logo/logo-original.png"
+            alt="WAGEMANN SCHWEISS-SERVICE"
+            width={170}
+            height={65}
+          />
+        </div>
+      </ScrollLink>
+
       <div className={styles.phoneNumber}>
         {" "}
         <BurgerMenu onToggle={handleToggle} />

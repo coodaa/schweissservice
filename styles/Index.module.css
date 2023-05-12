@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .backgroundImage {
@@ -41,8 +42,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
-
 
 .scroll-reveal {
   display: flex;

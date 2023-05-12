@@ -11,7 +11,7 @@ export default function Index() {
       import("scrollreveal").then((ScrollRevealModule) => {
         setScrollReveal(ScrollRevealModule.default);
         ScrollRevealModule.default().reveal(".fadeIn", {
-          duration: 2000,
+          duration: 500,
           origin: "bottom",
           distance: "100px",
           delay: 500,
@@ -36,7 +36,7 @@ export default function Index() {
           content="Schweißen, technische Gase, Leer, Ostfriesland, Wagemann"
         />
       </Head>
-      <div id="serviceSection">
+      <div id="homeSection">
         <div className={styles.main}>
           <div className={styles.redSquare}>
             <Image
@@ -56,7 +56,7 @@ export default function Index() {
           />
         </div>
       </div>
-      <div className={styles.main} id="historySection">
+      <div className={styles.main} id="serviceSection">
         <div className="fadeIn">
           <Image
             src="/assets/img/pictures/gasflasche.jpg"
@@ -68,25 +68,25 @@ export default function Index() {
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            et ea rebum.
           </p>
         </div>
       </div>
       <div className={styles.main} id="contactSection">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet.
+        <div className="fadeIn">
+          <Image
+            src="/assets/img/pictures/gasflasche.jpg"
+            alt="Beschreibung des Bildes"
+            width={500}
+            height={500}
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum.
+          </p>
+        </div>
       </div>
       ;
     </>

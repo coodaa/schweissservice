@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.design {
+  text-align: left;
+}
+
+.legal {
+  text-align: right;
+}
