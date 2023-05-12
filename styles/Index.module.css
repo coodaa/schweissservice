@@ -30,3 +30,25 @@
   max-height: 35rem;
   min-height: 19rem;
 }
+
+#historySection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.scroll-reveal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scroll-reveal img {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.scroll-reveal p {
+  flex: 2;
+}

@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Index.module.css";
 import Image from "next/image";
+import ScrollReveal from "scrollreveal";
 
 export default function Index() {
+  useEffect(() => {
+    ScrollReveal().reveal(".scroll-reveal", {
+      distance: "100px",
+      origin: "bottom",
+      opacity: 0,
+      duration: 2000,
+      delay: 500,
+    });
+  }, []);
+
   return (
     <>
       <Head>
@@ -38,15 +49,15 @@ export default function Index() {
         </div>
       </div>
       <div className={styles.main} id="historySection">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-        ipsum dolor sit amet.
+        <div className="scroll-reveal">
+          <Image
+            src="/assets/img/pictures/gasflasche.jpg"
+            alt="Beschreibung des Bildes"
+            width={500}
+            height={500}
+          />
+          <p>Lorem ipsum dolor sit amet...</p>
+        </div>
       </div>
       <div className={styles.main} id="contactSection">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
