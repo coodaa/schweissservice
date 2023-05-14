@@ -72,20 +72,20 @@ export default function Index() {
           </p>
         </div>
       </div>
-      <div className={styles.main} id="contactSection">
-        <div className="fadeIn">
+      <div className={styles.historySection} id="historySection">
+        <div className={styles.redSquare}>
+          <h2>UNSERE ÖFFNUNGSZEITEN</h2>
+          <p>Montag - Donnerstag: 08:30 - 11:00 Uhr</p>
+          <p>Freitag & Samstag: 09:30 - 10:30 Uhr</p>
+          <p>Sonntag: Geschlossen</p>
+        </div>
+        <div className={styles.image}>
           <Image
-            src="/assets/img/pictures/gasflasche.jpg"
-            alt="Beschreibung des Bildes"
-            width={500}
-            height={500}
+            src="/assets/img/pictures/hafenleer.jpg"
+            alt="Hafen Leer"
+            width={1000} // Platzhalterwert
+            height={500} // Platzhalterwert
           />
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
-          </p>
         </div>
       </div>
       ;

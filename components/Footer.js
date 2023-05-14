@@ -3,19 +3,31 @@ import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 import { FaFacebookSquare } from "react-icons/fa";
 
+// In Ihrer JSX-Datei
 export default function Footer() {
   return (
-    <div className={styles.footer}>
-      <div className={styles.logo}>
+    <div className={styles.footer} id="contactSection">
+      <div className={styles.footerLine}>
+        <hr className={styles.line} />
         <Image
+          className={styles.logoImage}
           src="/assets/img/logo/logo-full-white.png"
           alt="Logo"
-          width={100}
-          height={50}
+          width={350}
+          height={150}
+          objectFit="contain"
         />
+        <hr className={styles.line} />
       </div>
       <div className={styles.social}>
-        <FaFacebookSquare size={30} />
+        <a
+          href="https://www.facebook.com/wagemannschweissservice/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.fbLink}
+        >
+          <FaFacebookSquare size={30} />
+        </a>
       </div>
       <div className={styles.info}>
         <p className={styles.design}>Design & Code</p>

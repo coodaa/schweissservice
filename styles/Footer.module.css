@@ -1,28 +1,42 @@
 .footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
   background-color: var(--primary-color);
 }
 
-.logo {
-  flex: 1;
+
+.footerLine {
   display: flex;
+  align-items: flex-end;
   justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.line {
+  flex-grow: 1;
+  border: none;
+  border-top: 0.9rem solid #fff;
+  background:
+    linear-gradient(135deg, transparent 45px, #ddd 0)
+}
+
+
+.logo {
+  margin-bottom: 20px;
 }
 
 .social {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 20px;
   color: #fff;
 }
 
 .info {
-  flex: 1;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   color: #fff;
 }
 
@@ -32,4 +46,8 @@
 
 .legal {
   text-align: right;
+}
+
+.fbLink {
+  color: white;
 }
