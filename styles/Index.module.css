@@ -26,7 +26,6 @@
   padding: 10px;
   color: var(--text-bright);
   text-align: left;
-  /* left: -10%; */
   max-width: 30rem;
   max-height: 35rem;
   min-height: 19rem;
@@ -37,6 +36,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .historyContent {
   display: flex;
   justify-content: space-between;
@@ -58,9 +58,15 @@
   flex: 2;
 }
 
-
-
 .historySection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+}
+
+.contactSection {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -98,4 +104,10 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.timeLabel {
+  font-weight: bold;
+  display: inline-block;
+  width: 150px;
 }
