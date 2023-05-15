@@ -1,30 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import styles from "../styles/Index.module.css";
 import Image from "next/image";
 import CookieConsentBar from "../components/CookieConsentBar";
 import MapComponent from "../components/MapComponent";
+import { useCookieConsent } from "../hooks/useCookieConsent";
 
 export default function Index() {
-  const [showMap, setShowMap] = useState(false);
+  const { cookieConsent, updateCookieConsent } = useCookieConsent();
 
   const handleAcceptCookies = () => {
-    setShowMap(true);
-    if (typeof window !== "undefined") {
-      localStorage.setItem("CookieConsent", "true");
-    }
+    updateCookieConsent(true);
   };
-
-  useEffect(() => {
-    // Check if the user has agreed to the cookie policy
-    if (typeof window !== "undefined") {
-      const cookieConsent = localStorage.getItem("CookieConsent");
-
-      if (cookieConsent === "true") {
-        setShowMap(true);
-      }
-    }
-  }, []);
 
   return (
     <>
@@ -103,7 +90,7 @@ export default function Index() {
       </div>
 
       <div className={styles.contactSection}>
-        <MapComponent showMap={showMap} />
+        <MapComponent showMap={cookieConsent} />
         <div className={styles.redSquare}>
           <h2>KONTAKT</h2>
           <p>Wagemann Schweiß Service UG</p>

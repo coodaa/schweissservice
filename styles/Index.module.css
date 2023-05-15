@@ -66,17 +66,6 @@
   height: 50vh;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .contactSection {
   display: flex;
   justify-content: space-between;
@@ -90,13 +79,12 @@
   align-items: center;
 }
 
-
 .mapPlaceholder {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, .8); /* Transparenz kann nach Bedarf angepasst werden */
+  background-color: rgba(0, 0, 0, .8);
   background-image: url('/assets/img/pictures/map.png');
   background-size: cover;
   background-position: center;
@@ -115,7 +103,6 @@
 .mapPlaceholder button {
   margin-top: 20px;
 }
-
 
 .map {
   flex: 2;
@@ -146,34 +133,6 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .contactSection {
-    flex-direction: column;
-    height: auto;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-  .historySection {
-    flex-direction: column;
-    height: auto;
-  }
-}
-
 .redSquares {
   flex: 1;
   background-color: var(--primary-color);
@@ -185,7 +144,6 @@
   text-align: left;
   padding: 20px;
 }
-
 .image {
   flex: 2;
   display: flex;
@@ -203,4 +161,16 @@
   font-weight: bold;
   display: inline-block;
   width: 150px;
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .historySection {
+    flex-direction: column;
+    height: auto;
+  }
 }
