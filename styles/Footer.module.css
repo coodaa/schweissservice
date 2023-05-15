@@ -6,7 +6,6 @@
   background-color: var(--primary-color);
 }
 
-
 .footerLine {
   display: flex;
   align-items: flex-end;
@@ -19,10 +18,8 @@
   flex-grow: 1;
   border: none;
   border-top: 0.9rem solid #fff;
-  background:
-    linear-gradient(135deg, transparent 45px, #ddd 0)
+  background: linear-gradient(135deg, transparent 45px, #ddd 0);
 }
-
 
 .logo {
   margin-bottom: 20px;
@@ -38,16 +35,40 @@
   justify-content: space-between;
   width: 100%;
   color: #fff;
+  flex-direction: row;
+}
+
+.info a {
+  background: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+.info a:hover {
+  color: #ccc; /* Oder jede andere Farbe, die Sie möchten */
+}
+
+
+.design, .legal {
+  display: flex;
+  flex-direction: column;
 }
 
 .design {
   text-align: left;
-}
-
-.legal {
-  text-align: right;
+  line-height: 1.2em; /* Anpassung des Zeilenabstands in Bezug auf die Schriftgröße */
 }
 
 .fbLink {
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .design, .legal {
+    text-align: center;
+  }
 }

@@ -19,7 +19,7 @@
   z-index: 0;
 }
 
-.redSquare {
+.redSquareLogo {
   position: relative;
   z-index: 1;
   background-color: var(--primary-color);
@@ -68,16 +68,17 @@
 
 .contactSection {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 50vh;
 }
 
-.contactContent {
+/* .contactContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 .mapPlaceholder {
   display: flex;
@@ -124,16 +125,7 @@
   padding: 20px;
 }
 
-.confirmButton {
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.redSquares {
+.redSquare2 {
   flex: 1;
   background-color: var(--primary-color);
   color: white;
@@ -144,6 +136,30 @@
   text-align: left;
   padding: 20px;
 }
+
+.redSquare2 h2 {
+  margin-bottom: 10px;
+}
+
+.redSquare2 p {
+  margin: 2px 0; /* Kontrolliert den Zeilenabstand */
+  font-size: 16px; /* Kontrolliert die Schriftgröße */
+}
+
+.redSquare2 p:first-child {
+  font-weight: bold; /* Erste Zeile fett */
+}
+
+
+.confirmButton {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .image {
   flex: 2;
   display: flex;
@@ -163,14 +179,20 @@
   width: 150px;
 }
 
+
 @media (max-width: 768px) {
   .contactSection {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
   }
 
   .historySection {
     flex-direction: column;
     height: auto;
+  }
+
+  .serviceContent {
+    flex-direction: column;
+    align-items: center;
   }
 }

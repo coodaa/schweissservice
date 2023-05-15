@@ -14,6 +14,11 @@
   display: flex;
   justify-content: space-between;
   transition: 0.3s all ease; /* Füge Übergang hinzu */
+  margin-left: 1rem;
+}
+
+.phoneNumber {
+  margin-right: 0.5rem;
 }
 
 .stickyContainer {
@@ -45,6 +50,11 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 1rem;
+    margin-left: 0;
+  }
+
+  .phoneNumber {
+    margin-right: 0;
   }
 
   .openingHours, .phoneNumber {
@@ -53,11 +63,5 @@
 
   .sundayHours {
     display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .sundayHours {
-    display: inline;
   }
 }

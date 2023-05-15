@@ -30,8 +30,20 @@ export default function Footer() {
         </a>
       </div>
       <div className={styles.info}>
-        <p className={styles.design}>Design & Code</p>
-        <p className={styles.legal}>Impressum Datenschutz</p>
+        <div className={styles.design}>
+          <p>Design & Code</p>
+          <a
+            href="https://bouysbouysbouys.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            bouysbouysbouys
+          </a>
+        </div>
+        <div className={styles.legal}>
+          <a href="#impressum">Impressum</a>
+          <a href="#datenschutz">Datenschutz</a>
+        </div>
       </div>
     </div>
   );

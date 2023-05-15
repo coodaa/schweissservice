@@ -30,7 +30,7 @@ export default function Index() {
 
       <div id="homeSection">
         <div className={styles.main}>
-          <div className={styles.redSquare}>
+          <div className={styles.redSquareLogo}>
             <Image
               src="/assets/img/logo/logo-full-white.png"
               alt="WAGEMANN SCHWEISS-SERVICE"
@@ -48,22 +48,23 @@ export default function Index() {
           />
         </div>
       </div>
-      <div className={styles.main} id="serviceSection">
-        <div className="fadeIn">
+      {/* <div className={styles.main} id="serviceSection">
+        <div className={`fadeIn ${styles.serviceContent}`}>
           <Image
             src="/assets/img/pictures/gasflasche.jpg"
             alt="Beschreibung des Bildes"
             width={500}
             height={500}
+            layout="responsive"
           />
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore.
           </p>
         </div>
-      </div>
+      </div> */}
       <div className={styles.historySection} id="historySection">
-        <div className={styles.redSquares}>
+        <div className={styles.redSquare}>
           <h2>UNSERE ÖFFNUNGSZEITEN</h2>
           <p>
             <span className={styles.timeLabel}>Montag - Donnerstag:</span>{" "}
@@ -91,7 +92,7 @@ export default function Index() {
 
       <div className={styles.contactSection}>
         <MapComponent showMap={cookieConsent} />
-        <div className={styles.redSquare}>
+        <div className={styles.redSquare2}>
           <h2>KONTAKT</h2>
           <p>Wagemann Schweiß Service UG</p>
           <p>Sägemühlenstraße 89</p>
