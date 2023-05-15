@@ -90,15 +90,32 @@
   align-items: center;
 }
 
+
 .mapPlaceholder {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #D5E3DD;
+  background-color: rgba(0, 0, 0, .8); /* Transparenz kann nach Bedarf angepasst werden */
+  background-image: url('/assets/img/pictures/map.png');
+  background-size: cover;
+  background-position: center;
+  width: 600px;
+  height: 450px;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
+
+.mapPlaceholder a {
+  color: white;
+  text-decoration: underline;
+}
+
+.mapPlaceholder button {
+  margin-top: 20px;
+}
+
 
 .map {
   flex: 2;

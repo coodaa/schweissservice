@@ -2,29 +2,27 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Index.module.css";
 import Image from "next/image";
+import CookieConsentBar from "../components/CookieConsentBar";
+import MapComponent from "../components/MapComponent";
 
 export default function Index() {
-  const [ScrollReveal, setScrollReveal] = useState(null);
   const [showMap, setShowMap] = useState(false);
 
-  const handleConfirm = () => {
+  const handleAcceptCookies = () => {
     setShowMap(true);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("CookieConsent", "true");
+    }
   };
 
   useEffect(() => {
+    // Check if the user has agreed to the cookie policy
     if (typeof window !== "undefined") {
-      import("scrollreveal").then((ScrollRevealModule) => {
-        setScrollReveal(ScrollRevealModule.default);
-        ScrollRevealModule.default().reveal(".fadeIn", {
-          duration: 500,
-          origin: "bottom",
-          distance: "100px",
-          delay: 500,
-          opacity: 0,
-          easing: "ease-in-out",
-          viewFactor: 0.2,
-        });
-      });
+      const cookieConsent = localStorage.getItem("CookieConsent");
+
+      if (cookieConsent === "true") {
+        setShowMap(true);
+      }
     }
   }, []);
 
@@ -41,6 +39,8 @@ export default function Index() {
           content="Schweißen, technische Gase, Leer, Ostfriesland, Wagemann"
         />
       </Head>
+      <CookieConsentBar onAccept={handleAcceptCookies} />
+
       <div id="homeSection">
         <div className={styles.main}>
           <div className={styles.redSquare}>
@@ -71,9 +71,7 @@ export default function Index() {
           />
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum.
+            nonumy eirmod tempor invidunt ut labore.
           </p>
         </div>
       </div>
@@ -93,6 +91,7 @@ export default function Index() {
             <span>Geschlossen</span>
           </p>
         </div>
+
         <div className={styles.image}>
           <Image
             src="/assets/img/pictures/hafenleer.jpg"
@@ -102,33 +101,16 @@ export default function Index() {
           />
         </div>
       </div>
+
       <div className={styles.contactSection}>
-        <div className={styles.contactContent}>
-          {showMap ? (
-            <div className={styles.map}>
-              <iframe
-                title="Google Maps"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9578.832482668065!2d7.4592978!3d53.2350412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9c4e5c8057b22a9!2sWagemann%20Schwei%C3%9F%20Service%20UG!5e0!3m2!1sen!2sde!4v1625060605309!5m2!1sen!2sde"
-                width="600"
-                height="450"
-                style={{ border: 0 }}
-                allowfullscreen=""
-                loading="lazy"
-              />
-            </div>
-          ) : (
-            <button onClick={handleConfirm} className={styles.confirmButton}>
-              Karte anzeigen
-            </button>
-          )}
-          <div className={styles.redSquare}>
-            <h2>KONTAKT</h2>
-            <p>Wagemann Schweiß Service UG</p>
-            <p>Sägemühlenstraße 89</p>
-            <p>26789 Leer (Ostfriesland)</p>
-            <p>Telefon: +49 (0)491 9293713</p>
-            <p>Email: wagemannschweissservice@t-online.de</p>
-          </div>
+        <MapComponent showMap={showMap} />
+        <div className={styles.redSquare}>
+          <h2>KONTAKT</h2>
+          <p>Wagemann Schweiß Service UG</p>
+          <p>Sägemühlenstraße 89</p>
+          <p>26789 Leer (Ostfriesland)</p>
+          <p>Telefon: +49 (0)491 9293713</p>
+          <p>Email: wagemannschweissservice@t-online.de</p>
         </div>
       </div>
     </>
