@@ -85,7 +85,7 @@ export default function Index() {
             src="/assets/img/pictures/hafenleer.jpg"
             alt="Hafen Leer"
             width={1000} // Platzhalterwert
-            height={500} // Platzhalterwert
+            height={400} // Platzhalterwert
           />
         </div>
       </div>
