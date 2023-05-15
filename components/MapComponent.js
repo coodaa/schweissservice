@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { useCookieConsent } from "../hooks/useCookieConsent";
 
 function MapComponent() {
-  const [showMap, setShowMap] = useState(false);
+  const { cookieConsent, updateCookieConsent } = useCookieConsent();
 
   const handleLoadMap = () => {
-    setShowMap(true);
+    updateCookieConsent(true);
   };
 
   useEffect(() => {
-    const cookieValue = localStorage.getItem("cookieAccepted");
-    if (cookieValue === "true") {
-      setShowMap(true);
+    if (cookieConsent) {
+      handleLoadMap();
     }
-  }, []);
+  }, [cookieConsent]);
 
   return (
     <div>
-      {!showMap && (
+      {!cookieConsent && (
         <div style={{ backgroundColor: "gray", width: "100%", height: "100%" }}>
           <p>
             Mit dem Laden der Karte akzeptieren Sie die Datenschutzerklärung von
@@ -32,7 +32,7 @@ function MapComponent() {
           <button onClick={handleLoadMap}>Karte laden</button>
         </div>
       )}
-      {showMap && (
+      {cookieConsent && (
         <iframe
           width="600"
           height="450"
