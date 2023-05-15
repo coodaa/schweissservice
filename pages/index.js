@@ -1,10 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Index.module.css";
 import Image from "next/image";
 
 export default function Index() {
   const [ScrollReveal, setScrollReveal] = useState(null);
+  const [showMap, setShowMap] = useState(false);
+
+  const handleConfirm = () => {
+    setShowMap(true);
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -97,26 +102,35 @@ export default function Index() {
           />
         </div>
       </div>
-      <div className={styles.contactSection} id="contactSection">
-        <div className={styles.map}>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.616283037676!2d7.45526201610698!3d53.23253677995862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b697a68a6332d9%3A0xf4efbd8f8d4f3c3e!2sS%C3%A4gem%C3%BChlenstra%C3%9Fe%2089%2C%2026789%20Leer%20(Ostfriesland)%2C%20Germany!5e0!3m2!1sen!2sus!4v1649088021043!5m2!1sen!2sus"
-            width="600"
-            height="450"
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-        <div className={styles.redSquare2}>
-          <h2>KONTAKT</h2>
-          <p>Wagemann Schweiß Service UG</p>
-          <p>Sägemühlenstraße 89</p>
-          <p>26789 Leer (Ostfriesland)</p>
-          <p>Telefon: +49 (0)491 9293713</p>
-          <p>Email: wagemannschweissservice@t-online.de</p>
+      <div className={styles.contactSection}>
+        <div className={styles.contactContent}>
+          {showMap ? (
+            <div className={styles.map}>
+              <iframe
+                title="Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9578.832482668065!2d7.4592978!3d53.2350412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9c4e5c8057b22a9!2sWagemann%20Schwei%C3%9F%20Service%20UG!5e0!3m2!1sen!2sde!4v1625060605309!5m2!1sen!2sde"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+              />
+            </div>
+          ) : (
+            <button onClick={handleConfirm} className={styles.confirmButton}>
+              Karte anzeigen
+            </button>
+          )}
+          <div className={styles.redSquare}>
+            <h2>KONTAKT</h2>
+            <p>Wagemann Schweiß Service UG</p>
+            <p>Sägemühlenstraße 89</p>
+            <p>26789 Leer (Ostfriesland)</p>
+            <p>Telefon: +49 (0)491 9293713</p>
+            <p>Email: wagemannschweissservice@t-online.de</p>
+          </div>
         </div>
       </div>
-      ;
     </>
   );
 }

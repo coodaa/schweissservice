@@ -66,13 +66,89 @@
   height: 50vh;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 .contactSection {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 50vh;
 }
+
+.contactContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mapPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #D5E3DD;
+}
+
+.map {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.redSquare {
+  flex: 1;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  padding: 20px;
+}
+
+.confirmButton {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .historySection {
