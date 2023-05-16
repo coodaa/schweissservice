@@ -86,6 +86,10 @@ export default function Index() {
             alt="Hafen Leer"
             width={1000} // Platzhalterwert
             height={400} // Platzhalterwert
+            style={{
+              layout: "fill",
+              objectFit: "cover",
+            }}
           />
         </div>
       </div>
