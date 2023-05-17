@@ -42,7 +42,7 @@ const Navbar = () => {
                 style={{ verticalAlign: "middle" }}
               />
             )}
-            <span>+49 (0) 491 9293713</span>
+            <a href="tel:+4904919293713">+49 (0) 491 9293713</a>
           </>
         )}
       </div>

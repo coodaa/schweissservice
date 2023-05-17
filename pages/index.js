@@ -5,6 +5,7 @@ import Image from "next/image";
 import CookieConsentBar from "../components/CookieConsentBar";
 import MapComponent from "../components/MapComponent";
 import { useCookieConsent } from "../hooks/useCookieConsent";
+import { MdPlace, MdPhone, MdEmail } from "react-icons/md"; // import the icons
 
 export default function Index() {
   const { cookieConsent, updateCookieConsent } = useCookieConsent();
@@ -79,19 +80,7 @@ export default function Index() {
             <span>Geschlossen</span>
           </p>
         </div>
-
-        <div className={styles.image}>
-          <Image
-            src="/assets/img/pictures/hafenleer.jpg"
-            alt="Hafen Leer"
-            width={1000} // Platzhalterwert
-            height={400} // Platzhalterwert
-            style={{
-              layout: "fill",
-              objectFit: "cover",
-            }}
-          />
-        </div>
+        <div className={styles.image} />
       </div>
 
       <div className={styles.contactSection}>
@@ -101,8 +90,27 @@ export default function Index() {
           <p>Wagemann Schweiß Service UG</p>
           <p>Sägemühlenstraße 89</p>
           <p>26789 Leer (Ostfriesland)</p>
-          <p>Telefon: +49 (0)491 9293713</p>
-          <p>Email: wagemannschweissservice@t-online.de</p>
+          <p>&nbsp;</p>
+          <p>
+            <MdPhone
+              className={styles.icon}
+              size={20}
+              style={{ verticalAlign: "middle" }}
+            />
+            &nbsp;
+            <a href="tel:+4904919293713">+49 (0) 491 9293713</a>
+          </p>
+          <p>
+            <MdEmail
+              className={styles.icon}
+              size={20}
+              style={{ verticalAlign: "middle" }}
+            />
+            &nbsp;
+            <a href="mailto:wagemannschweissservice@t-online.de">
+              wagemannschweissservice@t-online.de
+            </a>
+          </p>
         </div>
       </div>
     </>

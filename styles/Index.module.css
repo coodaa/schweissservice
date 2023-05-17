@@ -63,7 +63,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 35vh;
+  height: 45vh;
 }
 
 .contactSection {
@@ -71,14 +71,20 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 35vh;
+  height: 45vh;
 }
 
-/* .contactContent {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
+
+.contactSection a {
+  color: inherit;
+  text-decoration: none;
+  background: none;
+}
+
+.contactSection a:hover {
+  color: #ccc; /* Oder jede andere Farbe, die Sie möchten */
+}
+
 
 .mapPlaceholder {
   display: flex;
@@ -161,13 +167,16 @@
 }
 
 .image {
-  flex: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  background-image: url("/assets/img/pictures/hafenleer.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45vh; /* Oder setzen Sie eine spezifische Höhe, die Sie wünschen */
   width: 100%;
-  height: 35vh;
+}
+
+.backgroundImage {
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -192,5 +201,9 @@
   .serviceContent {
     flex-direction: column;
     align-items: center;
+  }
+
+  .image {
+    height: 50vh; /* oder ein anderer geeigneter Wert */
   }
 }

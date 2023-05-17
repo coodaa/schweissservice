@@ -21,6 +21,16 @@
   margin-right: 0.5rem;
 }
 
+.phoneNumber a {
+  color: inherit;
+  text-decoration: none;
+  background: none;
+}
+
+.phoneNumber a:hover {
+  color: #ccc; /* Oder jede andere Farbe, die Sie möchten */
+}
+
 .stickyContainer {
   position: sticky;
   top: 0;
