@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 984.97 344.34">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .06em;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        font-family: TimesNewRomanPSMT, 'Times New Roman';
+      }
+
+      .cls-1, .cls-5, .cls-7, .cls-8 {
+        font-size: 124px;
+      }
+
+      .cls-9 {
+        letter-spacing: .03em;
+      }
+
+      .cls-2 {
+        font-family: Oswald-Medium, Oswald;
+        font-size: 60px;
+        font-weight: 500;
+      }
+
+      .cls-10 {
+        fill: #ffcc06;
+      }
+
+      .cls-11 {
+        letter-spacing: .02em;
+      }
+
+      .cls-12 {
+        letter-spacing: .07em;
+      }
+
+      .cls-4 {
+        font-size: 232px;
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-14 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6 {
+        font-size: 266.34px;
+        letter-spacing: -.02em;
+      }
+
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: .04em;
+      }
+
+      .cls-16 {
+        letter-spacing: .08em;
+      }
+
+      .cls-17 {
+        letter-spacing: -.24em;
+      }
+    </style>
+  </defs>
+  <text class="cls-5" transform="translate(257.46 219.99) scale(1.02 1)"><tspan x="0" y="0">a</tspan></text>
+  <text class="cls-4" transform="translate(308.54 263.99) scale(1.13 1)"><tspan x="0" y="0">g</tspan></text>
+  <text class="cls-8" transform="translate(441.46 219.99) scale(1.02 1)"><tspan x="0" y="0">e</tspan></text>
+  <text class="cls-1" transform="translate(502.53 219.99) scale(1.03 1)"><tspan x="0" y="0">m</tspan></text>
+  <text class="cls-7" transform="translate(609.41 219.99) scale(1.02 1)"><tspan class="cls-12" x="0" y="0">an</tspan><tspan class="cls-16" x="134.15" y="0">n</tspan></text>
+  <ellipse class="cls-10" cx="371.85" cy="193.14" rx="17.65" ry="23.69" transform="translate(-18.12 39.84) rotate(-5.99)"/>
+  <polygon class="cls-3" points="0 256.31 264 256.31 264 289.98 7.52 289.98 0 256.31"/>
+  <polygon class="cls-3" points="976.48 256.31 924.9 256.31 924.9 289.98 968.96 289.98 976.48 256.31"/>
+  <text class="cls-2" transform="translate(441.9 298.87)"><tspan class="cls-15" x="0" y="0">SC</tspan><tspan class="cls-13" x="62.64" y="0">H</tspan><tspan class="cls-15" x="96.9" y="0">WEI</tspan><tspan class="cls-14" x="182.76" y="0">S</tspan><tspan class="cls-9" x="211.5" y="0">S</tspan><tspan class="cls-17" x="242.64" y="0">-</tspan><tspan class="cls-14" x="249.84" y="0"> </tspan><tspan class="cls-15" x="263.52" y="0">SE</tspan><tspan class="cls-11" x="319.44" y="0">R</tspan><tspan class="cls-14" x="354.35" y="0">V</tspan><tspan class="cls-15" x="384.41" y="0">IC</tspan><tspan class="cls-9" x="433.91" y="0">E</tspan></text>
+  <text class="cls-6" transform="translate(23.92 221.34) scale(1.11 1)"><tspan x="0" y="0">W</tspan></text>
+</svg>

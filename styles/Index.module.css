@@ -66,6 +66,27 @@
   height: 45vh;
 }
 
+.redSquare {
+  flex: 1;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  padding: 20px;
+}
+
+.image {
+  flex: 2;
+  background-image: url("/assets/img/pictures/hafenleer.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45vh; /* Oder setzen Sie eine spezifische Höhe, die Sie wünschen */
+  width: 100%;
+}
+
 .contactSection {
   display: flex;
   flex-direction: row;
@@ -73,7 +94,6 @@
   align-items: center;
   height: 45vh;
 }
-
 
 .contactSection a {
   color: inherit;
@@ -119,18 +139,6 @@
   border: 1px solid #ccc;
 }
 
-.redSquare {
-  flex: 1;
-  background-color: var(--primary-color);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  text-align: left;
-  padding: 20px;
-}
-
 .redSquare2 {
   flex: 1;
   background-color: var(--primary-color);
@@ -156,7 +164,6 @@
   font-weight: bold; /* Erste Zeile fett */
 }
 
-
 .confirmButton {
   padding: 10px 20px;
   background-color: #007BFF;
@@ -166,19 +173,10 @@
   cursor: pointer;
 }
 
-.image {
-  background-image: url("/assets/img/pictures/hafenleer.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 45vh; /* Oder setzen Sie eine spezifische Höhe, die Sie wünschen */
-  width: 100%;
-}
-
 .backgroundImage {
   background-size: cover;
   background-position: center;
 }
-
 
 .timeLabel {
   font-weight: bold;
@@ -186,15 +184,9 @@
   width: 150px;
 }
 
-
 @media (max-width: 768px) {
   .contactSection {
     flex-direction: column-reverse;
-    height: auto;
-  }
-
-  .historySection {
-    flex-direction: column;
     height: auto;
   }
 
@@ -203,7 +195,18 @@
     align-items: center;
   }
 
+
+  .historySection {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .redSquare {
+    height: auto; /* passen Sie die Höhe an den Inhalt an */
+  }
+
   .image {
     height: 50vh; /* oder ein anderer geeigneter Wert */
+    /* width: 100%; */
   }
 }

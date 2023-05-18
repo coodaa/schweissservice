@@ -18,7 +18,7 @@ function MapComponent() {
   return (
     <div className={styles.mapContainer}>
       {!cookieConsent && (
-        <div>
+        <div className={styles.mapPlaceholder}>
           <p>
             Mit dem Laden der Karte akzeptieren Sie die Datenschutzerklärung von
             Google.

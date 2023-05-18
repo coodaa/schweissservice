@@ -11,11 +11,11 @@ export default function Footer() {
         <hr className={styles.line} />
         <Image
           className={styles.logoImage}
-          src="/assets/img/logo/logo-full-white.png"
+          src="/assets/img/logo/logo-full-white.svg"
           alt="Logo"
           width={350}
           height={150}
-          objectFit="contain"
+          style={{ objectFit: "contain" }}
         />
         <hr className={styles.line} />
       </div>

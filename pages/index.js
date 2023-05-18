@@ -5,7 +5,7 @@ import Image from "next/image";
 import CookieConsentBar from "../components/CookieConsentBar";
 import MapComponent from "../components/MapComponent";
 import { useCookieConsent } from "../hooks/useCookieConsent";
-import { MdPlace, MdPhone, MdEmail } from "react-icons/md"; // import the icons
+import { MdPhone, MdEmail } from "react-icons/md";
 
 export default function Index() {
   const { cookieConsent, updateCookieConsent } = useCookieConsent();
@@ -17,10 +17,10 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>WAGEMANN SCHWEISS-SERVICE</title>
+        <title>Wagemann Schweiß-Service</title>
         <meta
           name="description"
-          content="Beschreibung von WAGEMANN SCHWEISS-SERVICE"
+          content="Beschreibung von Wagemann Schweiß-Service"
         />
         <meta
           name="keywords"
@@ -33,8 +33,8 @@ export default function Index() {
         <div className={styles.main}>
           <div className={styles.redSquareLogo}>
             <Image
-              src="/assets/img/logo/logo-full-white.png"
-              alt="WAGEMANN SCHWEISS-SERVICE"
+              src="/assets/img/logo/logo-full-white.svg"
+              alt="Wagemann Schweiß-Service"
               width={350}
               height={150}
             />
@@ -45,7 +45,7 @@ export default function Index() {
           </div>
           <div
             className={styles.backgroundImage}
-            alt="WAGEMANN SCHWEISS-SERVICE"
+            alt="Wagemann Schweiß-Service"
           />
         </div>
       </div>
@@ -80,11 +80,13 @@ export default function Index() {
             <span>Geschlossen</span>
           </p>
         </div>
+
         <div className={styles.image} />
       </div>
 
       <div className={styles.contactSection}>
         <MapComponent showMap={cookieConsent} />
+
         <div className={styles.redSquare2}>
           <h2>KONTAKT</h2>
           <p>Wagemann Schweiß Service UG</p>
