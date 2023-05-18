@@ -1,9 +1,10 @@
+
 .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
 }
 
@@ -20,15 +21,22 @@
 }
 
 .redSquareLogo {
+  flex-basis: 33.33%;
   position: relative;
   z-index: 1;
   background-color: var(--primary-color);
-  padding: 10px;
+  padding: 20px;
   color: var(--text-bright);
   text-align: left;
   max-width: 30rem;
   max-height: 35rem;
-  min-height: 19rem;
+  min-height: 20em;
+  min-width: 20em;
+  max-width: 100%;
+}
+
+.main h2 {
+ margin: 0;
 }
 
 #historySection {
@@ -103,15 +111,14 @@
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   text-align: left;
-  margin-left: 2em;
 }
 
 .historyLabel {
   display: inline-block;
-  /* width: 250px; */
+  width: 360px;
 }
 
 .imageHistory {
@@ -249,17 +256,53 @@
 }
 
 
+
+
+
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 35vh;
+  background-color: white;
+  padding: 3rem;
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+  height: 300px;
+}
+
+.textContainer {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.text {
+  /* border: 1px solid #000; */
+  padding: 10px;
+  text-align: center;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+
+
+
 @media (max-width: 768px) {
   .contactSection {
     flex-direction: column-reverse;
     height: auto;
   }
-
-  .serviceContent {
-    flex-direction: column;
-    align-items: center;
-  }
-
 
   .historySection {
     flex-direction: column;

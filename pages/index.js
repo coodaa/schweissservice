@@ -35,18 +35,49 @@ export default function Index() {
             <Image
               src="/assets/img/logo/logo-full-white.svg"
               alt="Wagemann Schweiß-Service"
-              width={350}
-              height={150}
+              width={450}
+              height={200}
+              layout="responsive"
+              sizes="(max-width: 600px) 80vw, (min-width: 601px) 50vw"
             />
-            <h3>
-              Ihr kompetenter Partner für technische Gase und Schweißlösungen im
-              Herzen Ostfrieslands.
-            </h3>
+
+            <h2>Ihr kompetenter Partner für technische</h2>
+            <h2> Gase und Schweißlösungen im Herzen</h2>
+            <h2>Ostfrieslands.</h2>
           </div>
           <div
             className={styles.backgroundImage}
             alt="Wagemann Schweiß-Service"
           />
+        </div>
+      </div>
+
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
+          <Image
+            src="/assets/img/pictures/gas.jpg" // Pfad zu Ihrem Bild
+            alt="Beschreibung des Bildes"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+        <div className={styles.textContainer}>
+          <div>
+            <h1 className={styles.text}>25+</h1>
+            <p className={styles.subtext}>Ihr Text</p>
+          </div>
+          <div>
+            <h1 className={styles.text}>41+</h1>
+            <p className={styles.subtext}>Ihr Text</p>
+          </div>
+          <div>
+            <h1 className={styles.text}>200+</h1>
+            <p className={styles.subtext}>Ihr Text</p>
+          </div>
+          <div>
+            <h1 className={styles.text}>230+</h1>
+            <p className={styles.subtext}>Ihr Text</p>
+          </div>
         </div>
       </div>
 
@@ -56,7 +87,7 @@ export default function Index() {
             <h2>QUALITÄT,</h2>
             <h2>ERFAHRUNG UND</h2>
             <h2>MAßGESCHNEIDERTE</h2>
-            <h2> LÖSUNGEN</h2>
+            <h2>LÖSUNGEN</h2>
             <p>
               <span className={styles.historyLabel}>
                 Entdecken Sie unsere erstklassigen Dienstleistungen: Wir bieten
@@ -68,22 +99,6 @@ export default function Index() {
         </div>
         <div className={styles.imageQuality} />
       </div>
-
-      {/* <div className={styles.main} id="serviceSection">
-        <div className={`fadeIn ${styles.serviceContent}`}>
-          <Image
-            src="/assets/img/pictures/gasflasche.jpg"
-            alt="Beschreibung des Bildes"
-            width={500}
-            height={500}
-            layout="responsive"
-          />
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore.
-          </p>
-        </div>
-      </div> */}
 
       <div className={styles.imageHistory}>
         <div className={styles.overlayText}>
