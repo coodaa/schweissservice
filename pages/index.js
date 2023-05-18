@@ -51,7 +51,7 @@ export default function Index() {
           />
         </div>
       </div>
-
+      {/*
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
@@ -79,7 +79,7 @@ export default function Index() {
             <p className={styles.subtext}>Ihr Text</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.historySection} id="serviceSection">
         <div className={styles.redHistorySquare}>
