@@ -30,7 +30,10 @@ function MapComponent() {
           >
             Mehr erfahren
           </a>
-          <button onClick={handleLoadMap}>Karte laden</button>
+          &nbsp;
+          <button className={styles.loadMapButton} onClick={handleLoadMap}>
+            Karte laden
+          </button>
         </div>
       )}
       {cookieConsent && (

@@ -66,6 +66,16 @@
   height: 45vh;
 }
 
+.centerItems {
+  align-items: left;
+  margin: 0; /* Entfernt den oberen und unteren Rand */
+
+}
+
+.centerItems h2 {
+  margin: 0; /* Entfernt den oberen und unteren Rand */
+}
+
 .redSquare {
   flex: 1;
   background-color: var(--primary-color);
@@ -73,12 +83,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   text-align: left;
-  padding: 20px;
 }
 
-.image {
+.imageHistory {
+  background-image: url("/assets/img/pictures/history.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.imageLeer {
   flex: 2;
   background-image: url("/assets/img/pictures/hafenleer.jpg");
   background-size: cover;
@@ -86,6 +103,17 @@
   height: 45vh; /* Oder setzen Sie eine spezifische Höhe, die Sie wünschen */
   width: 100%;
 }
+
+.imageSheep {
+  background-image: url("/assets/img/pictures/sheep.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100%;
+}
+
+
+
 
 .contactSection {
   display: flex;
@@ -146,8 +174,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
-  text-align: left;
+  align-items: center;
   padding: 20px;
 }
 
@@ -179,10 +206,10 @@
 }
 
 .timeLabel {
-  font-weight: bold;
   display: inline-block;
-  width: 150px;
+  width: 180px;
 }
+
 
 @media (max-width: 768px) {
   .contactSection {

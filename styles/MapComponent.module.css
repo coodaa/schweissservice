@@ -1,7 +1,6 @@
 /* MapComponent.module.css */
 .mapContainer {
   background-color: rgb(218, 228, 184);
-  background-image: url("/assets/img/pictures/map.png");
   width: 100%;
   height: 100%;
   display: flex;
@@ -18,13 +17,12 @@
   height: 100%;
 }
 
-
 .mapPlaceholder {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: grey; /* Legt die Hintergrundfarbe auf Grau fest */
+  background-color: rgb(168, 170, 159);
   width: 100%;
   height: 100%;
   padding: 20px; /* Fügt etwas Platz um den Text hinzu */
@@ -32,9 +30,20 @@
   color: white; /* Setzt die Textfarbe auf Weiß */
 }
 
+.loadMapButton {
+  color: #fff; /* Textfarbe */
+  background-color: var(--primary-color);
+  border: none; /* Kein Rand */
+  padding: 10px 20px; /* Innenabstand */
+  border-radius: 5px; /* Abrunden der Ecken */
+  font-size: 1em; /* Schriftgröße */
+  cursor: pointer; /* Handzeiger-Cursor beim Überfahren */
+  transition: background-color 0.3s ease; /* Übergangseffekt */
+}
 
-
-
+.loadMapButton:hover {
+  background-color: #DE3639; /* Dunklere Farbe beim Überfahren */
+}
 
 @media (max-width: 768px) {
   .mapContainer {
