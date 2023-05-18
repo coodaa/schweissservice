@@ -87,12 +87,50 @@
   text-align: left;
 }
 
+.imageQuality {
+  flex: 2;
+  background-image: url("/assets/img/pictures/quality.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45vh; /* Oder setzen Sie eine spezifische Höhe, die Sie wünschen */
+  width: 100%;
+}
+
+
+.redHistorySquare {
+  flex: 1;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin-left: 2em;
+}
+
+.historyLabel {
+  display: inline-block;
+  /* width: 250px; */
+}
+
 .imageHistory {
   background-image: url("/assets/img/pictures/history.jpg");
   background-size: cover;
   background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50vh;
   width: 100%;
+}
+
+.overlayText {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
 }
 
 .imageLeer {

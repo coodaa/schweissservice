@@ -38,10 +38,10 @@ export default function Index() {
               width={350}
               height={150}
             />
-            <h2>
+            <h3>
               Ihr kompetenter Partner für technische Gase und Schweißlösungen im
               Herzen Ostfrieslands.
-            </h2>
+            </h3>
           </div>
           <div
             className={styles.backgroundImage}
@@ -49,6 +49,26 @@ export default function Index() {
           />
         </div>
       </div>
+
+      <div className={styles.historySection} id="serviceSection">
+        <div className={styles.redHistorySquare}>
+          <div className={styles.centerItems}>
+            <h2>QUALITÄT,</h2>
+            <h2>ERFAHRUNG UND</h2>
+            <h2>MAßGESCHNEIDERTE</h2>
+            <h2> LÖSUNGEN</h2>
+            <p>
+              <span className={styles.historyLabel}>
+                Entdecken Sie unsere erstklassigen Dienstleistungen: Wir bieten
+                Ihnen maßgeschneiderte Lösungen für technische Gase und
+                professionelle Schweißarbeiten.
+              </span>
+            </p>
+          </div>
+        </div>
+        <div className={styles.imageQuality} />
+      </div>
+
       {/* <div className={styles.main} id="serviceSection">
         <div className={`fadeIn ${styles.serviceContent}`}>
           <Image
@@ -65,7 +85,12 @@ export default function Index() {
         </div>
       </div> */}
 
-      <div className={styles.imageHistory} />
+      <div className={styles.imageHistory}>
+        <div className={styles.overlayText}>
+          <h2>HANDWERK</h2>
+          <h3>Entstanden im Herzen Ostfriesland</h3>
+        </div>
+      </div>
 
       <div className={styles.historySection} id="historySection">
         <div className={styles.redSquare}>
