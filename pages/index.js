@@ -95,41 +95,6 @@ export default function Index() {
         <div className={styles.imageQuality} />
       </div>
 
-      <div className={styles.serviceArea}>
-        <h3 className={styles.headlineRed}>Unser Service</h3>
-        <h1 className={styles.headlineBlack}>WELCHE DIENSTE WIR ANBIETEN</h1>
-        <div className={styles.serviceBox}>
-          <div className={styles.box}>
-            <h2>Unser Service</h2>
-            <p>
-              Technische Gase für Schweiß- und Schneidprozesse,
-              Lebensmittelindustrie, Medizin und mehr
-            </p>
-          </div>
-          <div className={styles.box}>
-            <h2>Unser Service</h2>
-            <p>
-              Technische Gase für Schweiß- und Schneidprozesse,
-              Lebensmittelindustrie, Medizin und mehr
-            </p>
-          </div>
-          <div className={styles.box}>
-            <h2>Unser Service</h2>
-            <p>
-              Technische Gase für Schweiß- und Schneidprozesse,
-              Lebensmittelindustrie, Medizin und mehr
-            </p>
-          </div>
-          <div className={styles.box}>
-            <h2>Unser Service</h2>
-            <p>
-              Technische Gase für Schweiß- und Schneidprozesse,
-              Lebensmittelindustrie, Medizin und mehr
-            </p>
-          </div>
-        </div>
-      </div>
-
       <div className={styles.imageHistory}>
         <div className={styles.overlayText}>
           <h2>HANDWERK</h2>
