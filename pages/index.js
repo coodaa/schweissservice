@@ -54,36 +54,29 @@ export default function Index() {
         </div>
       </div>
 
-      <div className={styles.container}>
-        <div className={styles.imageContainer}>
-          <Image
-            src="/assets/img/pictures/gas.jpg" // Pfad zu Ihrem Bild
-            alt="Beschreibung des Bildes"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
-        <div className={styles.textContainer}>
+      <div className={styles.serviceSection} id="serviceSection">
+        <div className={styles.imageGas} />
+        <div className={styles.textService}>
           <div>
             <h1 className={styles.text}>25+</h1>
             <p className={styles.subtext}>Jahre Erfahrung</p>
           </div>
           <div>
             <h1 className={styles.text}>41+</h1>
-            <p className={styles.subtext}>Ihr Text</p>
+            <p className={styles.subtext}>Gase im Angebot</p>
           </div>
           <div>
             <h1 className={styles.text}>200+</h1>
-            <p className={styles.subtext}>Ihr Text</p>
+            <p className={styles.subtext}>Artikel</p>
           </div>
           <div>
             <h1 className={styles.text}>230+</h1>
-            <p className={styles.subtext}>Ihr Text</p>
+            <p className={styles.subtext}>Quadratmeter Verkaufsfläche</p>
           </div>
         </div>
       </div>
 
-      <div className={styles.historySection} id="serviceSection">
+      <div className={styles.historySection} id="historySection">
         <div className={styles.redHistorySquare}>
           <div className={styles.centerItems}>
             <h2>QUALITÄT,</h2>
@@ -109,7 +102,7 @@ export default function Index() {
         </div>
       </div>
 
-      <div className={styles.historySection} id="historySection">
+      <div className={styles.historySection} id="contactSection">
         <div className={styles.redSquare}>
           <div className={styles.centerItems}>
             <h2>UNSERE</h2>
