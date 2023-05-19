@@ -55,6 +55,17 @@ export default function Index() {
       </div>
 
       <div className={styles.serviceSection} id="serviceSection">
+        <h3 className={styles.headlineRed}>Warum wir</h3>
+
+        <div className={styles.headline}>
+          <h1 className={styles.headlineBlack}>
+            QUALITÄT, ERFAHRUNG UND MAßGESCHNEIDERTE LÖSUNGEN
+          </h1>
+          <p className={styles.headlineContent}>
+            Wagemann Schweißservice wurde gegründet, um all Ihre Anforderungen
+            in technischen Gasen und Schweißlösungen zu erfüllen.
+          </p>
+        </div>
         <div className={styles.serviceGas}>
           <div className={styles.imageGas} />
           <div className={styles.textService}>

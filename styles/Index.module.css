@@ -43,16 +43,52 @@
 /* Service Section */
 
 .serviceSection {
-  background-color: #007BFF;
   height: auto;
+  background-color: white;
+  padding-right: 2em;
 }
+
+.headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 3em;
+}
+
+.headlineRed {
+  color: var(--primary-color);
+  margin: 0;
+  padding-top: 3em;
+  padding-left: 2.8em;
+}
+
+.headlineBlack {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 2 1;
+  order: 1;
+  position: relative;
+}
+
+.headlineContent {
+  flex: 1;
+  order: 2;
+  display: grid;
+  grid-template-rows: 6fr 1fr;
+  /* max-width: 40%; */
+  /* margin-left: 3em; */
+}
+
 
 .serviceGas {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: white;
-  padding: 3em;
+  padding-left: 3em;
+  padding-bottom: 3em;
+
 }
 
 .imageGas {
@@ -63,7 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
+  flex: 2 1;
   order: 1;
   position: relative;
 }
@@ -259,6 +295,28 @@
 
 @media (max-width: 768px) {
 
+  .serviceSection {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .headline {
+    flex-direction: column;
+    padding-left: 1em;
+    padding-right: 1em;
+
+  }
+
+  .headlineRed {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+  }
+
+
+
+
+
   .serviceGas {
     flex-direction: column;
     height: 60vh;
@@ -269,6 +327,7 @@
     height: 50vh;
     width: 100%;
   }
+
 
   .contactSection {
     flex-direction: column-reverse;
