@@ -38,12 +38,12 @@ export default function Index() {
               width={450}
               height={200}
               layout="responsive"
-              sizes="(max-width: 600px) 80vw, (min-width: 601px) 50vw"
+              // sizes="(max-width: 600px) 80vw, (min-width: 601px) 60vw"
             />
-
-            <h2>Ihr kompetenter Partner für technische</h2>
-            <h2> Gase und Schweißlösungen im Herzen</h2>
-            <h2>Ostfrieslands.</h2>
+            <h2>
+              Ihr kompetenter Partner für technische Gase und Schweißlösungen im
+              Herzen Ostfrieslands.
+            </h2>
           </div>
           <div
             className={styles.backgroundImage}
