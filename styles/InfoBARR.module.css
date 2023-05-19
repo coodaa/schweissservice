@@ -60,7 +60,7 @@
 
 
 .link:hover {
-  color: #551A8B; /* Farbe des Links beim Hover, typischerweise Dunkelblau */
+  color: #5C1717; /* Oder jede andere Farbe, die Sie möchten */
 }
 
 @media (max-width: 767px) {

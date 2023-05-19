@@ -1,7 +1,6 @@
-// CookieConsentBar.js
-
 import React from "react";
 import CookieConsent from "react-cookie-consent";
+import styles from "../styles/CookieConsentBar.module.css";
 
 export default function CookieConsentBar({ onAccept }) {
   return (
@@ -9,8 +8,9 @@ export default function CookieConsentBar({ onAccept }) {
       location="bottom"
       buttonText="Akzeptieren"
       cookieName="CookieConsent"
-      style={{ background: "#2B373B" }}
-      buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+      style={{ background: "#B02B2D" }}
+      className={styles.cookieConsent}
+      buttonClasses={styles.acceptButton}
       expires={150}
       onAccept={onAccept}
     >

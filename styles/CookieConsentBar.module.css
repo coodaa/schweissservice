@@ -1,0 +1,8 @@
+/* CookieConsentBar.module.css */
+.acceptButton {
+  border: none; /* Kein Rand */
+  padding: 10px 20px !important; /* Innenabstand */
+  border-radius: 5px!important; /* Abrunden der Ecken */
+  font-size: .9em!important;
+  cursor: pointer !important; /* Handzeiger-Cursor beim Überfahren */
+}

@@ -42,7 +42,7 @@
 }
 
 .loadMapButton:hover {
-  background-color: #DE3639; /* Dunklere Farbe beim Überfahren */
+  background-color: #5C1717; /* Dunklere Farbe beim Überfahren */
 }
 
 @media (max-width: 768px) {
