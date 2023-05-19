@@ -17,10 +17,13 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Wagemann Schweiß-Service</title>
+        <title>
+          Wagemann Schweiß-Service | Technische Gase und Schweißlösungen in
+          Ostfriesland
+        </title>
         <meta
           name="description"
-          content="Beschreibung von Wagemann Schweiß-Service"
+          content="Wagemann Schweiß-Service ist Ihr kompetenter Partner für technische Gase und professionelle Schweißlösungen im Herzen von Ostfriesland."
         />
         <meta
           name="keywords"
@@ -34,11 +37,10 @@ export default function Index() {
           <div className={styles.redSquareLogo}>
             <Image
               src="/assets/img/logo/logo-full-white.svg"
-              alt="Wagemann Schweiß-Service"
+              alt="Logo von Wagemann Schweiß-Service"
               width={450}
               height={200}
               layout="responsive"
-              // sizes="(max-width: 600px) 80vw, (min-width: 601px) 60vw"
             />
             <h2>
               Ihr kompetenter Partner für technische Gase und Schweißlösungen im
@@ -47,11 +49,11 @@ export default function Index() {
           </div>
           <div
             className={styles.backgroundImage}
-            alt="Wagemann Schweiß-Service"
+            alt="Hintergrundbild von Wagemann Schweiß-Service"
           />
         </div>
       </div>
-      {/*
+
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
@@ -64,7 +66,7 @@ export default function Index() {
         <div className={styles.textContainer}>
           <div>
             <h1 className={styles.text}>25+</h1>
-            <p className={styles.subtext}>Ihr Text</p>
+            <p className={styles.subtext}>Jahre Erfahrung</p>
           </div>
           <div>
             <h1 className={styles.text}>41+</h1>
@@ -79,7 +81,7 @@ export default function Index() {
             <p className={styles.subtext}>Ihr Text</p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       <div className={styles.historySection} id="serviceSection">
         <div className={styles.redHistorySquare}>
