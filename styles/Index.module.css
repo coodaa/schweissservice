@@ -78,7 +78,7 @@
 .centerItems {
   align-items: left;
   margin: 0; /* Entfernt den oberen und unteren Rand */
-
+  padding: 1.2em;
 }
 
 .centerItems h2 {
@@ -221,7 +221,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .redSquare2 h2 {
