@@ -55,23 +55,25 @@ export default function Index() {
       </div>
 
       <div className={styles.serviceSection} id="serviceSection">
-        <div className={styles.imageGas} />
-        <div className={styles.textService}>
-          <div>
-            <h1 className={styles.text}>25+</h1>
-            <p className={styles.subtext}>Jahre Erfahrung</p>
-          </div>
-          <div>
-            <h1 className={styles.text}>41+</h1>
-            <p className={styles.subtext}>Gase im Angebot</p>
-          </div>
-          <div>
-            <h1 className={styles.text}>200+</h1>
-            <p className={styles.subtext}>Artikel</p>
-          </div>
-          <div>
-            <h1 className={styles.text}>230+</h1>
-            <p className={styles.subtext}>Quadratmeter Verkaufsfläche</p>
+        <div className={styles.serviceGas}>
+          <div className={styles.imageGas} />
+          <div className={styles.textService}>
+            <div>
+              <h1 className={styles.text}>25+</h1>
+              <p className={styles.subtext}>Jahre Erfahrung</p>
+            </div>
+            <div>
+              <h1 className={styles.text}>41+</h1>
+              <p className={styles.subtext}>Gase im Angebot</p>
+            </div>
+            <div>
+              <h1 className={styles.text}>200+</h1>
+              <p className={styles.subtext}>Artikel</p>
+            </div>
+            <div>
+              <h1 className={styles.text}>230+</h1>
+              <p className={styles.subtext}>Quadratmeter Verkaufsfläche</p>
+            </div>
           </div>
         </div>
       </div>
@@ -79,10 +81,9 @@ export default function Index() {
       <div className={styles.historySection} id="historySection">
         <div className={styles.redHistorySquare}>
           <div className={styles.centerItems}>
-            <h2>QUALITÄT,</h2>
-            <h2>ERFAHRUNG UND</h2>
-            <h2>MAßGESCHNEIDERTE</h2>
-            <h2>LÖSUNGEN</h2>
+            <h2 className={styles.historyLabel}>
+              QUALITÄT, ERFAHRUNG UND MAßGESCHNEIDERTE LÖSUNGEN
+            </h2>
             <p>
               <span className={styles.historyLabel}>
                 Entdecken Sie unsere erstklassigen Dienstleistungen: Wir bieten
