@@ -76,6 +76,37 @@ export default function Index() {
         </div>
       </div>
 
+      <div className={styles.container}>
+        <div className={styles.box}>
+          <h2>Unser Service</h2>
+          <p>
+            Technische Gase für Schweiß- und Schneidprozesse,
+            Lebensmittelindustrie, Medizin und mehr
+          </p>
+        </div>
+        <div className={styles.box}>
+          <h2>Unser Service</h2>
+          <p>
+            Technische Gase für Schweiß- und Schneidprozesse,
+            Lebensmittelindustrie, Medizin und mehr
+          </p>
+        </div>
+        <div className={styles.box}>
+          <h2>Unser Service</h2>
+          <p>
+            Technische Gase für Schweiß- und Schneidprozesse,
+            Lebensmittelindustrie, Medizin und mehr
+          </p>
+        </div>
+        <div className={styles.box}>
+          <h2>Unser Service</h2>
+          <p>
+            Technische Gase für Schweiß- und Schneidprozesse,
+            Lebensmittelindustrie, Medizin und mehr
+          </p>
+        </div>
+      </div>
+
       <div className={styles.historySection} id="historySection">
         <div className={styles.redHistorySquare}>
           <div className={styles.centerItems}>
