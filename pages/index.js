@@ -7,6 +7,7 @@ import MapComponent from "../components/MapComponent";
 import { useCookieConsent } from "../hooks/useCookieConsent";
 import { MdPhone, MdEmail } from "react-icons/md";
 import QuadComponent from "../components/QuadComponent";
+import ScrollImage from "../components/ScrollImage";
 
 export default function Index() {
   const { cookieConsent, updateCookieConsent } = useCookieConsent();
@@ -162,7 +163,7 @@ export default function Index() {
         <h3 className={styles.headlineHistoryRed}>Geschichte</h3>
         <h1 className={styles.headlineHistory}>MANFRED WAGEMANN </h1>
       </div>
-
+      <ScrollImage imgSrc="/assets/img/pictures/manni.jpg" />
       <div className={styles.historySection} id="contactSection">
         <div className={styles.redSquare}>
           <div className={styles.centerItems}>

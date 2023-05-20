@@ -63,7 +63,6 @@
 }
 
 
-
 .headlineBlack {
   width: 100%;
   display: flex;
@@ -73,8 +72,6 @@
   order: 1;
   position: relative;
 }
-
-
 
 .headlineHistoryRed {
   color: var(--primary-color);
