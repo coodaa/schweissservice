@@ -6,6 +6,7 @@ import CookieConsentBar from "../components/CookieConsentBar";
 import MapComponent from "../components/MapComponent";
 import { useCookieConsent } from "../hooks/useCookieConsent";
 import { MdPhone, MdEmail } from "react-icons/md";
+import QuadComponent from "../components/QuadComponent";
 
 export default function Index() {
   const { cookieConsent, updateCookieConsent } = useCookieConsent();
@@ -13,6 +14,45 @@ export default function Index() {
   const handleAcceptCookies = () => {
     updateCookieConsent(true);
   };
+
+  const quadData = [
+    {
+      title: "Unser Service",
+      text: (
+        <p lang="de">
+          Technische Gase für Schweiß- und Schneidprozesse,
+          Lebensmittelindustrie, Medizin und mehr
+        </p>
+      ),
+    },
+    {
+      title: "Unser Service",
+      text: (
+        <p lang="de">
+          Technische Gase für Schweiß- und Schneidprozesse,
+          Lebensmittelindustrie, Medizin und mehr
+        </p>
+      ),
+    },
+    {
+      title: "Unser Service",
+      text: (
+        <p lang="de">
+          Technische Gase für Schweiß- und Schneidprozesse,
+          Lebensmittelindustrie, Medizin und mehr
+        </p>
+      ),
+    },
+    {
+      title: "Unser Service",
+      text: (
+        <p lang="de">
+          Technische Gase für Schweiß- und Schneidprozesse,
+          Lebensmittelindustrie, Medizin und mehr
+        </p>
+      ),
+    },
+  ];
 
   return (
     <>
@@ -31,7 +71,6 @@ export default function Index() {
         />
       </Head>
       <CookieConsentBar onAccept={handleAcceptCookies} />
-
       <div id="homeSection">
         <div className={styles.main}>
           <div className={styles.redSquareLogo}>
@@ -53,7 +92,6 @@ export default function Index() {
           />
         </div>
       </div>
-
       <div className={styles.serviceSection} id="serviceSection">
         <h3 className={styles.headlineRed}>Warum wir</h3>
 
@@ -88,7 +126,6 @@ export default function Index() {
           </div>
         </div>
       </div>
-
       <div className={styles.historySection} id="historySection">
         <div className={styles.redHistorySquare}>
           <div className={styles.centerItems}>
@@ -106,12 +143,24 @@ export default function Index() {
         </div>
         <div className={styles.imageQuality} />
       </div>
+      <div className={styles.backgroundWhite}>
+        <h3 className={styles.headlineRedCenter}>Unser Service</h3>
+        <h1 className={styles.headlineBlackCenter}>
+          WELCHE DIENSTE WIR ANBIETEN
+        </h1>
+      </div>
 
+      <QuadComponent quadData={quadData} />
       <div className={styles.imageHistory}>
         <div className={styles.overlayText}>
           <h2>HANDWERK</h2>
           <h3>Entstanden im Herzen Ostfriesland</h3>
         </div>
+      </div>
+
+      <div className={styles.backgroundWhite}>
+        <h3 className={styles.headlineHistoryRed}>Geschichte</h3>
+        <h1 className={styles.headlineHistory}>MANFRED WAGEMANN </h1>
       </div>
 
       <div className={styles.historySection} id="contactSection">
@@ -138,7 +187,6 @@ export default function Index() {
 
         <div className={styles.imageLeer} />
       </div>
-
       <div className={styles.contactSection}>
         <MapComponent showMap={cookieConsent} />
         <div className={styles.redSquare2}>
@@ -172,7 +220,6 @@ export default function Index() {
           </div>
         </div>
       </div>
-
       <div className={styles.imageSheep} />
     </>
   );

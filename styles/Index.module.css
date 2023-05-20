@@ -44,7 +44,7 @@
 
 .serviceSection {
   height: auto;
-  background-color: white;
+  background-color: var(--background-color);
   padding-right: 2em;
 }
 
@@ -62,6 +62,8 @@
   padding-left: 2.8em;
 }
 
+
+
 .headlineBlack {
   width: 100%;
   display: flex;
@@ -70,6 +72,12 @@
   flex: 2 1;
   order: 1;
   position: relative;
+}
+
+
+
+.headlineHistoryRed {
+  color: var(--primary-color);
 }
 
 .headlineContent {
@@ -182,6 +190,34 @@
   height: 50vh;
   width: 100%;
 }
+
+.backgroundWhite {
+  background-color: var(--background-color);
+  padding: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.headlineRedCenter {
+  color: var(--primary-color);
+  margin: 0;
+  text-align: center;
+}
+
+.headlineBlackCenter {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* SECTION CSS */
@@ -315,8 +351,6 @@
 
 
 
-
-
   .serviceGas {
     flex-direction: column;
     height: 60vh;
@@ -336,7 +370,7 @@
 
   .historySection {
     flex-direction: column;
-    height: 100vh;
+    height: 50vh;
   }
 
   .historyLabel {

@@ -1,0 +1,59 @@
+
+.conti {
+  height: 75vh;
+  background-color: var(--background-color);
+}
+
+.quadGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  padding-top: 0.4rem;
+  justify-items: center;
+  background-color: var(--background-color);
+}
+
+.quadContent {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+}
+
+.quadContent::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  transform: rotateY(20deg); /* this will tilt the box around the Y-axis by 10 degrees when mouseover */
+}
+
+.quadInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+
+}
+
+.quadTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.quadText {
+  font-size: 1rem;
+	text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
