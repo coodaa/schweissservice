@@ -1,51 +1,25 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
+import useScrollTrigger from "../hooks/useScrollTrigger";
 import styles from "../styles/ScrollImage.module.css";
-import dynamic from "next/dynamic";
 
-let DynamicScrollTrigger;
-
-const ScrollImage = ({ imgSrc }) => {
-  const [visible, setVisible] = useState(false);
-  const [isMounted, setIsMounted] = useState(false);
+export default function ScrollImage({ imgSrc, text }) {
+  const ref = useRef();
+  const isVisible = useScrollTrigger({ threshold: ref.current?.offsetTop });
 
   useEffect(() => {
-    DynamicScrollTrigger = dynamic(() => import("react-scroll-trigger"), {
-      ssr: false,
-    });
-    setIsMounted(true);
-  }, []);
+    if (isVisible) {
+      ref.current.style.transform = "translateX(0)";
+      ref.current.style.opacity = "1";
+    }
+  }, [isVisible]);
 
-  const onEnterViewport = () => {
-    setVisible(true);
-  };
-
-  const onExitViewport = () => {
-    setVisible(false);
-  };
-
-  return isMounted ? (
-    <DynamicScrollTrigger onEnter={onEnterViewport} onExit={onExitViewport}>
-      <div className={styles.white}>
-        <div
-          className={
-            visible
-              ? `${styles.imageContainer} ${styles.visible}`
-              : styles.imageContainer
-          }
-        >
-          <div className={styles.imageBackground}></div>
-          <Image
-            className={styles.image}
-            src={imgSrc}
-            alt="Bild"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div>
+  return (
+    <div className={styles.container}>
+      <div ref={ref} className={styles.imageContainer}>
+        <Image src={imgSrc} layout="fill" objectFit="cover" alt="" />
       </div>
-    </DynamicScrollTrigger>
-  ) : null;
-};
-
-export default ScrollImage;
+      <p>{text}</p>
+    </div>
+  );
+}

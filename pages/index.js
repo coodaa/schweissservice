@@ -162,8 +162,23 @@ export default function Index() {
       <div className={styles.backgroundWhite}>
         <h3 className={styles.headlineHistoryRed}>Geschichte</h3>
         <h1 className={styles.headlineHistory}>MANFRED WAGEMANN </h1>
+        <ScrollImage
+          imgSrc="/assets/img/pictures/manni.jpg"
+          text="  Im Jahr 1998 gründete Manfred Wagemann den Wagemann Schweiß-Service,
+          ein Unternehmen, das sich der Bereitstellung von erstklassigen
+          Schweißlösungen und technischen Gasen verschrieben hat. Mit einer
+          Vision von Qualität, Zuverlässigkeit und Kundenzufriedenheit baute
+          Manfred Wagemann das Unternehmen von Grund auf auf und verwandelte es
+          in eine angesehene Adresse für Schweiß- und Gasbedürfnisse in Leer,
+          Ostfriesland. Seit seiner Gründung hat sich Wagemann Schweiß-Service
+          kontinuierlich weiterentwickelt und angepasst, um die Anforderungen
+          einer sich ständig verändernden Branche zu erfüllen. Dank des
+          Engagements und der Leidenschaft von Manfred Wagemann und seinem Team
+          hat sich das Unternehmen einen Ruf für Exzellenz und Innovation
+          erarbeitet."
+        />
       </div>
-      <ScrollImage imgSrc="/assets/img/pictures/manni.jpg" />
+
       <div className={styles.historySection} id="contactSection">
         <div className={styles.redSquare}>
           <div className={styles.centerItems}>
