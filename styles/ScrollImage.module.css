@@ -5,10 +5,19 @@
   align-items: center;
 }
 
-.imageContainer {
-  width: 50%;
-  height: 300px;
+.redSquare {
   position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+.imageContainer {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
   transform: translateX(-100%);
   opacity: 0;
@@ -20,8 +29,15 @@
     flex-direction: column;
   }
 
-  .imageContainer {
+  .redSquare {
     width: 100%;
-    margin-bottom: 1rem;
+    height: auto;
+  }
+
+  .imageContainer {
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
   }
 }

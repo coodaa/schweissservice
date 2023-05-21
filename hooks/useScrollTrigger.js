@@ -1,23 +1,22 @@
 import { useEffect, useState } from "react";
 
-export default function useScrollTrigger(options = {}) {
-  const { threshold } = options;
+export default function useScrollTrigger({ threshold }) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + window.innerHeight;
-      const targetPosition = window.innerHeight + threshold;
-
-      if (scrollPosition > targetPosition) {
+    const checkVisibility = () => {
+      if (window.scrollY >= threshold) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", checkVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", checkVisibility);
+    };
   }, [threshold]);
 
   return isVisible;

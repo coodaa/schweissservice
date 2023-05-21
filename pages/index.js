@@ -162,9 +162,10 @@ export default function Index() {
       <div className={styles.backgroundWhite}>
         <h3 className={styles.headlineHistoryRed}>Geschichte</h3>
         <h1 className={styles.headlineHistory}>MANFRED WAGEMANN </h1>
-        <ScrollImage
-          imgSrc="/assets/img/pictures/manni.jpg"
-          text="  Im Jahr 1998 gründete Manfred Wagemann den Wagemann Schweiß-Service,
+      </div>
+      <ScrollImage
+        imgSrc="/assets/img/pictures/manni.jpg"
+        text="  Im Jahr 1998 gründete Manfred Wagemann den Wagemann Schweiß-Service,
           ein Unternehmen, das sich der Bereitstellung von erstklassigen
           Schweißlösungen und technischen Gasen verschrieben hat. Mit einer
           Vision von Qualität, Zuverlässigkeit und Kundenzufriedenheit baute
@@ -176,8 +177,7 @@ export default function Index() {
           Engagements und der Leidenschaft von Manfred Wagemann und seinem Team
           hat sich das Unternehmen einen Ruf für Exzellenz und Innovation
           erarbeitet."
-        />
-      </div>
+      />
 
       <div className={styles.historySection} id="contactSection">
         <div className={styles.redSquare}>

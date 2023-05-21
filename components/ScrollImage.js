@@ -16,8 +16,10 @@ export default function ScrollImage({ imgSrc, text }) {
 
   return (
     <div className={styles.container}>
-      <div ref={ref} className={styles.imageContainer}>
-        <Image src={imgSrc} layout="fill" objectFit="cover" alt="" />
+      <div className={styles.redSquare}>
+        <div ref={ref} className={styles.imageContainer}>
+          <Image src={imgSrc} layout="fill" objectFit="cover" alt="" />
+        </div>
       </div>
       <p>{text}</p>
     </div>
