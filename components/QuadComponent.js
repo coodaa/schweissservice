@@ -8,7 +8,9 @@ export default function QuadComponent({ quadData }) {
         <div key={i} className={styles.quadContent}>
           <div className={styles.quadInner}>
             <h3 className={styles.quadTitle}>{quad.title}</h3>
-            <p className={styles.quadText}>{quad.text}</p>
+            <p lang="de" className={styles.quadText}>
+              {quad.text}
+            </p>
           </div>
         </div>
       ))}

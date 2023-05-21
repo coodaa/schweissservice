@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  align-items: stretch;  /* Make sure children stretch to fill vertically */
+  justify-content: space-between;
+  height: 70vh;  /* Define the height here instead */
+}
+
+.imageWrapper {
+  flex: 1;
+  position: relative;
+  background-color: red;
+  padding: 5%;
+  overflow: hidden;
+}
+
+.imageContent {
+  position: relative;
+  height: 100%;
+}
+
+.text {
+  flex: 1;
+  display: flex;  /* Add this to make sure the text aligns properly */
+  align-items: center;  /* Vertically center the text */
+  justify-content: center;  /* Horizontally center the text */
+  text-align: center;  /* Make sure the text itself is centered */
+}
+
+/* For smaller screens */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;  /* Let the height adjust naturally on small screens */
+  }
+}

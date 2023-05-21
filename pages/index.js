@@ -7,12 +7,7 @@ import MapComponent from "../components/MapComponent";
 import { useCookieConsent } from "../hooks/useCookieConsent";
 import { MdPhone, MdEmail } from "react-icons/md";
 import QuadComponent from "../components/QuadComponent";
-import dynamic from "next/dynamic";
-
-// import ScrollImage from "../components/ScrollImage";
-const ScrollImage = dynamic(() => import("../components/ScrollImage"), {
-  ssr: false,
-});
+import ImageFeature from "../components/ImageFeature";
 
 export default function Index() {
   const { cookieConsent, updateCookieConsent } = useCookieConsent();
@@ -24,39 +19,19 @@ export default function Index() {
   const quadData = [
     {
       title: "Unser Service",
-      text: (
-        <p lang="de">
-          Technische Gase für Schweiß- und Schneidprozesse,
-          Lebensmittelindustrie, Medizin und mehr
-        </p>
-      ),
+      text: "Technische Gase für Schweiß- und Schneidprozesse, Lebensmittelindustrie, Medizin und mehr",
     },
     {
-      title: "Unser Service",
-      text: (
-        <p lang="de">
-          Technische Gase für Schweiß- und Schneidprozesse,
-          Lebensmittelindustrie, Medizin und mehr
-        </p>
-      ),
+      title: "Unser Gase",
+      text: "Technische Gase für Schweiß- und Schneidprozesse, Lebensmittelindustrie, Medizin und mehr",
     },
     {
-      title: "Unser Service",
-      text: (
-        <p lang="de">
-          Technische Gase für Schweiß- und Schneidprozesse,
-          Lebensmittelindustrie, Medizin und mehr
-        </p>
-      ),
+      title: "Unser Erfahrung",
+      text: "Technische Gase für Schweiß- und Schneidprozesse, Lebensmittelindustrie, Medizin und mehr",
     },
     {
-      title: "Unser Service",
-      text: (
-        <p lang="de">
-          Technische Gase für Schweiß- und Schneidprozesse,
-          Lebensmittelindustrie, Medizin und mehr
-        </p>
-      ),
+      title: "Unser Herz",
+      text: "Technische Gase für Schweiß- und Schneidprozesse, Lebensmittelindustrie, Medizin und mehr",
     },
   ];
 
@@ -168,21 +143,15 @@ export default function Index() {
         <h3 className={styles.headlineHistoryRed}>Geschichte</h3>
         <h1 className={styles.headlineHistory}>MANFRED WAGEMANN </h1>
       </div>
-      <ScrollImage
-        imgSrc="/assets/img/pictures/manni.jpg"
-        text="  Im Jahr 1998 gründete Manfred Wagemann den Wagemann Schweiß-Service,
-          ein Unternehmen, das sich der Bereitstellung von erstklassigen
-          Schweißlösungen und technischen Gasen verschrieben hat. Mit einer
-          Vision von Qualität, Zuverlässigkeit und Kundenzufriedenheit baute
-          Manfred Wagemann das Unternehmen von Grund auf auf und verwandelte es
-          in eine angesehene Adresse für Schweiß- und Gasbedürfnisse in Leer,
-          Ostfriesland. Seit seiner Gründung hat sich Wagemann Schweiß-Service
-          kontinuierlich weiterentwickelt und angepasst, um die Anforderungen
-          einer sich ständig verändernden Branche zu erfüllen. Dank des
-          Engagements und der Leidenschaft von Manfred Wagemann und seinem Team
-          hat sich das Unternehmen einen Ruf für Exzellenz und Innovation
-          erarbeitet."
-      />
+
+      <div className={styles.backgroundWhite}>
+        <ImageFeature
+          src="/assets/img/pictures/manni.jpg"
+          alt="Bildbeschreibung"
+          text="Im Jahr 1998 gründete Manfred Wagemann den Wagemann Schweiß-Service, ein Unternehmen, das sich der Bereitstellung von erstklassigen Schweißlösungen und technischen Gasen verschrieben hat. Mit einer Vision von Qualität, Zuverlässigkeit und Kundenzufriedenheit baute Manfred Wagemann das Unternehmen von Grund auf auf und verwandelte es in eine angesehene Adresse für Schweiß- und Gasbedürfnisse in Leer, Ostfriesland.
+        Seit seiner Gründung hat sich Wagemann Schweiß-Service kontinuierlich weiterentwickelt und angepasst, um die Anforderungen einer sich ständig verändernden Branche zu erfüllen. Dank des Engagements und der Leidenschaft von Manfred Wagemann und seinem Team hat sich das Unternehmen einen Ruf für Exzellenz und Innovation erarbeitet."
+        />
+      </div>
 
       <div className={styles.historySection} id="contactSection">
         <div className={styles.redSquare}>
