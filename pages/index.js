@@ -7,7 +7,12 @@ import MapComponent from "../components/MapComponent";
 import { useCookieConsent } from "../hooks/useCookieConsent";
 import { MdPhone, MdEmail } from "react-icons/md";
 import QuadComponent from "../components/QuadComponent";
-import ScrollImage from "../components/ScrollImage";
+import dynamic from "next/dynamic";
+
+// import ScrollImage from "../components/ScrollImage";
+const ScrollImage = dynamic(() => import("../components/ScrollImage"), {
+  ssr: false,
+});
 
 export default function Index() {
   const { cookieConsent, updateCookieConsent } = useCookieConsent();
