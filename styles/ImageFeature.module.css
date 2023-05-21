@@ -10,22 +10,29 @@
 .imageWrapper {
   flex: 1;
   position: relative;
-  background-color: red;
+  height: 70vh;
+  background-color: var(--primary-color);
   padding: 5%;
   overflow: hidden;
+  box-sizing: border-box;
+  margin-left: -3em;
 }
 
 .imageContent {
   position: relative;
   height: 100%;
+  margin-left: -5%;
+  width: 105%;
 }
+
 
 .text {
   flex: 1;
   display: flex;  /* Add this to make sure the text aligns properly */
   align-items: center;  /* Vertically center the text */
-  justify-content: center;  /* Horizontally center the text */
-  text-align: center;  /* Make sure the text itself is centered */
+  justify-content: center;
+  padding-right: 1em;
+  margin-left: 5em;
 }
 
 /* For smaller screens */
