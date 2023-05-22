@@ -153,13 +153,13 @@ export default function Index() {
 \n
 Seit seiner Gründung hat sich Wagemann Schweiß-Service kontinuierlich weiterentwickelt und angepasst, um die Anforderungen einer sich ständig verändernden Branche zu erfüllen. Dank des Engagements und der Leidenschaft von Manfred Wagemann und seinem Team hat sich das Unternehmen einen Ruf für Exzellenz und Innovation erarbeitet.`}
         />
-        <ImageFeatureRight
+        {/* <ImageFeatureRight
           src="/assets/img/pictures/sunna.jpg"
           alt="Bildbeschreibung"
           text={`Heute, mehr als zwei Jahrzehnte nach seiner Gründung, steht Wagemann Schweiß-Service unter der Leitung von Sunna Wagemann. Sunna führt die Tradition ihres Vaters fort, indem sie den Kunden weiterhin erstklassige Schweißlösungen, technische Gase und einen unübertroffenen Service bietet.
 
 Die Werte, die das Unternehmen seit seinen Anfängen leiten, sind auch heute noch der Kern unserer Arbeit - wir sind stolz darauf, die Vision von Manfred Wagemann in die Zukunft zu tragen.`}
-        />
+        /> */}
       </div>
 
       <div className={styles.historySection} id="contactSection">
