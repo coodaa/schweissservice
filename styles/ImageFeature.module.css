@@ -12,10 +12,10 @@
   position: relative;
   height: 70vh;
   background-color: var(--primary-color);
-  padding: 5%;
-  overflow: hidden;
+  padding: 2%;
+  /* overflow: hidden; */
   box-sizing: border-box;
-  margin-left: -3em;
+  margin-left: -4em;
 }
 
 .imageContent {
@@ -23,8 +23,8 @@
   height: 100%;
   margin-left: -5%;
   width: 105%;
+  margin-left: 3vw;
 }
-
 
 .text {
   flex: 1;
@@ -39,6 +39,10 @@
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
-    height: auto;  /* Let the height adjust naturally on small screens */
+    height: 130vh;  /* Let the height adjust naturally on small screens */
+  }
+
+  .imageContent {
+    margin-left: 4vw;
   }
 }

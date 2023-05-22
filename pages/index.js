@@ -8,6 +8,7 @@ import { useCookieConsent } from "../hooks/useCookieConsent";
 import { MdPhone, MdEmail } from "react-icons/md";
 import QuadComponent from "../components/QuadComponent";
 import ImageFeature from "../components/ImageFeature";
+import ImageFeatureRight from "../components/ImageFeatureRight";
 
 export default function Index() {
   const { cookieConsent, updateCookieConsent } = useCookieConsent();
@@ -151,6 +152,13 @@ export default function Index() {
           text={`Im Jahr 1998 gründete Manfred Wagemann den Wagemann Schweiß-Service, ein Unternehmen, das sich der Bereitstellung von erstklassigen Schweißlösungen und technischen Gasen verschrieben hat. Mit einer Vision von Qualität, Zuverlässigkeit und Kundenzufriedenheit baute Manfred Wagemann das Unternehmen von Grund auf auf und verwandelte es in eine angesehene Adresse für Schweiß- und Gasbedürfnisse in Leer, Ostfriesland.
 \n
 Seit seiner Gründung hat sich Wagemann Schweiß-Service kontinuierlich weiterentwickelt und angepasst, um die Anforderungen einer sich ständig verändernden Branche zu erfüllen. Dank des Engagements und der Leidenschaft von Manfred Wagemann und seinem Team hat sich das Unternehmen einen Ruf für Exzellenz und Innovation erarbeitet.`}
+        />
+        <ImageFeatureRight
+          src="/assets/img/pictures/sunna.jpg"
+          alt="Bildbeschreibung"
+          text={`Im Jahr 1998 gründete Manfred Wagemann den Wagemann Schweiß-Service, ein Unternehmen, das sich der Bereitstellung von erstklassigen Schweißlösungen und technischen Gasen verschrieben hat. Mit einer Vision von Qualität, Zuverlässigkeit und Kundenzufriedenheit baute Manfred Wagemann das Unternehmen von Grund auf auf und verwandelte es in eine angesehene Adresse für Schweiß- und Gasbedürfnisse in Leer, Ostfriesland.
+          \n
+          Seit seiner Gründung hat sich Wagemann Schweiß-Service kontinuierlich weiterentwickelt und angepasst, um die Anforderungen einer sich ständig verändernden Branche zu erfüllen. Dank des Engagements und der Leidenschaft von Manfred Wagemann und seinem Team hat sich das Unternehmen einen Ruf für Exzellenz und Innovation erarbeitet.`}
         />
       </div>
 

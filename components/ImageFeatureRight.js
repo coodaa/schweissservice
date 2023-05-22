@@ -4,7 +4,7 @@ import { useSpring, animated } from "react-spring";
 import Image from "next/image";
 import styles from "../styles/ImageFeature.module.css";
 
-function ImageFeature({ src, alt, text }) {
+function ImageFeatureRight({ src, alt, text }) {
   const { ref, inView } = useInView({
     triggerOnce: true, // Trigger the animation once
   });
@@ -15,9 +15,9 @@ function ImageFeature({ src, alt, text }) {
   });
 
   const imageProps = useSpring({
-    from: { transform: "translateX(-150%)" },
+    from: { transform: "translateX(100%)" }, // starts from the right
     delay: 500, // delay in milliseconds
-    to: { transform: inView ? "translateX(0)" : "translateX(-150%)" },
+    to: { transform: inView ? "translateX(0)" : "translateX(100%)" }, // ends at the right if not in view
   });
 
   return (
@@ -32,4 +32,4 @@ function ImageFeature({ src, alt, text }) {
   );
 }
 
-export default ImageFeature;
+export default ImageFeatureRight;
