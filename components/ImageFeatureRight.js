@@ -2,7 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "react-spring";
 import Image from "next/image";
-import styles from "../styles/ImageFeature.module.css";
+import styles from "../styles/ImageFeatureRight.module.css";
 
 function ImageFeatureRight({ src, alt, text }) {
   const { ref, inView } = useInView({
@@ -15,9 +15,9 @@ function ImageFeatureRight({ src, alt, text }) {
   });
 
   const imageProps = useSpring({
-    from: { transform: "translateX(100%)" }, // starts from the right
+    from: { transform: "translateX(100%)" }, // starts just off the right edge
     delay: 500, // delay in milliseconds
-    to: { transform: inView ? "translateX(0)" : "translateX(100%)" }, // ends at the right if not in view
+    to: { transform: inView ? "translateX(0)" : "translateX(100%)" }, // ends just off the right edge if not in view
   });
 
   return (

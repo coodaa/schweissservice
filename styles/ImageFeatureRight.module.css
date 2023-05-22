@@ -2,9 +2,10 @@
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
-  align-items: stretch;  /* Make sure children stretch to fill vertically */
+  align-items: stretch;
   justify-content: space-between;
-  height: 70vh;  /* Define the height here instead */
+  height: 70vh;
+  flex-direction: row-reverse;
 }
 
 .imageWrapper {
@@ -13,41 +14,44 @@
   height: 70vh;
   background-color: var(--primary-color);
   padding: 2%;
-  /* overflow: hidden; */
   box-sizing: border-box;
-  margin-left: -4em;
+  margin-right: -3em;
 }
 
 .imageContent {
   position: relative;
   height: 100%;
-  margin-left: -5%;
+  margin-right: -5%; /* Change marginLeft to marginRight */
   width: 105%;
-  margin-left: 3vw;
 }
 
 .text {
   flex: 1;
-  display: flex;  /* Add this to make sure the text aligns properly */
-  align-items: center;  /* Vertically center the text */
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding-right: 1em;
-  margin-left: 5em;
+  padding-left: 1em; /* Change paddingRight to paddingLeft */
+  margin-right: 5em; /* Change marginLeft to marginRight */
 }
 
-/* For smaller screens */
 @media (max-width: 600px) {
   .container {
     flex-direction: column;
-    height: 130vh;  /* Let the height adjust naturally on small screens */
+    height: 130vh;
   }
 
   .imageContent {
-    margin-left: 4vw;
+    margin-right: 0%; /* Change this to 0 */
+  }
+
+  .imageWrapper {
+    margin-right: 0em;
+    padding: 0;/* Change this to 0 */
   }
 
   .text {
     padding-right: 0em;
     margin-left: 0em;
   }
+
 }
