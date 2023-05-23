@@ -2,11 +2,10 @@
   display: flex;
   gap: 1rem;
   margin: 2rem 0;
-  /* align-items: stretch; */
+  align-items: stretch;
   justify-content: space-between;
   height: 70vh;
   flex-direction: row-reverse;
-  padding: 2%;
 }
 
 .imageWrapper {
@@ -15,22 +14,28 @@
   height: 70vh;
   background-color: var(--primary-color);
   box-sizing: border-box;
-    overflow: hidden;
-
+  /* overflow: hidden; */
+  margin-right: -4em;
+  padding: 2%;
 }
 
 .imageContent {
   position: relative;
   height: 100%;
-  width: 100%;
+  margin-right: -5%;
+  width: 105%;
+  margin-left: -4vw;
 }
 
 .text {
   flex: 1;
-  display: flex;
-  align-items: center;
+  display: flex;  /* Add this to make sure the text aligns properly */
+  align-items: center;  /* Vertically center the text */
   justify-content: center;
+  padding-left: 1em;
+  margin-right: 5em;
 }
+
 
 @media (max-width: 600px) {
   .container {
@@ -38,4 +43,25 @@
     height: 130vh;
     padding: 0;
   }
+
+  .imageWrapper {
+    margin-right: 0vw;
+    /* overflow: hidden; Add this */
+    margin-right: -3em;
+    padding: 3%;
+  }
+
+  .imageContent {
+    margin-left: -8vw;
+  }
+
+  .text {
+    padding-right: 0em;
+    margin-left: 0em;
+  }
+
+
+
+
+
 }

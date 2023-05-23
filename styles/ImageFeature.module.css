@@ -23,7 +23,7 @@
   height: 100%;
   margin-left: -5%;
   width: 105%;
-  margin-left: 3vw;
+  margin-left: 2vw;
 }
 
 .text {
@@ -40,6 +40,11 @@
   .container {
     flex-direction: column;
     height: 130vh;  /* Let the height adjust naturally on small screens */
+  }
+
+  .imageWrapper {
+    margin-right: 0vw;
+    padding: 3%;
   }
 
   .imageContent {

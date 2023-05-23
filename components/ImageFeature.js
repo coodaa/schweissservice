@@ -24,7 +24,13 @@ function ImageFeature({ src, alt, text }) {
     <div className={styles.container} ref={ref}>
       <animated.div className={styles.imageWrapper} style={wrapperProps}>
         <animated.div className={styles.imageContent} style={imageProps}>
-          <Image src={src} alt={alt} layout="fill" objectFit="cover" />
+          <Image
+            src={src}
+            alt={alt}
+            layout="fill"
+            objectFit="cover"
+            objectPosition="top"
+          />
         </animated.div>
       </animated.div>
       <div className={styles.text}>{text}</div>
