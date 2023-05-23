@@ -75,6 +75,16 @@
 
 .headlineHistoryRed {
   color: var(--primary-color);
+  margin-top: 5vh;
+}
+
+.headlineHistory {
+  margin: 0;
+}
+
+.headlineHistoryRight {
+  margin-bottom: 0;
+  text-align: right;
 }
 
 .headlineContent {
@@ -192,6 +202,7 @@
   background-color: var(--background-color);
   padding: 3rem;
   padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .headlineRedCenter {
@@ -203,16 +214,6 @@
 .headlineBlackCenter {
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -382,5 +383,10 @@
 
   .image {
     height: 50vh; /* oder ein anderer geeigneter Wert */
+  }
+
+  .backgroundWhite {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
   }
 }

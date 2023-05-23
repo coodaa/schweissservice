@@ -143,22 +143,53 @@ export default function Index() {
       <div className={styles.backgroundWhite}>
         <h3 className={styles.headlineHistoryRed}>Geschichte</h3>
         <h1 className={styles.headlineHistory}>MANFRED WAGEMANN </h1>
-      </div>
 
-      <div className={styles.backgroundWhite}>
         <ImageFeature
-          src="/assets/img/pictures/mannii.jpg"
+          src="/assets/img/pictures/manniii.jpg"
           alt="Bildbeschreibung"
-          text={`Im Jahr 1998 gründete Manfred Wagemann den Wagemann Schweiß-Service, ein Unternehmen, das sich der Bereitstellung von erstklassigen Schweißlösungen und technischen Gasen verschrieben hat. Mit einer Vision von Qualität, Zuverlässigkeit und Kundenzufriedenheit baute Manfred Wagemann das Unternehmen von Grund auf auf und verwandelte es in eine angesehene Adresse für Schweiß- und Gasbedürfnisse in Leer, Ostfriesland.
-\n
-Seit seiner Gründung hat sich Wagemann Schweiß-Service kontinuierlich weiterentwickelt und angepasst, um die Anforderungen einer sich ständig verändernden Branche zu erfüllen. Dank des Engagements und der Leidenschaft von Manfred Wagemann und seinem Team hat sich das Unternehmen einen Ruf für Exzellenz und Innovation erarbeitet.`}
+          text={
+            <>
+              <p>
+                Im Jahr 1998 gründete Manfred Wagemann den Wagemann
+                Schweiß-Service, ein Unternehmen, das sich der Bereitstellung
+                von erstklassigen Schweißlösungen und technischen Gasen
+                verschrieben hat. Mit einer Vision von Qualität, Zuverlässigkeit
+                und Kundenzufriedenheit baute Manfred Wagemann das Unternehmen
+                von Grund auf auf und verwandelte es in eine angesehene Adresse
+                für Schweiß- und Gasbedürfnisse in Leer, Ostfriesland.
+              </p>
+              <p>
+                Seit seiner Gründung hat sich Wagemann Schweiß-Service
+                kontinuierlich weiterentwickelt und angepasst, um die
+                Anforderungen einer sich ständig verändernden Branche zu
+                erfüllen. Dank des Engagements und der Leidenschaft von Manfred
+                Wagemann und seinem Team hat sich das Unternehmen einen Ruf für
+                Exzellenz und Innovation erarbeitet.
+              </p>
+            </>
+          }
         />
-        <ImageFeatureRight
-          src="/assets/img/pictures/sunnaaa.jpg"
-          alt="Bildbeschreibung"
-          text={`Heute, mehr als zwei Jahrzehnte nach seiner Gründung, steht Wagemann Schweiß-Service unter der Leitung von Sunna Wagemann. Sunna führt die Tradition ihres Vaters fort, indem sie den Kunden weiterhin erstklassige Schweißlösungen, technische Gase und einen unübertroffenen Service bietet.
+        <h1 className={styles.headlineHistoryRight}>SUNNA WAGEMANN </h1>
 
-Die Werte, die das Unternehmen seit seinen Anfängen leiten, sind auch heute noch der Kern unserer Arbeit - wir sind stolz darauf, die Vision von Manfred Wagemann in die Zukunft zu tragen.`}
+        <ImageFeatureRight
+          src="/assets/img/pictures/sunnas.jpg"
+          alt="Bildbeschreibung"
+          text={
+            <>
+              <p>
+                Heute, mehr als zwei Jahrzehnte nach seiner Gründung, steht
+                Wagemann Schweiß-Service unter der Leitung von Sunna Wagemann.
+                Sunna führt die Tradition ihres Vaters fort, indem sie den
+                Kunden weiterhin erstklassige Schweißlösungen, technische Gase
+                und einen unübertroffenen Service bietet.
+              </p>
+              <p>
+                Die Werte, die das Unternehmen seit seinen Anfängen leiten, sind
+                auch heute noch der Kern unserer Arbeit - wir sind stolz darauf,
+                die Vision von Manfred Wagemann in die Zukunft zu tragen.
+              </p>
+            </>
+          }
         />
       </div>
 

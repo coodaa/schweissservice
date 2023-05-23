@@ -28,12 +28,16 @@
 
 .text {
   flex: 1;
-  display: flex;  /* Add this to make sure the text aligns properly */
-  align-items: center;  /* Vertically center the text */
-  justify-content: center;
+  display: flex;  /* Keeps the flex container */
+  align-items: flex-start;  /* Align the items to the start (top) */
+  justify-content: center;  /* Start the content from the start (top) */
+  flex-direction: column;  /* Make the content stack vertically */
   padding-right: 1em;
   margin-left: 5em;
+  height: 100%; /* Make sure it takes up full height */
 }
+
+
 
 /* For smaller screens */
 @media (max-width: 600px) {
@@ -48,7 +52,7 @@
   }
 
   .imageContent {
-    margin-left: 4vw;
+    margin-left: 6vw;
   }
 
   .text {
