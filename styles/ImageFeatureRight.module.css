@@ -45,11 +45,22 @@
     padding: 0;
   }
 
+  .imageWrapper::before {
+    overflow: hidden;
+  }
+
   .imageWrapper {
     margin-right: 0vw;
     margin-right: -3em;
     padding: 3%;
   }
+
+  .imageWrapper::after {
+    overflow: hidden;
+  }
+
+
+
 
   .imageContent {
     margin-left: -9vw;
