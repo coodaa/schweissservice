@@ -6,7 +6,7 @@ import styles from "../styles/ImageFeatureRight.module.css";
 
 function ImageFeatureRight({ src, alt, text }) {
   const { ref, inView } = useInView({
-    triggerOnce: true,
+    triggerOnce: true, // Trigger the animation once
   });
 
   const wrapperProps = useSpring({
@@ -15,9 +15,9 @@ function ImageFeatureRight({ src, alt, text }) {
   });
 
   const imageProps = useSpring({
-    from: { transform: "translateX(100%)" },
-    delay: 500,
-    to: { transform: inView ? "translateX(0)" : "translateX(100%)" },
+    from: { transform: "translateX(100%)" }, // begin off the right edge
+    delay: 500, // delay in milliseconds
+    to: { transform: inView ? "translateX(0)" : "translateX(100%)" }, // ends just off the right edge if not in view
   });
 
   return (
