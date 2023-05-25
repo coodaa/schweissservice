@@ -56,16 +56,10 @@ function ImageFeatureRight({ src, alt, text }) {
     to: { opacity: inView ? 1 : 0 },
   });
 
-  // const imageProps = useSpring({
-  //   from: { transform: "translateX(100%)" }, // begin off the right edge
-  //   delay: 500, // delay in milliseconds
-  //   to: { transform: inView ? "translateX(0)" : "translateX(100%)" }, // ends just off the right edge if not in view
-  // });
-
   const imageProps = useSpring({
-    from: { transform: "translateX(100%)" },
+    from: { transform: "translateX(150%)" },
     delay: 500,
-    to: { transform: inView ? "translateX(0)" : "translateX(100%)" },
+    to: { transform: inView ? "translateX(0)" : "translateX(150%)" },
   });
 
   return (

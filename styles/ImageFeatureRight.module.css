@@ -20,6 +20,7 @@
   padding: 2%;
 }
 
+
 .imageContent {
   position: relative;
   height: 100%;
@@ -37,6 +38,12 @@
   padding-left: 1em;
   margin-right: 5em;
   height: 100%;
+}
+
+
+.headlineHistoryRight {
+  margin-bottom: 0;
+  text-align: right;
 }
 
 @media (max-width: 600px) {

@@ -37,6 +37,25 @@
   height: 100%; /* Make sure it takes up full height */
 }
 
+.headlineRedCenter {
+  color: var(--primary-color);
+  margin: 0;
+  text-align: center;
+}
+
+.headlineBlackCenter {
+  text-align: center;
+}
+
+.headlineHistoryRed {
+  color: var(--primary-color);
+  margin-top: 5vh;
+}
+
+.headlineHistory {
+  margin: 0;
+}
+
 
 
 /* For smaller screens */

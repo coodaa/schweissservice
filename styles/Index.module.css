@@ -82,10 +82,7 @@
   margin: 0;
 }
 
-.headlineHistoryRight {
-  margin-bottom: 0;
-  text-align: right;
-}
+
 
 .headlineContent {
   flex: 1;
@@ -200,23 +197,10 @@
 
 .backgroundWhite {
   background-color: var(--background-color);
-  padding: 3rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  /* padding: 3rem; */
+  /* padding-bottom: 0.5rem; */
+  /* padding-top: 0.5rem; */
 }
-
-.headlineRedCenter {
-  color: var(--primary-color);
-  margin: 0;
-  text-align: center;
-}
-
-.headlineBlackCenter {
-  text-align: center;
-}
-
-
-
 
 /* SECTION CSS */
 
