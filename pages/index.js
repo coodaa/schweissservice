@@ -153,10 +153,13 @@ export default function Index() {
                 Im Jahr 1998 gründete Manfred Wagemann den Wagemann
                 Schweiß-Service, ein Unternehmen, das sich der Bereitstellung
                 von erstklassigen Schweißlösungen und technischen Gasen
-                verschrieben hat. Mit einer Vision von Qualität, Zuverlässigkeit
-                und Kundenzufriedenheit baute Manfred Wagemann das Unternehmen
-                von Grund auf auf und verwandelte es in eine angesehene Adresse
-                für Schweiß- und Gasbedürfnisse in Leer, Ostfriesland.
+                verschrieben hat.
+              </p>
+              <p>
+                Mit einer Vision von Qualität, Zuverlässigkeit und
+                Kundenzufriedenheit baute Manfred Wagemann das Unternehmen von
+                Grund auf auf und verwandelte es in eine angesehene Adresse für
+                Schweiß- und Gasbedürfnisse in Leer, Ostfriesland.
               </p>
               <p>
                 Seit seiner Gründung hat sich Wagemann Schweiß-Service
@@ -179,6 +182,8 @@ export default function Index() {
               <p>
                 Heute, mehr als zwei Jahrzehnte nach seiner Gründung, steht
                 Wagemann Schweiß-Service unter der Leitung von Sunna Wagemann.
+              </p>
+              <p>
                 Sunna führt die Tradition ihres Vaters fort, indem sie den
                 Kunden weiterhin erstklassige Schweißlösungen, technische Gase
                 und einen unübertroffenen Service bietet.

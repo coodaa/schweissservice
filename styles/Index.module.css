@@ -76,13 +76,28 @@
 .headlineHistoryRed {
   color: var(--primary-color);
   margin-top: 5vh;
+  padding: 3rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+
 }
 
 .headlineHistory {
   margin: 0;
+  padding: 3rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+
 }
 
+.headlineHistoryRight {
+  margin-bottom: 0;
+  text-align: right;
+  padding: 3rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 
+}
 
 .headlineContent {
   flex: 1;
@@ -198,9 +213,22 @@
 .backgroundWhite {
   background-color: var(--background-color);
   /* padding: 3rem; */
-  /* padding-bottom: 0.5rem; */
-  /* padding-top: 0.5rem; */
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
+
+.headlineRedCenter {
+  color: var(--primary-color);
+  margin: 0;
+  text-align: center;
+}
+
+.headlineBlackCenter {
+  text-align: center;
+}
+
+
+
 
 /* SECTION CSS */
 

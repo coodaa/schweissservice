@@ -23,7 +23,7 @@
   height: 100%;
   margin-left: -5%;
   width: 105%;
-  margin-left: 2vw;
+  margin-left: 3vw;
 }
 
 .text {
@@ -37,25 +37,6 @@
   height: 100%; /* Make sure it takes up full height */
 }
 
-.headlineRedCenter {
-  color: var(--primary-color);
-  margin: 0;
-  text-align: center;
-}
-
-.headlineBlackCenter {
-  text-align: center;
-}
-
-.headlineHistoryRed {
-  color: var(--primary-color);
-  margin-top: 5vh;
-}
-
-.headlineHistory {
-  margin: 0;
-}
-
 
 
 /* For smaller screens */
@@ -66,12 +47,12 @@
   }
 
   .imageWrapper {
-    margin-right: 0vw;
+    margin-right: 1vw;
     padding: 3%;
   }
 
   .imageContent {
-    margin-left: 6vw;
+    margin-left: -5vw;
   }
 
   .text {
