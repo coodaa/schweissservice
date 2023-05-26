@@ -4,7 +4,7 @@
   margin: 2rem 0;
   align-items: stretch;
   justify-content: space-between;
-  height: 70vh;
+  height: 50vh;
   flex-direction: row-reverse;
   position: relative;
   overflow: hidden;
@@ -13,7 +13,6 @@
 .imageWrapper {
   flex: 1;
   position: relative;
-  height: 70vh;
   background-color: var(--primary-color);
   box-sizing: border-box;
   margin-right: -4em;
@@ -26,7 +25,7 @@
   height: 100%;
   margin-right: -5%;
   width: 105%;
-  margin-left: -4vw;
+  margin-left: -5vw;
 }
 
 .text {
@@ -35,8 +34,8 @@
   align-items: flex-start;  /* Align the items to the start (top) */
   justify-content: center;  /* Start the content from the start (top) */
   flex-direction: column;  /* Make the content stack vertically */
-  margin-right: 3em;
-  margin-left: 3vw;
+  padding-right: 10em;
+  padding-left: 8em;
   height: 100%; /* Make sure it takes up full height */
 }
 
@@ -65,7 +64,7 @@
     text-align: left;
     align-items: center;
     word-wrap: break-word;
-    /* margin-right: 0em;
-  margin-left: 0vw; */
+    padding-left: 0em;
+    padding: 1em
   }
 }

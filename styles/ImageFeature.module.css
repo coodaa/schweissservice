@@ -4,16 +4,14 @@
   margin: 2rem 0;
   align-items: stretch;  /* Make sure children stretch to fill vertically */
   justify-content: space-between;
-  height: 70vh;  /* Define the height here instead */
+  height: 50vh;  /* Define the height here instead */
 }
 
 .imageWrapper {
   flex: 1;
   position: relative;
-  height: 70vh;
   background-color: var(--primary-color);
   padding: 2%;
-  /* overflow: hidden; */
   box-sizing: border-box;
   margin-left: -4em;
 }
@@ -23,7 +21,7 @@
   height: 100%;
   margin-left: -5%;
   width: 105%;
-  margin-left: 3vw;
+  margin-left: 4vw;
 }
 
 .text {
@@ -32,11 +30,10 @@
   align-items: flex-start;  /* Align the items to the start (top) */
   justify-content: center;  /* Start the content from the start (top) */
   flex-direction: column;  /* Make the content stack vertically */
-  padding-right: 1em;
-  margin-left: 5em;
+  padding-right: 6em;
+  padding-left: 10em;
   height: 100%; /* Make sure it takes up full height */
 }
-
 
 
 /* For smaller screens */
@@ -57,6 +54,11 @@
 
   .text {
     padding-right: 0em;
+    /* padding-top: 0em; */
     margin-left: 0em;
+    /* text-align: center; */
+    align-items: center;
+    padding-left: 0em;
+    padding: 1em
   }
 }

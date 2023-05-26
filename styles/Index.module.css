@@ -76,10 +76,7 @@
 .headlineHistoryRed {
   color: var(--primary-color);
   margin-top: 5vh;
-  padding: 3rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-
+  padding-left: 3rem;
 }
 
 .headlineHistory {
@@ -219,7 +216,6 @@
 
 .headlineRedCenter {
   color: var(--primary-color);
-  margin: 0;
   text-align: center;
 }
 
