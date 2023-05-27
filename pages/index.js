@@ -9,6 +9,7 @@ import { MdPhone, MdEmail } from "react-icons/md";
 import QuadComponent from "../components/QuadComponent";
 import ImageFeature from "../components/ImageFeature";
 import ImageFeatureRight from "../components/ImageFeatureRight";
+import TextAnimation from "../components/TextAnimation";
 
 export default function Index() {
   const { cookieConsent, updateCookieConsent } = useCookieConsent();
@@ -88,24 +89,7 @@ export default function Index() {
         </div>
         <div className={styles.serviceGas}>
           <div className={styles.imageGas} />
-          <div className={styles.textService}>
-            <div>
-              <h1 className={styles.text}>25+</h1>
-              <p className={styles.subtext}>Jahre Erfahrung</p>
-            </div>
-            <div>
-              <h1 className={styles.text}>41+</h1>
-              <p className={styles.subtext}>Gase im Angebot</p>
-            </div>
-            <div>
-              <h1 className={styles.text}>200+</h1>
-              <p className={styles.subtext}>Artikel</p>
-            </div>
-            <div>
-              <h1 className={styles.text}>230+</h1>
-              <p className={styles.subtext}>Quadratmeter Verkaufsfläche</p>
-            </div>
-          </div>
+          <TextAnimation styles={styles} />
         </div>
       </div>
       <div className={styles.historySection}>
