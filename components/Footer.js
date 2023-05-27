@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Footer.module.css";
 import Image from "next/image";
 import { FaFacebookSquare } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -44,7 +45,7 @@ export default function Footer() {
 
         <div className={styles.legal}>
           <a href="#impressum">Impressum</a>
-          <a href="/privacy">Datenschutz</a>
+          <Link href="/privacy">Datenschutz</Link>
         </div>
       </div>
     </div>
