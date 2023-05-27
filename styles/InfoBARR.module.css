@@ -23,7 +23,7 @@
 
 .navLinksMobile {
   position: fixed;
-  top: 0;
+  top: -1em;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -35,9 +35,18 @@
   transform: translateX(-100%);
   z-index: 100;
   background-color: rgba(250, 249, 246, 0.95);
-  font-size: 2rem;
+  font-size: 2.5rem;
   list-style: none;
+  padding: 0;
+}
 
+.navLinksMobile ul {
+  padding: 3em;
+  margin: 3;
+}
+
+.navLinksMobile li {
+  padding: 1em
 }
 
 .navLinksMobile.show {
@@ -48,10 +57,8 @@
   display: flex;
   gap: 1rem;
   list-style: none;
-  padding: 0;
   margin-right: 1rem;
 }
-
 
 .link {
   text-decoration: none;
@@ -66,8 +73,6 @@
 .link:hover {
   color: #5C1717; /* Oder jede andere Farbe, die Sie möchten */
 }
-
-
 
 @media (max-width: 767px) {
   .navLinksDesktop {
