@@ -52,6 +52,7 @@ const Infobar = ({ scrollPosition }) => {
                 to="serviceSection"
                 smooth={true}
                 duration={500}
+                offset={-60}
                 className={styles.link}
               >
                 Service
@@ -63,6 +64,7 @@ const Infobar = ({ scrollPosition }) => {
                 to="historySection"
                 smooth={true}
                 duration={500}
+                offset={-60}
                 className={styles.link}
               >
                 Geschichte
@@ -74,6 +76,7 @@ const Infobar = ({ scrollPosition }) => {
                 to="contactSection"
                 smooth={true}
                 duration={500}
+                offset={-60}
                 className={styles.link}
               >
                 Kontakt
@@ -87,6 +90,7 @@ const Infobar = ({ scrollPosition }) => {
               to="serviceSection"
               smooth={true}
               duration={500}
+              offset={-60}
               className={styles.link}
             >
               Service
@@ -97,6 +101,7 @@ const Infobar = ({ scrollPosition }) => {
               to="historySection"
               smooth={true}
               duration={500}
+              offset={-60}
               className={styles.link}
             >
               Geschichte
@@ -107,6 +112,7 @@ const Infobar = ({ scrollPosition }) => {
               to="contactSection"
               smooth={true}
               duration={500}
+              offset={-60}
               className={styles.link}
             >
               Kontakt

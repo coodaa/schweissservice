@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.0.1",
-    "framer-motion": "^10.12.12",
+    "framer-motion": "^10.12.16",
     "leaflet": "^1.9.3",
     "next": "^13.4.3",
     "react-cookie-consent": "^8.0.1",

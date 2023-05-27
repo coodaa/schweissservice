@@ -108,7 +108,7 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div className={styles.historySection} id="historySection">
+      <div className={styles.historySection}>
         <div className={styles.redHistorySquare}>
           <div className={styles.centerItems}>
             <h2 className={styles.historyLabel}>
@@ -139,8 +139,7 @@ export default function Index() {
           <h3>Entstanden im Herzen Ostfriesland</h3>
         </div>
       </div>
-
-      <div className={styles.backgroundWhite}>
+      <div className={styles.backgroundWhite} id="historySection">
         <h3 className={styles.headlineHistoryRed}>Geschichte</h3>
         <h1 className={styles.headlineHistory}>MANFRED WAGEMANN </h1>
 
