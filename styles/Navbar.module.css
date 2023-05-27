@@ -23,7 +23,6 @@
 }
 
 
-
 .navLinksMobile {
   display: none;
   list-style: none;
@@ -71,7 +70,7 @@
     display: flex;
     gap: 1rem;
     top: 4.5rem;
-  }
+ }
 
   .navLinksDesktop {
     display: none;

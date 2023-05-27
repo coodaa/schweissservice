@@ -4,9 +4,10 @@
   flex-direction: column;
   justify-content: space-around;
   width: 2.5rem;
-  height: 1.5rem;
+  height: 1.1rem;
   cursor: pointer;
   margin-right: 1rem;
+
 }
 
 .bar {
@@ -15,6 +16,7 @@
   background-color: var(--primary-color);
   transition: all 0.3s;
 }
+
 
 .open:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
