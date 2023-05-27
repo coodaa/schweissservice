@@ -52,6 +52,10 @@ export default function Index() {
           name="keywords"
           content="Schweißen, technische Gase, Leer, Ostfriesland, Wagemann"
         />
+        <meta
+          property="og:image"
+          content="/assets/img/logo/wagemann_logo.svg"
+        />
       </Head>
       <CookieConsentBar onAccept={handleAcceptCookies} />
       <div id="homeSection">
