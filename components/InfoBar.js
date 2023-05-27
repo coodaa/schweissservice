@@ -89,6 +89,18 @@ const Infobar = ({ scrollPosition }) => {
                 <li>
                   <ScrollLink
                     onClick={() => setMenuOpen(false)}
+                    to="homeSection"
+                    smooth={true}
+                    duration={500}
+                    offset={-60}
+                    className={styles.link}
+                  >
+                    Home
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink
+                    onClick={() => setMenuOpen(false)}
                     to="serviceSection"
                     smooth={true}
                     duration={500}
