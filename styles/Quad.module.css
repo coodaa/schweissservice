@@ -57,3 +57,7 @@
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
 }
+
+.quadContent:hover {
+  transform: rotate(1deg);
+}

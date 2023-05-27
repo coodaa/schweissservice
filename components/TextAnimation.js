@@ -33,7 +33,7 @@ export default function TextAnimation() {
           variants={textVariants}
           className={styles.text}
         >
-          41+
+          25+
         </motion.h1>
         <motion.p
           initial="hidden"
@@ -42,7 +42,7 @@ export default function TextAnimation() {
           variants={subTextVariants}
           className={styles.subtext}
         >
-          Gase im Angebot
+          Jahre Erfahrung
         </motion.p>
       </motion.div>
       <motion.div
@@ -79,20 +79,20 @@ export default function TextAnimation() {
         <motion.h1
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          transition={{ delay: 0.3, duration: 0.5 }} // Verzögerung für h1
+          transition={{ delay: 1.5, duration: 0.5 }} // Verzögerung für h1
           variants={textVariants}
           className={styles.text}
         >
-          41+
+          200+
         </motion.h1>
         <motion.p
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          transition={{ delay: 0.7, duration: 0.5 }} // Verzögerung für p
+          transition={{ delay: 2, duration: 0.5 }} // Verzögerung für p
           variants={subTextVariants}
           className={styles.subtext}
         >
-          Gase im Angebot
+          Artikel
         </motion.p>
       </motion.div>
       <motion.div
@@ -104,20 +104,20 @@ export default function TextAnimation() {
         <motion.h1
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          transition={{ delay: 0.3, duration: 0.5 }} // Verzögerung für h1
+          transition={{ delay: 1.5, duration: 0.5 }} // Verzögerung für h1
           variants={textVariants}
           className={styles.text}
         >
-          41+
+          230+
         </motion.h1>
         <motion.p
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          transition={{ delay: 0.7, duration: 0.5 }} // Verzögerung für p
+          transition={{ delay: 2, duration: 0.5 }} // Verzögerung für p
           variants={subTextVariants}
           className={styles.subtext}
         >
-          Gase im Angebot
+          Quadratmeter Verkaufsfläche
         </motion.p>
       </motion.div>
     </div>

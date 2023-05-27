@@ -212,12 +212,11 @@
 
 .centerItems {
   align-items: left;
-  margin: 0; /* Entfernt den oberen und unteren Rand */
   padding: 1.2em;
 }
 
 .centerItems h2 {
-  margin: 0; /* Entfernt den oberen und unteren Rand */
+  margin: 0;
 }
 
 .redSquare {

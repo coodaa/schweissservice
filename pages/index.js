@@ -115,7 +115,6 @@ export default function Index() {
           WELCHE DIENSTE WIR ANBIETEN
         </h1>
       </div>
-
       <QuadComponent quadData={quadData} />
       <div className={styles.imageHistory}>
         <div className={styles.overlayText}>
