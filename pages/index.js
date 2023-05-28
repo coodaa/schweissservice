@@ -131,7 +131,7 @@ export default function Index() {
         <h1 className={styles.headlineHistory}>MANFRED WAGEMANN </h1>
 
         <ImageFeature
-          src="/assets/img/pictures/mannim.jpg"
+          src="/assets/img/pictures/manna.jpg"
           alt="Bildbeschreibung"
           text={
             <>
@@ -239,8 +239,8 @@ export default function Index() {
                 style={{ verticalAlign: "middle" }}
               />
               &nbsp;
-              <a href="mailto:wagemannschweissservice@t-online.de">
-                wagemannschweissservice@t-online.de
+              <a href="mailto:kontakt@wagemann-schweiss-service.de">
+                kontakt@wagemann-schweiss-service.de
               </a>
             </p>
           </div>

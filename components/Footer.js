@@ -45,7 +45,7 @@ export default function Footer() {
 
         <div className={styles.legal}>
           <Link href="/impressum">Impressum</Link>
-          <Link href="/privacy">Datenschutz</Link>
+          <Link href="/datenschutz">Datenschutz</Link>
         </div>
       </div>
     </div>

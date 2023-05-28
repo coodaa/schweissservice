@@ -9,22 +9,26 @@ const Impressum = () => {
         <h2 className={styles.subtitle}>Angaben gemäß § 5 TMG:</h2>
 
         <p className={styles.paragraph}>
-          Musterfirma GmbH
+          Wagemann Schweiß Service UG <br />
+          (haftungsbeschränkt) <br />
+          Sägemühlenstraße 89
           <br />
-          Musterstraße 1<br />
-          12345 Musterstadt
+          26789 Leer (Ostfriesland)
         </p>
 
         <h2 className={styles.subtitle}>Vertreten durch:</h2>
 
-        <p className={styles.paragraph}>Geschäftsführer Max Mustermann</p>
+        <p className={styles.paragraph}>Geschäftsführer Helga Wagemann</p>
 
         <h2 className={styles.subtitle}>Kontakt:</h2>
 
         <p className={styles.paragraph}>
-          Telefon: 01234-56789
+          Telefon: <a href="tel:+4904919293713">+49 (0) 491 9293713</a> <br />
           <br />
-          E-Mail: info@musterfirma.de
+          E-Mail:{" "}
+          <a href="mailto:kontakt@wagemann-schweiss-service.de">
+            kontakt@wagemann-schweiss-service.de
+          </a>
         </p>
 
         <h2 className={styles.subtitle}>Registereintrag:</h2>
@@ -50,10 +54,10 @@ const Impressum = () => {
         </h2>
 
         <p className={styles.paragraph}>
-          Max Mustermann
+          Helga Wagemann <br />
+          Sägemühlenstraße 89
           <br />
-          Musterstraße 1<br />
-          12345 Musterstadt
+          26789 Leer (Ostfriesland)
         </p>
 
         <h2 className={styles.subtitle}>Streitschlichtung</h2>
