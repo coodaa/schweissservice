@@ -26,8 +26,7 @@
   width: 100%;
   height: 100%;
   text-align: center; /* Zentriert den Text */
-  color: white;
-  overflow: auto;
+  color: white; /* Setzt die Textfarbe auf Weiß */
 }
 
 .loadMapButton {
@@ -48,6 +47,5 @@
 @media (max-width: 768px) {
   .mapContainer {
     height: 50vh;
-    width: auto;
   }
 }
