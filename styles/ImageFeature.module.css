@@ -53,12 +53,9 @@
   }
 
   .text {
-    padding-right: 0em;
-    padding-top: 0em;
-    margin-left: 0em;
-    /* text-align: center; */
     align-items: center;
-    padding-left: 0em;
-    padding: 1em
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-top: -4em;
   }
 }

@@ -93,7 +93,6 @@
   padding: 3rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-
 }
 
 .headlineContent {
@@ -235,7 +234,7 @@
   z-index: 1;
   text-align: center;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 2rem;
 }
 
@@ -379,5 +378,9 @@
   .backgroundWhite {
     padding-top: .5rem;
     padding-bottom: .5rem;
+  }
+
+  .headlineHistoryRight {
+    padding-top: 0rem;
   }
 }

@@ -11,10 +11,12 @@
   padding: 10px;
   text-align: center;
   font-size: 2.5rem;
+  margin-bottom: 0;
 }
 
 .subtext {
-  font-size: 14px;
+  font-size: 1rem;
   text-align: center;
   font-weight: bold;
+  margin: 0;
 }
