@@ -58,7 +58,7 @@ const Infobar = ({ scrollPosition }) => {
                   Service
                 </ScrollLink>
               ) : (
-                <Link legacyBehavior href="/#serviceSection">
+                <Link href="/#serviceSection">
                   <a className={styles.link} onClick={() => setMenuOpen(false)}>
                     Service
                   </a>
@@ -77,7 +77,7 @@ const Infobar = ({ scrollPosition }) => {
                   Geschichte
                 </ScrollLink>
               ) : (
-                <Link legacyBehavior href="/#historySection">
+                <Link href="/#historySection">
                   <a className={styles.link} onClick={() => setMenuOpen(false)}>
                     Geschichte
                   </a>
@@ -96,7 +96,7 @@ const Infobar = ({ scrollPosition }) => {
                   Kontakt
                 </ScrollLink>
               ) : (
-                <Link legacyBehavior href="/#contactSection">
+                <Link href="/#contactSection">
                   <a className={styles.link} onClick={() => setMenuOpen(false)}>
                     Kontakt
                   </a>
@@ -126,7 +126,7 @@ const Infobar = ({ scrollPosition }) => {
                       Home
                     </ScrollLink>
                   ) : (
-                    <Link legacyBehavior href="/#homeSection">
+                    <Link href="/#homeSection">
                       <a
                         className={styles.link}
                         onClick={() => setMenuOpen(false)}
@@ -149,7 +149,7 @@ const Infobar = ({ scrollPosition }) => {
                       Service
                     </ScrollLink>
                   ) : (
-                    <Link legacyBehavior href="/#serviceSection">
+                    <Link href="/#serviceSection">
                       <a
                         className={styles.link}
                         onClick={() => setMenuOpen(false)}
@@ -172,7 +172,7 @@ const Infobar = ({ scrollPosition }) => {
                       Geschichte
                     </ScrollLink>
                   ) : (
-                    <Link legacyBehavior href="/#historySection">
+                    <Link href="/#historySection">
                       <a
                         className={styles.link}
                         onClick={() => setMenuOpen(false)}
@@ -195,7 +195,7 @@ const Infobar = ({ scrollPosition }) => {
                       Kontakt
                     </ScrollLink>
                   ) : (
-                    <Link legacyBehavior href="/#contactSection">
+                    <Link href="/#contactSection">
                       <a
                         className={styles.link}
                         onClick={() => setMenuOpen(false)}
