@@ -87,7 +87,7 @@ export default function Index() {
             QUALITÄT, ERFAHRUNG UND MAßGESCHNEIDERTE LÖSUNGEN
           </h1>
           <p className={styles.headlineContent}>
-            Wagemann Schweißservice wurde gegründet, um all Ihre Anforderungen
+            Wagemann Schweiß-Service wurde gegründet, um all Ihre Anforderungen
             in technischen Gasen und Schweißlösungen zu erfüllen.
           </p>
         </div>

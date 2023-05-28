@@ -3,9 +3,12 @@ import styles from "../styles/InfoBARR.module.css";
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 import BurgerMenu from "./BurgerMenu";
+import { useRouter } from "next/router"; // import useRouter Hook
+import Link from "next/link"; // import Link component
 
 const Infobar = ({ scrollPosition }) => {
   const [isDesktopOrLaptop, setIsDesktopOrLaptop] = useState(false);
+  const router = useRouter(); // Initialize useRouter Hook
 
   useEffect(() => {
     if (window.innerWidth >= 1024) {
@@ -44,37 +47,61 @@ const Infobar = ({ scrollPosition }) => {
         {isDesktopOrLaptop ? (
           <ul className={styles.navLinksDesktop}>
             <li>
-              <ScrollLink
-                to="serviceSection"
-                smooth={true}
-                duration={500}
-                offset={-60}
-                className={styles.link}
-              >
-                Service
-              </ScrollLink>
+              {router.pathname === "/" ? (
+                <ScrollLink
+                  to="serviceSection"
+                  smooth={true}
+                  duration={500}
+                  offset={-60}
+                  className={styles.link}
+                >
+                  Service
+                </ScrollLink>
+              ) : (
+                <Link legacyBehavior href="/#serviceSection">
+                  <a className={styles.link} onClick={() => setMenuOpen(false)}>
+                    Service
+                  </a>
+                </Link>
+              )}
             </li>
             <li>
-              <ScrollLink
-                to="historySection"
-                smooth={true}
-                duration={500}
-                offset={-60}
-                className={styles.link}
-              >
-                Geschichte
-              </ScrollLink>
+              {router.pathname === "/" ? (
+                <ScrollLink
+                  to="historySection"
+                  smooth={true}
+                  duration={500}
+                  offset={-60}
+                  className={styles.link}
+                >
+                  Geschichte
+                </ScrollLink>
+              ) : (
+                <Link legacyBehavior href="/#historySection">
+                  <a className={styles.link} onClick={() => setMenuOpen(false)}>
+                    Geschichte
+                  </a>
+                </Link>
+              )}
             </li>
             <li>
-              <ScrollLink
-                to="contactSection"
-                smooth={true}
-                duration={500}
-                offset={-60}
-                className={styles.link}
-              >
-                Kontakt
-              </ScrollLink>
+              {router.pathname === "/" ? (
+                <ScrollLink
+                  to="contactSection"
+                  smooth={true}
+                  duration={500}
+                  offset={-60}
+                  className={styles.link}
+                >
+                  Kontakt
+                </ScrollLink>
+              ) : (
+                <Link legacyBehavior href="/#contactSection">
+                  <a className={styles.link} onClick={() => setMenuOpen(false)}>
+                    Kontakt
+                  </a>
+                </Link>
+              )}
             </li>
           </ul>
         ) : (
@@ -87,52 +114,96 @@ const Infobar = ({ scrollPosition }) => {
                 }`}
               >
                 <li>
-                  <ScrollLink
-                    onClick={() => setMenuOpen(false)}
-                    to="homeSection"
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    className={styles.link}
-                  >
-                    Home
-                  </ScrollLink>
+                  {router.pathname === "/" ? (
+                    <ScrollLink
+                      onClick={() => setMenuOpen(false)}
+                      to="homeSection"
+                      smooth={true}
+                      duration={500}
+                      offset={-60}
+                      className={styles.link}
+                    >
+                      Home
+                    </ScrollLink>
+                  ) : (
+                    <Link legacyBehavior href="/#homeSection">
+                      <a
+                        className={styles.link}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Home
+                      </a>
+                    </Link>
+                  )}
                 </li>
                 <li>
-                  <ScrollLink
-                    onClick={() => setMenuOpen(false)}
-                    to="serviceSection"
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    className={styles.link}
-                  >
-                    Service
-                  </ScrollLink>
+                  {router.pathname === "/" ? (
+                    <ScrollLink
+                      onClick={() => setMenuOpen(false)}
+                      to="serviceSection"
+                      smooth={true}
+                      duration={500}
+                      offset={-60}
+                      className={styles.link}
+                    >
+                      Service
+                    </ScrollLink>
+                  ) : (
+                    <Link legacyBehavior href="/#serviceSection">
+                      <a
+                        className={styles.link}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Service
+                      </a>
+                    </Link>
+                  )}
                 </li>
                 <li>
-                  <ScrollLink
-                    onClick={() => setMenuOpen(false)}
-                    to="historySection"
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    className={styles.link}
-                  >
-                    Geschichte
-                  </ScrollLink>
+                  {router.pathname === "/" ? (
+                    <ScrollLink
+                      onClick={() => setMenuOpen(false)}
+                      to="historySection"
+                      smooth={true}
+                      duration={500}
+                      offset={-60}
+                      className={styles.link}
+                    >
+                      Geschichte
+                    </ScrollLink>
+                  ) : (
+                    <Link legacyBehavior href="/#historySection">
+                      <a
+                        className={styles.link}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Geschichte
+                      </a>
+                    </Link>
+                  )}
                 </li>
                 <li>
-                  <ScrollLink
-                    onClick={() => setMenuOpen(false)}
-                    to="contactSection"
-                    smooth={true}
-                    duration={500}
-                    offset={-60}
-                    className={styles.link}
-                  >
-                    Kontakt
-                  </ScrollLink>
+                  {router.pathname === "/" ? (
+                    <ScrollLink
+                      onClick={() => setMenuOpen(false)}
+                      to="contactSection"
+                      smooth={true}
+                      duration={500}
+                      offset={-60}
+                      className={styles.link}
+                    >
+                      Kontakt
+                    </ScrollLink>
+                  ) : (
+                    <Link legacyBehavior href="/#contactSection">
+                      <a
+                        className={styles.link}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        Kontakt
+                      </a>
+                    </Link>
+                  )}
                 </li>
               </ul>
             )}
