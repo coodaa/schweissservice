@@ -62,7 +62,7 @@
     text-align: left;
     align-items: center;
     word-wrap: break-word;
-    padding-left: 0em;
-    padding: 1em
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
