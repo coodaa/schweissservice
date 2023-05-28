@@ -118,14 +118,14 @@ const Infobar = ({ scrollPosition }) => {
                       smooth={true}
                       duration={500}
                       offset={-60}
-                      className={styles.link}
+                      className={styles.linkMobil}
                     >
                       Home
                     </ScrollLink>
                   ) : (
                     <Link legacyBehavior href="/#homeSection">
                       <a
-                        className={styles.link}
+                        className={styles.linkMobil}
                         onClick={() => setMenuOpen(false)}
                       >
                         Home
@@ -141,14 +141,14 @@ const Infobar = ({ scrollPosition }) => {
                       smooth={true}
                       duration={500}
                       offset={-60}
-                      className={styles.link}
+                      className={styles.linkMobil}
                     >
                       Service
                     </ScrollLink>
                   ) : (
                     <Link legacyBehavior href="/#serviceSection">
                       <a
-                        className={styles.link}
+                        className={styles.linkMobil}
                         onClick={() => setMenuOpen(false)}
                       >
                         Service
@@ -164,14 +164,14 @@ const Infobar = ({ scrollPosition }) => {
                       smooth={true}
                       duration={500}
                       offset={-60}
-                      className={styles.link}
+                      className={styles.linkMobil}
                     >
                       Geschichte
                     </ScrollLink>
                   ) : (
                     <Link legacyBehavior href="/#historySection">
                       <a
-                        className={styles.link}
+                        className={styles.linkMobil}
                         onClick={() => setMenuOpen(false)}
                       >
                         Geschichte
@@ -187,14 +187,14 @@ const Infobar = ({ scrollPosition }) => {
                       smooth={true}
                       duration={500}
                       offset={-60}
-                      className={styles.link}
+                      className={styles.linkMobil}
                     >
                       Kontakt
                     </ScrollLink>
                   ) : (
                     <Link legacyBehavior href="/#contactSection">
                       <a
-                        className={styles.link}
+                        className={styles.linkMobil}
                         onClick={() => setMenuOpen(false)}
                       >
                         Kontakt
