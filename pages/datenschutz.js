@@ -14,7 +14,7 @@ const Privacy = () => {
           Daten, mit denen Sie persönlich identifiziert werden können.
           Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer
           unter diesem Text aufgeführten Datenschutzerklärung.
-        </p>{" "}
+        </p>
         <h2 className={styles.subTitle}>
           2. Datenerfassung auf unserer Website
         </h2>
@@ -43,6 +43,7 @@ const Privacy = () => {
           </p>
         </p>
         <h2 className={styles.subTitle}>3. Ihre Rechte</h2>
+
         <p className={styles.paragraph}>
           <h3>Welche Rechte haben Sie bezüglich Ihrer Daten?</h3>
           <p>
@@ -54,6 +55,20 @@ const Privacy = () => {
             Impressum angegebenen Adresse an uns wenden. Des Weiteren steht
             Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
           </p>
+        </p>
+
+        <h2 className={styles.subTitle}>
+          4. Haftungsbeschränkung für externe Links
+        </h2>
+        <p>
+          Unsere Webseite enthält Verknüpfungen zu Webseiten Dritter (sog.
+          „externe Links“). Da wir auf deren Inhalte keinen Einfluss haben, kann
+          für die fremden Inhalte keine Gewähr übernommen werden. Für die
+          Inhalte und Richtigkeit der Informationen ist stets der jeweilige
+          Informationsanbieter der verlinkten Webseite verantwortlich. Zum
+          Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. Sobald
+          uns eine Rechtsverletzung bekannt wird, werden wir den jeweiligen Link
+          umgehend entfernen.
         </p>
       </div>
     </div>
