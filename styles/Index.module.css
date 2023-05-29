@@ -6,6 +6,7 @@
   position: relative;
   height: 100vh;
   padding: 20px;
+  hyphens: auto;
 }
 
 .backgroundImage {
@@ -25,10 +26,10 @@
   position: relative;
   z-index: 1;
   background-color: var(--primary-color);
-  padding: 1em;
+  padding: 3em;
   color: var(--text-bright);
   text-align: left;
-  max-width: 30rem;
+  max-width: 35rem;
   max-height: 35rem;
   min-height: 20em;
   min-width: 20em;
@@ -44,6 +45,7 @@
 .main h2 {
  margin: 0;
  margin-top: 1.4em;
+ font-size: 2rem;
 }
 
 /* Service Section */
@@ -166,6 +168,7 @@
   justify-content: center;
   align-items: center;
   text-align: left;
+  /* width: 50vw; */
 }
 
 .historyLabel {
@@ -211,8 +214,6 @@
 }
 
 
-
-
 /* SECTION CSS */
 
 .centerItems {
@@ -222,6 +223,7 @@
 
 .centerItems h2 {
   margin: 0;
+  font-size: 1.9rem;
 }
 
 .redSquare {
@@ -322,6 +324,28 @@
   width: 180px;
 }
 
+@media only screen
+  and (min-width: 820px)
+  and (orientation: portrait) {
+  .imageGas {
+    margin-right: 2em;
+  }
+
+  .historyLabel {
+    width: auto;
+    height: auto;
+  }
+
+  .timeLabel {
+    width: 100%;
+    height: auto;
+  }
+
+  .contactSection {
+    hyphens: auto;
+  }
+
+}
 
 @media (max-width: 768px) {
 
@@ -334,7 +358,6 @@
     flex-direction: column;
     padding-left: 1em;
     padding-right: 1em;
-
   }
 
   .headlineRed {
@@ -342,8 +365,6 @@
     padding-right: 1em;
     padding-top: 1em;
   }
-
-
 
   .serviceGas {
     flex-direction: column;
@@ -356,10 +377,10 @@
     width: 100%;
   }
 
-
   .contactSection {
     flex-direction: column-reverse;
     height: auto;
+    width: auto;
   }
 
   .historySection {
@@ -368,13 +389,17 @@
   }
 
   .historyLabel {
-    width: auto;
-    align-items: left;
+    width: 100%;
     padding: 0;
+    height: auto;
   }
 
   .redSquare {
     height: auto; /* passen Sie die Höhe an den Inhalt an */
+  }
+
+  .redSquareLogo {
+    padding: 1em;
   }
 
   .image {

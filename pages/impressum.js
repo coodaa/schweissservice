@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Impressum.module.css";
+import { MdPhone, MdEmail } from "react-icons/md";
 
 const Impressum = () => {
   return (
@@ -22,10 +23,22 @@ const Impressum = () => {
 
         <h2 className={styles.subtitle}>Kontakt:</h2>
 
-        <p className={styles.paragraph}>
-          Telefon: <a href="tel:+4904919293713">+49 (0) 491 9293713</a> <br />
-          <br />
-          E-Mail:{" "}
+        <p>
+          <MdPhone
+            className={styles.link}
+            size={20}
+            style={{ verticalAlign: "middle" }}
+          />
+          &nbsp;
+          <a href="tel:+4904919293713">+49 (0) 491 9293713</a>
+        </p>
+        <p>
+          <MdEmail
+            className={styles.icon}
+            size={20}
+            style={{ verticalAlign: "middle" }}
+          />
+          &nbsp;
           <a href="mailto:kontakt@wagemann-schweiss-service.de">
             kontakt@wagemann-schweiss-service.de
           </a>
