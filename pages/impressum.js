@@ -128,7 +128,7 @@ const Impressum = () => {
             schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
             Downloads und Kopien dieser Seite sind nur für den privaten, nicht
             kommerziellen Gebrauch gestattet.
-          </p>{" "}
+          </p>
         </div>
       </div>
     </>

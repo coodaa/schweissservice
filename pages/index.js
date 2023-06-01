@@ -150,8 +150,8 @@ export default function Index() {
         <h1 className={styles.headlineHistory}>MANFRED WAGEMANN </h1>
 
         <ImageFeature
-          src="/assets/img/pictures/manna.jpg"
-          alt="Bildbeschreibung"
+          src="/assets/img/pictures/mannfred.jpg"
+          alt="Manfred Wagemann"
           text={
             <>
               <p>
@@ -180,8 +180,8 @@ export default function Index() {
         <h1 className={styles.headlineHistoryRight}>SUNNA WAGEMANN </h1>
 
         <ImageFeatureRight
-          src="/assets/img/pictures/sunnam.jpg"
-          alt="Bildbeschreibung"
+          src="/assets/img/pictures/sunna.jpg"
+          alt="Sunna Wagemann"
           text={
             <>
               <p>
@@ -220,11 +220,11 @@ export default function Index() {
               <span>08:30 - 11:00 Uhr</span>
             </p>
             <p>
-              <span className={styles.timeLabel}>Freitag & Samstag:</span>{" "}
+              <span className={styles.timeLabel}>Freitag & Samstag:</span>
               <span>09:30 - 10:30 Uhr</span>
             </p>
             <p>
-              <span className={styles.timeLabel}>Sonntag:</span>{" "}
+              <span className={styles.timeLabel}>Sonntag:</span>
               <span>Geschlossen</span>
             </p>
           </div>
