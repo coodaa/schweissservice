@@ -198,11 +198,6 @@ export default function Index() {
                 auch heute noch der Kern unserer Arbeit - wir sind stolz darauf,
                 die Vision von Manfred Wagemann in die Zukunft zu tragen.
               </p>
-              <p>
-                Die Werte, die das Unternehmen seit seinen Anfängen leiten, sind
-                auch heute noch der Kern unserer Arbeit - wir sind stolz darauf,
-                die Vision von Manfred Wagemann in die Zukunft zu tragen.
-              </p>
             </>
           }
         />
