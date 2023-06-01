@@ -46,18 +46,37 @@ export default function Index() {
         </title>
         <meta
           name="description"
-          content="Wagemann Schweiß-Service ist Ihr kompetenter Partner für technische Gase und professionelle Schweißlösungen im Herzen von Ostfriesland."
+          content="Wagemann Schweiß-Service ist Ihr kompetenter Partner für technische Gase und professionelle Schweißlösungen im Herzen von Ostfriesland. Kontaktieren Sie uns für maßgeschneiderte Lösungen."
         />
         <meta
           name="keywords"
           content="Schweißen, technische Gase, Leer, Ostfriesland, Wagemann"
         />
         <meta
+          property="og:title"
+          content="Wagemann Schweiß-Service | Technische Gase und Schweißlösungen in
+          Ostfriesland"
+        />
+        <meta
+          property="og:description"
+          content="Wagemann Schweiß-Service ist Ihr kompetenter Partner für technische Gase und professionelle Schweißlösungen im Herzen von Ostfriesland. Kontaktieren Sie uns für maßgeschneiderte Lösungen."
+        />
+        <meta
           property="og:image"
           content="/assets/img/logo/wagemann_logo.svg"
         />
+        <meta
+          property="og:url"
+          content="https://www.wagemann-schweiss-service.de/"
+        />
+        <meta property="og:type" content="website" />
+        <link
+          rel="canonical"
+          href="https://www.wagemann-schweiss-service.de/"
+        />
       </Head>
       <CookieConsentBar onAccept={handleAcceptCookies} />
+
       <div id="homeSection">
         <div className={styles.main}>
           <div className={styles.redSquareLogo}>
