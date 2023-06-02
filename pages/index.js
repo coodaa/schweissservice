@@ -150,7 +150,7 @@ export default function Index() {
         <h1 className={styles.headlineHistory}>MANFRED WAGEMANN </h1>
 
         <ImageFeature
-          src="/assets/img/pictures/mannfred.jpg"
+          src="/assets/img/pictures/mannfred.webp"
           alt="Manfred Wagemann"
           text={
             <>
@@ -180,7 +180,7 @@ export default function Index() {
         <h1 className={styles.headlineHistoryRight}>SUNNA WAGEMANN </h1>
 
         <ImageFeatureRight
-          src="/assets/img/pictures/sunna.jpg"
+          src="/assets/img/pictures/sunna.webp"
           alt="Sunna Wagemann"
           text={
             <>
