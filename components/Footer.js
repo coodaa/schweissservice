@@ -24,7 +24,7 @@ export default function Footer() {
         <div className={styles.design}>
           <p>Design & Code</p>
           <a
-            href="https://bouysbouysbouys.vercel.app/"
+            href="https://www.bouysbouysbouys.com/"
             target="_blank"
             rel="noreferrer"
           >
