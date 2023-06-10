@@ -21,19 +21,19 @@ export default function Index() {
   const quadData = [
     {
       title: "Unser Service",
-      text: "Technische Gase für Schweiß- und Schneidprozesse, Lebensmittelindustrie, Medizin und mehr",
+      text: "Unser Service umfasst eine Vielzahl von Schweißarbeiten, die Ihren individuellen Anforderungen gerecht werden. Egal ob kleine Reparaturen oder maßgeschneiderte Projekte – wir sind Ihr zuverlässiger Partner",
     },
     {
-      title: "Unser Gase",
-      text: "Technische Gase für Schweiß- und Schneidprozesse, Lebensmittelindustrie, Medizin und mehr",
+      title: "Unsere Gase",
+      text: "Acetylon, Alugas, Argon, Ballongas, Diving Sauerstoff, Erdgas, Formiergas, Kohlensäure, Mischgas 82/18, Propan, Stickstoff, Treibgas, Wasserstoff,",
     },
     {
-      title: "Unser Erfahrung",
-      text: "Technische Gase für Schweiß- und Schneidprozesse, Lebensmittelindustrie, Medizin und mehr",
+      title: "Unsere Artikel",
+      text: "Schweißerhandschuhe von Hase Safety Gloves GmbH aus Jever, Schweißgeräte von SR Schweißtechnik GmbH aus Ganderkesee",
     },
     {
       title: "Unser Herz",
-      text: "Technische Gase für Schweiß- und Schneidprozesse, Lebensmittelindustrie, Medizin und mehr",
+      text: "Unser Herz schlägt für technische Gase - unverzichtbare Helfer für Schweiß- und Schneidprozesse. Aber auch für für Schweißgeräte und Arbeitsschutz",
     },
   ];
 
@@ -50,7 +50,7 @@ export default function Index() {
         />
         <meta
           name="keywords"
-          content="Schweißen, technische Gase, Leer, Ostfriesland, Wagemann"
+          content="Schweißen,Stützpunkt Händler, technische Gase, Leer, Ostfriesland, Wagemann"
         />
         <meta
           property="og:title"
@@ -106,8 +106,9 @@ export default function Index() {
             QUALITÄT, ERFAHRUNG UND MAßGESCHNEIDERTE LÖSUNGEN
           </h1>
           <p className={styles.headlineContent}>
-            Wagemann Schweiß-Service wurde gegründet, um all Ihre Anforderungen
-            in technischen Gasen und Schweißlösungen zu erfüllen.
+            Willkommen bei Wagemann Schweiß-Service, Ihrem Stützpunkthändler für
+            technische Gase in Ostfriesland und Experte für maßgeschneiderte
+            Schweißlösungen.
           </p>
         </div>
         <div className={styles.serviceGas}>
@@ -119,13 +120,13 @@ export default function Index() {
         <div className={styles.redHistorySquare}>
           <div className={styles.centerItems}>
             <h2 className={styles.historyLabel}>
-              QUALITÄT, ERFAHRUNG UND MAßGESCHNEIDERTE LÖSUNGEN
+              TOP-SERVICE, FACHKENNTNIS, LÖSUNGEN NACH MAß
             </h2>
             <p>
               <span className={styles.historyLabel}>
-                Entdecken Sie unsere erstklassigen Dienstleistungen: Wir bieten
-                Ihnen maßgeschneiderte Lösungen für technische Gase und
-                professionelle Schweißarbeiten.
+                Unsere Mission? Ihre Anforderungen zu übertreffen. Vertrauen Sie
+                auf Qualität und Expertise, die Perfektion in jeder Schweißnaht
+                garantiert. Mit Wagemann, glänzt Ihr Projekt!
               </span>
             </p>
           </div>

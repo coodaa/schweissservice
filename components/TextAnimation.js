@@ -58,7 +58,7 @@ export default function TextAnimation() {
           variants={textVariants}
           className={styles.text}
         >
-          41+
+          15+
         </motion.h1>
         <motion.p
           initial="hidden"
@@ -83,7 +83,7 @@ export default function TextAnimation() {
           variants={textVariants}
           className={styles.text}
         >
-          200+
+          65+
         </motion.h1>
         <motion.p
           initial="hidden"
@@ -108,7 +108,7 @@ export default function TextAnimation() {
           variants={textVariants}
           className={styles.text}
         >
-          230+
+          130+
         </motion.h1>
         <motion.p
           initial="hidden"
