@@ -21,12 +21,14 @@ export default function Index() {
   const quadData = [
     {
       title: "Unser Service",
-      text: "Unser Service umfasst eine Vielzahl von Schweißarbeiten, die Ihren individuellen Anforderungen gerecht werden. Egal ob kleine Reparaturen oder maßgeschneiderte Projekte – wir sind Ihr zuverlässiger Partner",
+      text: "Unser Service umfasst eine Vielzahl von Schweißarbeiten. Egal ob kleine Reparaturen oder maßgeschneiderte Projekte – wir sind Ihr zuverlässiger Partner",
     },
+
     {
       title: "Unsere Gase",
-      text: "Acetylon, Alugas, Argon, Ballongas, Diving Sauerstoff, Erdgas, Formiergas, Kohlensäure, Mischgas 82/18, Propan, Stickstoff, Treibgas, Wasserstoff,",
+      text: "Acetylon, Alugas, Argon, Ballongas, Diving Sauerstoff, Erdgas, Formiergas, Kohlensäure, Mischgas 82/18, Propan, Stickstoff, Treibgas, Wasserstoff",
     },
+
     {
       title: "Unsere Artikel",
       text: "Schweißerhandschuhe von Hase Safety Gloves GmbH aus Jever, Schweißgeräte von SR Schweißtechnik GmbH aus Ganderkesee",
