@@ -17,7 +17,7 @@
   background-image: url('/assets/img/pictures/landing.webp');
   background-size: cover;
   background-position: center;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 .redSquareLogo {

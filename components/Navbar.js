@@ -25,8 +25,8 @@ const Navbar = () => {
                 style={{ verticalAlign: "middle" }}
               />
             )}
-            <span>Mo-Do 08:30-11:00 Uhr | Fr & Sa 09:30-10:30 Uhr &nbsp;</span>
-            <span className={styles.sundayHours}>| So: Geschlossen</span>
+            <span>Mo-Do 08:30-11:00 Uhr&nbsp;</span>
+            <span className={styles.sundayHours}>| Fr-So: Geschlossen</span>
           </>
         )}
       </div>
