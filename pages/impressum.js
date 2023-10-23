@@ -70,6 +70,17 @@ const Impressum = () => {
             <br />
             DE 123456789
           </p>
+          <p className={styles.paragraph}>
+          <p>
+  Herzlichen Dank an Ralph Gebler vom <a href="https://www.sonntags-report.de/cms/front_content.php" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>SonntagsReport</a> für die freundliche Zurverfügungstellung des Fotos von Manfred Wagemann.
+</p>
+          </p>
+
+
+
+
+
+
           <h2 className={styles.subtitle}>
             Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
           </h2>

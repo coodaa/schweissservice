@@ -154,7 +154,7 @@ export default function Index() {
 
         <ImageFeature
           src="/assets/img/pictures/mannfred.webp"
-          alt="Manfred Wagemann"
+          alt="Manfred Wagemann ©Ralph Gebler"
           text={
             <>
               <p>
@@ -219,7 +219,7 @@ export default function Index() {
             </p>
             <p>
               <span className={styles.timeLabel}>Freitag & Samstag:</span>
-              <span>09:30 - 10:30 Uhr</span>
+              <span>Geschlossen</span>
             </p>
             <p>
               <span className={styles.timeLabel}>Sonntag:</span>
