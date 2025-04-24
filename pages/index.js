@@ -215,7 +215,7 @@ export default function Index() {
               <span className={styles.timeLabel}>
                 Montag&#8209;&nbsp;Donnerstag:
               </span>
-              <span>08:30 - 11:00 Uhr</span>
+              <span>09:00 - 12:00 Uhr</span>
             </p>
             <p>
               <span className={styles.timeLabel}>Freitag & Samstag:</span>
