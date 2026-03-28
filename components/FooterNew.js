@@ -59,6 +59,14 @@ export default function FooterNew() {
           </div>
         </div>
 
+        {/* Partner */}
+        <div className="border-t border-zinc-800 pt-8 pb-8">
+          <p className="text-xs text-zinc-600 mb-2 uppercase tracking-widest">Empfehlung</p>
+          <a href="https://www.haus-hamburg-leer.de/" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-400 hover:text-white transition-colors">
+            Haus Hamburg Leer
+          </a>
+        </div>
+
         {/* Trennlinie + Bottom Bar */}
         <div className="border-t border-zinc-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-zinc-600">
