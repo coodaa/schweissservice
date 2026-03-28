@@ -7,6 +7,7 @@ export default function QuadComponent({ quadData }) {
       {quadData.map((quad, i) => (
         <div key={i} className={styles.quadContent}>
           <div className={styles.quadInner}>
+            {quad.icon && <div className={styles.quadIcon}>{quad.icon}</div>}
             <h3 className={styles.quadTitle}>{quad.title}</h3>
             <p lang="de" className={styles.quadText}>
               {quad.text}

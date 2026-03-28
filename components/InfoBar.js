@@ -103,107 +103,105 @@ const Infobar = ({ scrollPosition }) => {
           </ul>
         ) : (
           <>
-            <BurgerMenu onToggle={handleToggle} />
-            {menuOpen && (
-              <ul
-                className={`${styles.navLinksMobile} ${
-                  menuOpen ? styles.show : ""
-                }`}
-              >
-                <li>
-                  {router.pathname === "/" ? (
-                    <ScrollLink
-                      onClick={() => setMenuOpen(false)}
-                      to="homeSection"
-                      smooth={true}
-                      duration={500}
-                      offset={-60}
+            <BurgerMenu onToggle={handleToggle} isOpen={menuOpen} />
+            <ul
+              className={`${styles.navLinksMobile} ${
+                menuOpen ? styles.show : ""
+              }`}
+            >
+              <li>
+                {router.pathname === "/" ? (
+                  <ScrollLink
+                    onClick={() => setMenuOpen(false)}
+                    to="homeSection"
+                    smooth={true}
+                    duration={500}
+                    offset={-60}
+                    className={styles.linkMobil}
+                  >
+                    Home
+                  </ScrollLink>
+                ) : (
+                  <Link legacyBehavior href="/#homeSection">
+                    <a
                       className={styles.linkMobil}
+                      onClick={() => setMenuOpen(false)}
                     >
                       Home
-                    </ScrollLink>
-                  ) : (
-                    <Link legacyBehavior href="/#homeSection">
-                      <a
-                        className={styles.linkMobil}
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        Home
-                      </a>
-                    </Link>
-                  )}
-                </li>
-                <li>
-                  {router.pathname === "/" ? (
-                    <ScrollLink
-                      onClick={() => setMenuOpen(false)}
-                      to="serviceSection"
-                      smooth={true}
-                      duration={500}
-                      offset={-60}
+                    </a>
+                  </Link>
+                )}
+              </li>
+              <li>
+                {router.pathname === "/" ? (
+                  <ScrollLink
+                    onClick={() => setMenuOpen(false)}
+                    to="serviceSection"
+                    smooth={true}
+                    duration={500}
+                    offset={-60}
+                    className={styles.linkMobil}
+                  >
+                    Service
+                  </ScrollLink>
+                ) : (
+                  <Link legacyBehavior href="/#serviceSection">
+                    <a
                       className={styles.linkMobil}
+                      onClick={() => setMenuOpen(false)}
                     >
                       Service
-                    </ScrollLink>
-                  ) : (
-                    <Link legacyBehavior href="/#serviceSection">
-                      <a
-                        className={styles.linkMobil}
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        Service
-                      </a>
-                    </Link>
-                  )}
-                </li>
-                <li>
-                  {router.pathname === "/" ? (
-                    <ScrollLink
-                      onClick={() => setMenuOpen(false)}
-                      to="historySection"
-                      smooth={true}
-                      duration={500}
-                      offset={-60}
+                    </a>
+                  </Link>
+                )}
+              </li>
+              <li>
+                {router.pathname === "/" ? (
+                  <ScrollLink
+                    onClick={() => setMenuOpen(false)}
+                    to="historySection"
+                    smooth={true}
+                    duration={500}
+                    offset={-60}
+                    className={styles.linkMobil}
+                  >
+                    Geschichte
+                  </ScrollLink>
+                ) : (
+                  <Link legacyBehavior href="/#historySection">
+                    <a
                       className={styles.linkMobil}
+                      onClick={() => setMenuOpen(false)}
                     >
                       Geschichte
-                    </ScrollLink>
-                  ) : (
-                    <Link legacyBehavior href="/#historySection">
-                      <a
-                        className={styles.linkMobil}
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        Geschichte
-                      </a>
-                    </Link>
-                  )}
-                </li>
-                <li>
-                  {router.pathname === "/" ? (
-                    <ScrollLink
-                      onClick={() => setMenuOpen(false)}
-                      to="contactSection"
-                      smooth={true}
-                      duration={500}
-                      offset={-60}
+                    </a>
+                  </Link>
+                )}
+              </li>
+              <li>
+                {router.pathname === "/" ? (
+                  <ScrollLink
+                    onClick={() => setMenuOpen(false)}
+                    to="contactSection"
+                    smooth={true}
+                    duration={500}
+                    offset={-60}
+                    className={styles.linkMobil}
+                  >
+                    Kontakt
+                  </ScrollLink>
+                ) : (
+                  <Link legacyBehavior href="/#contactSection">
+                    <a
                       className={styles.linkMobil}
+                      onClick={() => setMenuOpen(false)}
                     >
                       Kontakt
-                    </ScrollLink>
-                  ) : (
-                    <Link legacyBehavior href="/#contactSection">
-                      <a
-                        className={styles.linkMobil}
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        Kontakt
-                      </a>
-                    </Link>
-                  )}
-                </li>
-              </ul>
-            )}
+                    </a>
+                  </Link>
+                )}
+              </li>
+            </ul>
           </>
         )}
       </div>

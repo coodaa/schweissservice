@@ -42,9 +42,33 @@
 }
 
 .main h2 {
- margin: 0;
- margin-top: 1.4em;
- font-size: 2rem;
+  margin: 0;
+  margin-top: 1.2em;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+.heroButton {
+  display: inline-block;
+  margin-top: 1.6em;
+  padding: 0.75em 1.8em;
+  background-color: transparent;
+  color: var(--text-bright);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.heroButton:hover {
+  background-color: var(--text-bright);
+  border-color: var(--text-bright);
+  color: var(--primary-color);
 }
 
 /* Service Section */
@@ -67,6 +91,10 @@
   margin: 0;
   padding-top: 3em;
   padding-left: 2.8em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .headlineBlack {
@@ -77,12 +105,22 @@
   flex: 2 1;
   order: 1;
   position: relative;
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--text-dark);
+  margin: 0;
 }
 
 .headlineHistoryRed {
   color: var(--primary-color);
   margin-top: 5vh;
   padding-left: 3rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .headlineHistory {
@@ -90,6 +128,11 @@
   padding: 3rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--text-dark);
 }
 
 .headlineHistoryRight {
@@ -98,6 +141,11 @@
   padding: 3rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--text-dark);
 }
 
 .headlineContent {
@@ -105,6 +153,9 @@
   order: 2;
   display: grid;
   grid-template-rows: 6fr 1fr;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-muted);
 }
 
 
@@ -200,10 +251,21 @@
 .headlineRedCenter {
   color: var(--primary-color);
   text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 .headlineBlackCenter {
   text-align: center;
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--text-dark);
+  margin-top: 0;
 }
 
 
@@ -299,11 +361,16 @@
 
 .confirmButton {
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: var(--primary-color);
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.confirmButton:hover {
+  background-color: var(--primary-dark);
 }
 
 .backgroundImage {
@@ -334,6 +401,7 @@
   }
 
   .contactSection {
+    -webkit-hyphens: auto;
     hyphens: auto;
   }
 

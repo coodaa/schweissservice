@@ -1,28 +1,38 @@
-import React from "react";
-import CookieConsent from "react-cookie-consent";
-import styles from "../styles/CookieConsentBar.module.css";
-import ReactGA from 'react-ga';
+"use client";
 
-export default function CookieConsentBar({ onAccept }) {
-  const handleAccept = () => {
-    // Google Analytics initialisieren, wenn Cookies akzeptiert werden
-    ReactGA.initialize('G-2FVK4ZXYNM');
-    onAccept();
-  };
+import CookieConsent from "react-cookie-consent";
+import { useCookieConsent } from "../hooks/useCookieConsent";
+
+export default function CookieConsentBar() {
+  const { updateCookieConsent } = useCookieConsent();
 
   return (
     <CookieConsent
       location="bottom"
       buttonText="Akzeptieren"
       cookieName="CookieConsent"
-      style={{ background: "#B02B2D" }}
-      className={styles.cookieConsent}
-      buttonClasses={styles.acceptButton}
       expires={150}
-      onAccept={handleAccept} // Verwenden Sie hier handleAccept statt onAccept
+      onAccept={() => updateCookieConsent(true)}
+      style={{
+        background: "#18181b",
+        borderTop: "1px solid #3f3f46",
+        fontSize: "0.875rem",
+        alignItems: "center",
+      }}
+      buttonStyle={{
+        background: "#b02c2d",
+        color: "#fff",
+        fontSize: "0.8rem",
+        fontWeight: "600",
+        letterSpacing: "0.08em",
+        textTransform: "uppercase",
+        padding: "0.6rem 1.4rem",
+        borderRadius: "0",
+        margin: "0 1rem",
+      }}
+      contentStyle={{ margin: "0.75rem 1rem" }}
     >
-      Diese Website verwendet Cookies, um die Benutzererfahrung zu verbessern
-      und den Benutzern zusätzliche Funktionen bereitzustellen.
+      Diese Website verwendet Cookies für Google Analytics und Google Maps. Ihre Daten werden erst nach Zustimmung erhoben.
     </CookieConsent>
   );
 }

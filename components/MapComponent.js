@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useCallback } from "react";
 import { useCookieConsent } from "../hooks/useCookieConsent";
 import styles from "../styles/MapComponent.module.css";

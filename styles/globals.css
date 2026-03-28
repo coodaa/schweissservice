@@ -2,10 +2,17 @@
 
 :root {
   --primary-color: #b02c2d;
+  --primary-dark: #8c2122;
   --secondary-color: #FAF9F6;
-  --text-dark: #333;
+  --text-dark: #1a1a1a;
+  --text-muted: #555;
   --text-bright: #FAF9F6;
   --background-color: #FAF9F6;
+  --neutral-100: #f0efec;
+  --neutral-200: #e2e0db;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.16);
 }
 
 body {

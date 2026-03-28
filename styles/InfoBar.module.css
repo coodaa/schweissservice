@@ -57,18 +57,15 @@
 
 @media (max-width: 767px) {
   .infoBar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 1rem;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0.75rem;
     margin-left: 0;
+    font-size: 0.8rem;
   }
 
   .phoneNumber {
-    margin-right: 0;
-  }
-
-  .openingHours, .phoneNumber {
-    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .sundayHours {

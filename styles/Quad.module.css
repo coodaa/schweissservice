@@ -11,10 +11,11 @@
 .quadContent {
   position: relative;
   background-color: #fff;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   overflow: hidden;
   width: 100%;
+  border-top: 3px solid var(--primary-color);
 }
 
 .quadContent::after {
@@ -44,15 +45,25 @@
 }
 
 .quadText {
-  font-size: 1rem;
-	text-align: justify;
-  hyphens: auto;
+  font-size: 0.95rem;
+  text-align: justify;
+  color: var(--text-muted);
+  line-height: 1.6;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .quadContent:hover {
-  transform: rotate(1.5deg);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.quadIcon {
+  color: var(--primary-color);
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: center;
 }
 
 

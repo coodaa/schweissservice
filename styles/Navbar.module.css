@@ -13,7 +13,7 @@
 .sticky {
   position: fixed;
   top: 0;
-  width: 98%
+  width: 100%;
 }
 
 .link {
@@ -78,6 +78,6 @@
   .sticky {
     position: fixed;
     top: 0;
-    width: 90%
+    width: 100%;
   }
 }
