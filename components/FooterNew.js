@@ -69,12 +69,17 @@ export default function FooterNew() {
 
         {/* Trennlinie + Bottom Bar */}
         <div className="border-t border-zinc-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-zinc-600">
-            © {new Date().getFullYear()} Wagemann Schweiß-Service UG (haftungsbeschränkt) · Design &amp; Code by{" "}
-            <a href="https://www.coodaa.de/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-400 transition-colors">
-              coodaa
-            </a>
-          </p>
+          <div>
+            <p className="text-xs text-zinc-600">
+              © {new Date().getFullYear()} Wagemann Schweiß-Service UG (haftungsbeschränkt)
+            </p>
+            <p className="text-xs text-zinc-400 mt-1">
+              Design &amp; Code by{" "}
+              <a href="https://www.coodaa.de/" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-brand-red transition-colors duration-200">
+                coodaa.de
+              </a>
+            </p>
+          </div>
           <div className="flex items-center gap-6">
             <a href="https://www.facebook.com/wagemannschweissservice/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               <FaFacebookSquare size={22} />
