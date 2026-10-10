@@ -38,7 +38,7 @@ export default function Datenschutz() {
             <h3 className="font-semibold text-zinc-700 mb-2">Google Analytics</h3>
             <p className="mb-4">Diese Website nutzt Google Analytics (nur nach Cookie-Zustimmung). Google Analytics verwendet Cookies zur Analyse der Websitenutzung. Die erzeugten Informationen werden in der Regel an einen Server von Google in den USA übertragen. IP-Anonymisierung ist aktiviert.</p>
             <h3 className="font-semibold text-zinc-700 mb-2">Google Maps</h3>
-            <p>Zur Darstellung unseres Standorts nutzen wir Google Maps (nur nach Cookie-Zustimmung). Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-red hover:underline">Google Datenschutzrichtlinie</a>.</p>
+            <p>Zur Darstellung unseres Standorts nutzen wir Google Maps (erst nach Ihrem Klick auf „Karte hier anzeigen“). Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-brand-red hover:underline">Google Datenschutzrichtlinie</a>.</p>
           </section>
 
           <section>

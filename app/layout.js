@@ -1,17 +1,20 @@
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Providers from "../components/Providers";
-import NavbarNew from "../components/NavbarNew";
-import FooterNew from "../components/FooterNew";
-import CookieConsentBar from "../components/CookieConsentBar";
+import SiteHeader from "../components/SiteHeader";
+import SiteFooter from "../components/SiteFooter";
+import ConsentBanner from "../components/ConsentBanner";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+// Archivo als eine variable Datei (Gewicht und Breite), lokal ausgeliefert.
+const archivo = localFont({
+  src: "./fonts/archivo-variable.woff2",
+  weight: "100 900",
+  style: "normal",
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-archivo",
+  declarations: [{ prop: "font-stretch", value: "62% 125%" }],
 });
 
 export const metadata = {
@@ -51,18 +54,19 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  themeColor: "#14212b",
+};
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="de" className={inter.variable}>
-      <head>
-        <meta name="theme-color" content="#b02c2d" />
-      </head>
+    <html lang="de" className={archivo.variable}>
       <body className="font-sans antialiased">
         <Providers>
-          <NavbarNew />
-          <main>{children}</main>
-          <FooterNew />
-          <CookieConsentBar />
+          <SiteHeader />
+          <main id="main">{children}</main>
+          <SiteFooter />
+          <ConsentBanner />
           <GoogleAnalytics />
           <Analytics />
         </Providers>

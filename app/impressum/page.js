@@ -32,7 +32,7 @@ export default function Impressum() {
             <h2 className="text-lg font-bold text-zinc-900 mb-3">Kontakt</h2>
             <p className="flex items-center gap-2 mb-1">
               <MdPhone className="text-brand-red shrink-0" />
-              <a href="tel:+4904919293713" className="hover:text-brand-red transition-colors">+49 (0) 491 9293713</a>
+              <a href="tel:+494919293713" className="hover:text-brand-red transition-colors">+49 (0) 491 9293713</a>
             </p>
             <p className="flex items-center gap-2">
               <MdEmail className="text-brand-red shrink-0" />

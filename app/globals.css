@@ -3,24 +3,89 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --brand-red: #b02c2d;
-    --brand-red-dark: #8c2122;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
   html {
-    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 
   body {
-    font-family: "Inter", system-ui, sans-serif;
-    background-color: #ffffff;
-    color: #111827;
+    background-color: #f2f4f3;
+    color: #14212b;
     margin: 0;
+    font-stretch: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  :focus-visible {
+    outline: 3px solid #e0605f;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: #b02c2d;
+    color: #fff;
   }
 }
 
+@layer components {
+  /* Schmal laufende Archivo für Überschriften – erinnert an gestanzte Typenschilder */
+  .display {
+    font-stretch: 78%;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 150ms, border-color 150ms, color 150ms;
+  }
+
+  .btn-primary {
+    background: #b02c2d;
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: #8c2122;
+  }
+
+  .btn-ghost-dark {
+    border: 1.5px solid rgb(255 255 255 / 0.35);
+    color: #fff;
+  }
+  .btn-ghost-dark:hover {
+    border-color: #fff;
+  }
+
+  .btn-ghost {
+    border: 1.5px solid #14212b;
+    color: #14212b;
+  }
+  .btn-ghost:hover {
+    background: #14212b;
+    color: #fff;
+  }
+
+  .text-link {
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+  }
+  .text-link:hover {
+    color: #b02c2d;
+  }
+}
