@@ -6,34 +6,6 @@ import MapEmbed from "../components/MapEmbed";
 import GasCylinder from "../components/GasCylinder";
 import { SITE } from "../lib/site";
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "Wagemann Schweiß-Service UG (haftungsbeschränkt)",
-  image: "https://www.wagemann-schweiss-service.de/assets/img/pictures/quality.webp",
-  "@id": "https://www.wagemann-schweiss-service.de/",
-  url: "https://www.wagemann-schweiss-service.de/",
-  telephone: "+49-491-9293713",
-  email: "kontakt@wagemann-schweiss-service.de",
-  foundingDate: "1998",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Sägemühlenstraße 89",
-    addressLocality: "Leer (Ostfriesland)",
-    postalCode: "26789",
-    addressCountry: "DE",
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 53.21785,
-    longitude: 7.45894,
-  },
-  sameAs: ["https://www.facebook.com/wagemannschweissservice/"],
-  openingHoursSpecification: [
-    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "09:00", closes: "12:00" },
-  ],
-};
-
 // Schulterfarben nach DIN EN 1089-3. Propan ist Flüssiggas und fällt nicht unter die Norm.
 const GASES = [
   { name: "Acetylen", formula: "C₂H₂", shoulder: "#6d342d", color: "kastanienbraun", use: "Brenngas zum Autogenschweißen und Brennschneiden" },
@@ -59,6 +31,101 @@ const SERVICES = [
     text: "Wir beraten Sie in Leer, welches Gas und welches Gerät zu Ihrer Arbeit passt. Ehrlich und ohne Umwege.",
   },
 ];
+
+const FAQ = [
+  {
+    q: "Welche Gase bekomme ich bei Wagemann in Leer?",
+    a: "Am Lager haben wir Acetylen, Argon, Kohlendioxid (CO₂), Mischgas, Propan, Stickstoff und Wasserstoff. Wir führen noch viele weitere Gase. Rufen Sie an, wenn Sie etwas Bestimmtes suchen.",
+  },
+  {
+    q: "Wann kann ich vorbeikommen?",
+    a: "Montag bis Donnerstag von 9 bis 12 Uhr. Freitag, Samstag und Sonntag ist geschlossen.",
+  },
+  {
+    q: "Wo finde ich Sie?",
+    a: "In der Sägemühlenstraße 89 in 26789 Leer (Ostfriesland).",
+  },
+  {
+    q: "Übernehmen Sie auch kleine Schweißarbeiten?",
+    a: "Ja. Wir schweißen von der kleinen Reparatur bis zum Einzelstück nach Ihren Vorgaben.",
+  },
+  {
+    q: "Führen Sie auch Schweißgeräte und Zubehör?",
+    a: "Ja. Wir führen Schweißgeräte von SR Schweißtechnik und Schutzhandschuhe von Hase Safety Gloves und beraten Sie vor Ort, was zu Ihrer Arbeit passt.",
+  },
+];
+
+const BASE_URL = "https://www.wagemann-schweiss-service.de";
+
+// Strukturierte Daten für Google, gespeist aus denselben Listen wie die Seite.
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": `${BASE_URL}/#business`,
+      name: "Wagemann Schweiß-Service UG (haftungsbeschränkt)",
+      alternateName: "Wagemann Schweiß-Service",
+      description:
+        "Stützpunkthändler für technische Gase in Leer (Ostfriesland). Dazu Schweißarbeiten, Schweißgeräte und Zubehör.",
+      url: `${BASE_URL}/`,
+      image: `${BASE_URL}/assets/img/og.jpg`,
+      logo: `${BASE_URL}/assets/img/logo/wagemann_logo.svg`,
+      telephone: "+49-491-9293713",
+      email: SITE.email,
+      foundingDate: "1998",
+      founder: { "@type": "Person", name: "Manfred Wagemann" },
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Sägemühlenstraße 89",
+        addressLocality: "Leer (Ostfriesland)",
+        postalCode: "26789",
+        addressRegion: "Niedersachsen",
+        addressCountry: "DE",
+      },
+      geo: { "@type": "GeoCoordinates", latitude: 53.21785, longitude: 7.45894 },
+      hasMap: SITE.routeUrl,
+      areaServed: { "@type": "AdministrativeArea", name: "Ostfriesland" },
+      sameAs: [SITE.facebook],
+      openingHoursSpecification: [
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "09:00", closes: "12:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Friday", "Saturday", "Sunday"], opens: "00:00", closes: "00:00" },
+      ],
+      knowsAbout: ["Technische Gase", "Schweißgas", "Schutzgasschweißen", "Autogenschweißen", "Schweißgeräte"],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Technische Gase und Schweißservice",
+        itemListElement: [
+          {
+            "@type": "OfferCatalog",
+            name: "Technische Gase",
+            itemListElement: GASES.map((gas) => ({
+              "@type": "Offer",
+              itemOffered: { "@type": "Product", name: gas.name, description: gas.use },
+            })),
+          },
+          {
+            "@type": "OfferCatalog",
+            name: "Leistungen",
+            itemListElement: SERVICES.map((service) => ({
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name: service.title, description: service.text },
+            })),
+          },
+        ],
+      },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${BASE_URL}/#faq`,
+      mainEntity: FAQ.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
+    },
+  ],
+};
 
 export default function Home() {
   return (
@@ -121,7 +188,7 @@ export default function Home() {
           <div>
             <h2 className="display text-4xl sm:text-5xl">Diese Gase haben wir am Lager</h2>
             <p className="mt-5 max-w-md text-lg leading-relaxed text-steel">
-              Als Stützpunkthändler halten wir die gängigen technischen Gase vorrätig. Ihr Gas steht nicht in der Liste? Rufen Sie an, wir führen noch viele weitere.
+              Als Stützpunkthändler in Leer halten wir die gängigen technischen Gase und Schweißgase in Flaschen vorrätig. Ihr Gas steht nicht in der Liste? Rufen Sie an, wir führen noch viele weitere.
             </p>
             <div className="relative mt-8 hidden aspect-[4/3] overflow-hidden lg:block">
               <Image
@@ -226,6 +293,27 @@ export default function Home() {
                 Heute leitet Sunna Wagemann den Betrieb. Sie führt die Tradition ihres Vaters fort: Schweißlösungen, technische Gase und ein Service, auf den sich Kundinnen und Kunden verlassen können.
               </p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Häufige Fragen ───────────────────────────────────────────── */}
+      <section id="faqSection" className="border-t border-line bg-white">
+        <div className="mx-auto grid max-w-7xl gap-x-16 gap-y-8 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_1.5fr] lg:py-24">
+          <h2 className="display text-4xl sm:text-5xl">Häufige Fragen</h2>
+          <div className="border-t border-ink">
+            {FAQ.map((item) => (
+              <details key={item.q} className="group border-b border-line">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5 text-xl font-semibold [&::-webkit-details-marker]:hidden">
+                  {item.q}
+                  <span aria-hidden="true" className="relative h-4 w-4 shrink-0">
+                    <span className="absolute left-0 top-1/2 h-0.5 w-4 -translate-y-1/2 bg-brand-red" />
+                    <span className="absolute left-1/2 top-0 h-4 w-0.5 -translate-x-1/2 bg-brand-red transition-transform duration-200 group-open:scale-y-0" />
+                  </span>
+                </summary>
+                <p className="max-w-2xl pb-6 text-lg leading-relaxed text-steel">{item.a}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>

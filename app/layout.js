@@ -17,15 +17,28 @@ const archivo = localFont({
   declarations: [{ prop: "font-stretch", value: "62% 125%" }],
 });
 
+const TITLE = "Technische Gase und Schweißservice in Leer | Wagemann Schweiß-Service";
+const DESCRIPTION =
+  "Technische Gase in Leer (Ostfriesland): Acetylen, Argon, CO₂, Mischgas, Propan, Stickstoff und Wasserstoff. Dazu Schweißarbeiten, Schweißgeräte und Zubehör. Geöffnet Mo–Do 9–12 Uhr.";
+
 export const metadata = {
   metadataBase: new URL("https://www.wagemann-schweiss-service.de"),
   title: {
-    default: "Wagemann Schweiß-Service | Technische Gase & Schweißlösungen in Ostfriesland",
+    default: TITLE,
     template: "%s | Wagemann Schweiß-Service",
   },
-  description:
-    "Wagemann Schweiß-Service ist Ihr kompetenter Partner für technische Gase und professionelle Schweißlösungen im Herzen von Ostfriesland.",
-  keywords: ["Schweißen", "technische Gase", "Leer", "Ostfriesland", "Wagemann"],
+  description: DESCRIPTION,
+  keywords: [
+    "technische Gase Leer",
+    "Schweißgas Leer",
+    "Gasflaschen Leer",
+    "Propangas Leer",
+    "Argon",
+    "Acetylen",
+    "Schweißarbeiten Leer",
+    "Schweißservice Ostfriesland",
+    "Wagemann",
+  ],
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
   openGraph: {
@@ -33,24 +46,22 @@ export const metadata = {
     locale: "de_DE",
     url: "/",
     siteName: "Wagemann Schweiß-Service",
-    title: "Wagemann Schweiß-Service | Technische Gase & Schweißlösungen",
-    description:
-      "Ihr Stützpunkthändler für technische Gase & maßgeschneiderte Schweißlösungen in Ostfriesland.",
+    title: TITLE,
+    description: DESCRIPTION,
     images: [
       {
-        url: "/assets/img/pictures/quality.webp",
+        url: "/assets/img/og.jpg",
         width: 1200,
         height: 630,
-        alt: "Wagemann Schweiß-Service – Qualität in Ostfriesland",
+        alt: "Wagemann Schweiß-Service: Technische Gase und Schweißservice in Leer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wagemann Schweiß-Service | Technische Gase & Schweißlösungen",
-    description:
-      "Ihr Stützpunkthändler für technische Gase & maßgeschneiderte Schweißlösungen in Ostfriesland.",
-    images: ["/assets/img/pictures/quality.webp"],
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/assets/img/og.jpg"],
   },
 };
 
