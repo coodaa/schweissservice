@@ -89,7 +89,6 @@ const jsonLd = {
       sameAs: [SITE.facebook],
       openingHoursSpecification: [
         { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"], opens: "09:00", closes: "12:00" },
-        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Friday", "Saturday", "Sunday"], opens: "00:00", closes: "00:00" },
       ],
       knowsAbout: ["Technische Gase", "Schweißgas", "Schutzgasschweißen", "Autogenschweißen", "Schweißgeräte"],
       hasOfferCatalog: {
