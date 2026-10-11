@@ -101,7 +101,7 @@ const jsonLd = {
             name: "Technische Gase",
             itemListElement: GASES.map((gas) => ({
               "@type": "Offer",
-              itemOffered: { "@type": "Product", name: gas.name, description: gas.use },
+              itemOffered: { "@type": "Service", name: gas.name, description: gas.use },
             })),
           },
           {
